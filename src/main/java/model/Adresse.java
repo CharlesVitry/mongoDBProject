@@ -6,15 +6,19 @@ public class Adresse {
     private String voie;
     private String ville;
     private int codePostal;
-    private int test;
+	private String departement;
+	private float longitude;
+	private float latitude;
     
     
-	public Adresse(int numero, String voie, String ville, int codePostal) {
+	public Adresse(int numero, String voie, String ville, int codePostal, float longitude, float latitude) {
 		super();
 		this.numero = numero;
 		this.voie = voie;
 		this.ville = ville;
 		this.codePostal = codePostal;
+		this.longitude = longitude;
+		this.latitude = latitude;
 	}
 	
 
@@ -43,5 +47,8 @@ public class Adresse {
 	public void setCodePostal(int codePostal) {
 		this.codePostal = codePostal;
 	}
-
+	public float getLongitude() {return longitude;}
+	public float setLongitude(float longitude) {return longitude;}
+	public float getLatitude() {return latitude;}
+	public float setLatitude(float latitude) {return latitude;}
 }
