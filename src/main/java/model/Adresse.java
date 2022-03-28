@@ -6,7 +6,7 @@ public class Adresse {
     private String voie;
     private String ville;
     private int codePostal;
-    
+    private int test;
     
     
 	public Adresse(int numero, String voie, String ville, int codePostal) {
