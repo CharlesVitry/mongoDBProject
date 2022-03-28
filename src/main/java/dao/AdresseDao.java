@@ -13,21 +13,21 @@ import java.util.ArrayList;
 
 public class AdresseDao extends Dao<Adresse>{
 
-	MongoCollection<Document> collection = database.getCollection("restaurants");
+	MongoCollection<Document> collection = database.getCollection("etablissement");
 	
 	@Override
 	public boolean create(Adresse obj) {
 		Document document = new Document();
 		document.put("numero", obj.getNumero());
-		document.put("Voie", obj.getVoie());
-		document.put("Ville", obj.getVille());
-		document.put("CodePostal", obj.getCodePostal());
-		document.put("Departement", obj.getCodePostal());
-		document.put("Longitude", obj.getLongitude());
-		document.put("Latitude", obj.getLatitude());
+		document.put("voie", obj.getVoie());
+		document.put("ville", obj.getVille());
+		document.put("codePostal", obj.getCodePostal());
+		document.put("departement", obj.getDepartement());
+		document.put("longitude", obj.getLongitude());
+		document.put("latitude", obj.getLatitude());
 
 		collection.insertOne(document);
-
+		System.out.println("Adresse créer avec succès !");
 		return true;
 	}
 
@@ -51,7 +51,7 @@ public class AdresseDao extends Dao<Adresse>{
 				document.getInteger("codePostal"),
 				document.getString("departement"),
 				document.getDouble("longitude"),
-				document.getDouble("latitutde")
+				document.getDouble("latitude")
 		);
 
 		return adr;
@@ -71,7 +71,7 @@ public class AdresseDao extends Dao<Adresse>{
 					document.getInteger("codePostal"),
 					document.getString("departement"),
 					document.getDouble("longitude"),
-					document.getDouble("latitutde")
+					document.getDouble("latitude")
 			);
 			adresses.add(adresse);
 		}

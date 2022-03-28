@@ -9,8 +9,21 @@ public class Adresse {
 	private String departement;
 	private double longitude;
 	private double latitude;
-    
-    
+
+
+	@Override
+	public String toString() {
+		return "Adresse{" +
+				"numero=" + numero +
+				", voie='" + voie + '\'' +
+				", ville='" + ville + '\'' +
+				", codePostal=" + codePostal +
+				", departement='" + departement + '\'' +
+				", longitude=" + longitude +
+				", latitude=" + latitude +
+				'}';
+	}
+
 	public Adresse(int numero, String voie, String ville, int codePostal, String departement, double longitude, double latitude) {
 		super();
 		this.numero = numero;
