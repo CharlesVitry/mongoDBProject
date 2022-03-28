@@ -17,6 +17,13 @@ public class AdresseDao extends Dao<Adresse>{
 	
 	@Override
 	public boolean create(Adresse obj) {
+		Document document = new Document();
+		document.put("numero", obj.getNumero());
+		document.put("CodePostal", obj.getCodePostal());
+		document.put("Ville", obj.getVille());
+		document.put("Voie", obj.getVoie());
+		collection.insertOne(document);
+
 		return true;
 	}
 
