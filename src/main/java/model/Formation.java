@@ -4,14 +4,22 @@ import java.util.ArrayList;
 
 public class Formation {
 
+    private int id_F;
     private String Intitule;
     private ArrayList<String> ListeDisciplines;
 
 
-    public Formation(String Intitule,ArrayList<String> ListeDisciplines) {
+    public Formation(int id_f, String Intitule, ArrayList<String> ListeDisciplines) {
         super();
+        this.id_F = id_F;
         this.Intitule = Intitule;
         this.ListeDisciplines = ListeDisciplines;
+    }
+    public int getid_f() {
+        return id_F;
+    }
+    public void setid_f(int id_F) {
+        this.id_F = id_F;
     }
 
     public String getIntitule() {
