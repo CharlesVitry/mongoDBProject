@@ -43,6 +43,17 @@ public class AdresseDao extends Dao<Adresse>{
 
 	@Override
 	public Adresse find(Adresse adr) {
+		Document document = collection.find(Filters.eq("numero", adr.getNumero())).first();
+		Adresse adresse = new Adresse(
+				document.getInteger("numero"),
+				document.getString("voie"),
+				document.getString("ville"),
+				document.getInteger("codePostal"),
+				document.getString("departement"),
+				document.getDouble("longitude"),
+				document.getDouble("latitutde")
+		);
+
 		return adr;
 	}
 
