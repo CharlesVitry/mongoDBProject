@@ -17,11 +17,12 @@ import java.util.List;
  */
 public class App<ad1>
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
-    }
 
-    Adresse ad1 = new Adresse(45, "Rue rabelaie", "Angers", 49000, "49",49.3, 49.7);
-    adresseDao.create(ad1);
+        Adresse ad1 = new Adresse(45, "Rue rabelaie", "Angers", 49000, "49", 49.3, 49.7);
+        adresseDao.create(ad1);
+
+        adresseDao.find(ad1);
+    }
 }
