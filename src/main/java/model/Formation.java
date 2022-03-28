@@ -4,43 +4,28 @@ import java.util.ArrayList;
 
 public class Formation {
 
-    private String intitule;
-    private List<String> ListeDisciplines;
+    private String Intitule;
+    private ArrayList<String> ListeDisciplines;
 
 
-    public Adresse(int numero, String voie, String ville, int codePostal) {
+    public Formation(String Intitule,ArrayList<String> ListeDisciplines) {
         super();
-        this.numero = numero;
-        this.voie = voie;
-        this.ville = ville;
-        this.codePostal = codePostal;
+        this.Intitule = Intitule;
+        this.ListeDisciplines = ListeDisciplines;
     }
 
+    public String getIntitule() {
+        return Intitule;
+    }
+    public void setIntitule(String Intitule) {
+        this.Intitule = Intitule;
+    }
+    public ArrayList<String> getListeDisciplines() {
+        return ListeDisciplines;
+    }
+    public void setVoie(ArrayList<String> ListeDisciplines) {
+        this.ListeDisciplines = ListeDisciplines;
+    }
 
-
-    public int getNumero() {
-        return numero;
-    }
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-    public String getVoie() {
-        return voie;
-    }
-    public void setVoie(String voie) {
-        this.voie = voie;
-    }
-    public String getVille() {
-        return ville;
-    }
-    public void setVille(String ville) {
-        this.ville = ville;
-    }
-    public int getCodePostal() {
-        return codePostal;
-    }
-    public void setCodePostal(int codePostal) {
-        this.codePostal = codePostal;
-    }
 
 }
