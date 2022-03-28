@@ -3,9 +3,6 @@ package model;
 public class Adresse {
 
     private int numero;
-
-
-
 	private String voie;
     private String ville;
     private int codePostal;

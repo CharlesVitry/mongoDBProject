@@ -60,6 +60,21 @@ public class AdresseDao extends Dao<Adresse>{
 	@Override
 	public ArrayList<Adresse> findAll() {
 		ArrayList<Adresse> adresses = new ArrayList<Adresse>();
+		FindIterable<Document> documents = collection.find();
+		MongoCursor<Document> cursor = documents.iterator();
+		while(cursor.hasNext()){
+			Document document = cursor.next();
+			Adresse adresse = new Adresse(
+					document.getInteger("numero"),
+					document.getString("voie"),
+					document.getString("ville"),
+					document.getInteger("codePostal"),
+					document.getString("departement"),
+					document.getDouble("longitude"),
+					document.getDouble("latitutde")
+			);
+			adresses.add(adresse);
+		}
 		return adresses;
 	}
 }
