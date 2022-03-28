@@ -3,20 +3,24 @@ package model;
 public class Adresse {
 
     private int numero;
-    private String voie;
+
+
+
+	private String voie;
     private String ville;
     private int codePostal;
 	private String departement;
-	private float longitude;
-	private float latitude;
+	private double longitude;
+	private double latitude;
     
     
-	public Adresse(int numero, String voie, String ville, int codePostal, float longitude, float latitude) {
+	public Adresse(int numero, String voie, String ville, int codePostal, String departement, double longitude, double latitude) {
 		super();
 		this.numero = numero;
 		this.voie = voie;
 		this.ville = ville;
 		this.codePostal = codePostal;
+		this.departement = departement;
 		this.longitude = longitude;
 		this.latitude = latitude;
 	}
@@ -47,8 +51,15 @@ public class Adresse {
 	public void setCodePostal(int codePostal) {
 		this.codePostal = codePostal;
 	}
-	public float getLongitude() {return longitude;}
-	public float setLongitude(float longitude) {return longitude;}
-	public float getLatitude() {return latitude;}
-	public float setLatitude(float latitude) {return latitude;}
+	public String getDepartement() {
+		return departement;
+	}
+
+	public void setDepartement(String departement) {
+		this.departement = departement;
+	}
+	public double getLongitude() {return longitude;}
+	public double setLongitude(double longitude) {return longitude;}
+	public double getLatitude() {return latitude;}
+	public double setLatitude(double latitude) {return latitude;}
 }

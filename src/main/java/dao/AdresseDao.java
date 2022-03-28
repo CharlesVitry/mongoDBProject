@@ -19,9 +19,13 @@ public class AdresseDao extends Dao<Adresse>{
 	public boolean create(Adresse obj) {
 		Document document = new Document();
 		document.put("numero", obj.getNumero());
-		document.put("CodePostal", obj.getCodePostal());
-		document.put("Ville", obj.getVille());
 		document.put("Voie", obj.getVoie());
+		document.put("Ville", obj.getVille());
+		document.put("CodePostal", obj.getCodePostal());
+		document.put("Departement", obj.getCodePostal());
+		document.put("Longitude", obj.getLongitude());
+		document.put("Latitude", obj.getLatitude());
+
 		collection.insertOne(document);
 
 		return true;
