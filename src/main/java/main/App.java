@@ -8,11 +8,16 @@ import model.Adresse;
 import model.Etablissement;
 import model.Etudiant;
 import model.Formation;
+import org.bson.BsonArray;
+import org.bson.BsonValue;
 import org.bson.Document;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.Array;
+import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -54,6 +59,29 @@ public class App<ad1>
 
         Etablissement eta1 = new Etablissement(45784, "UCO", "UCO ANGERS", "0245784554", "Université", "public", "Nantes", ad1, etudiants, diplomes,  formations);
         etablissementDao.create(eta1);
-        System.out.println(etablissementDao.find(eta1));
+
+        // NE MARCHE PAS
+        //System.out.println(etablissementDao.find(eta1));
+
+        try{
+            BufferedReader br = new BufferedReader(new FileReader("etablissements.json"));
+            String line;
+            while((line = br.readLine()) != null){
+                //System.out.println(lines)
+                BsonArray documents = BsonArray.parse(line);
+                System.out.println(documents);
+                for(BsonValue bson : documents.getValues()){
+                    Document document = Document.parse(bson.toString());
+                    Document fields = (Document) document.get("fields");
+
+                    fields.get("region"));
+                }
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
