@@ -11,6 +11,7 @@ public class Etudiant {
 
 
 
+
     public Etudiant(int id_e, String nom, String prenom, Adresse adresse, Formation formation, String present) {
         super();
         this.id_E = id_e;
@@ -69,6 +70,19 @@ public class Etudiant {
 
     public void setPresent(String present) {
         this.present = present;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Etudiant{" +
+                "id_E=" + id_E +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", adresse=" + adresse +
+                ", formation=" + formation +
+                ", present='" + present + '\'' +
+                '}';
     }
 
 }

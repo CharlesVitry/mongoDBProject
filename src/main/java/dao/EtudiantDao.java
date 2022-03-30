@@ -93,7 +93,7 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     @Override
     public ArrayList<Etudiant> findAll() {
-        ArrayList<Etudiant> etudiants = new ArrayList<>();
+        ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
         FindIterable<Document> documents = collection.find();
         MongoCursor<Document> cursor = documents.iterator();
         while(cursor.hasNext()){

@@ -5,6 +5,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 
+import model.Adresse;
 import model.Etudiant;
 import  model.Formation;
 import model.Etablissement;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 
 
 
-public class FormationDAO extends Dao<Formation>{
+public class FormationDAO extends Dao<Formation> {
 
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
@@ -27,9 +28,8 @@ public class FormationDAO extends Dao<Formation>{
         document.put("ListeDisciplines", obj.getListeDisciplines());
 
 
-
         collection.insertOne(document);
-        System.out.println("Formation créer avec succès !");
+        System.out.println("Formation créé avec succès !");
         return true;
     }
 
@@ -54,20 +54,26 @@ public class FormationDAO extends Dao<Formation>{
         );
 
 
-
-
         return formation;
 
     }
 
 
-
-
-
-
     @Override
     public ArrayList<Formation> findAll() {
-
-
+        ArrayList<Formation> formations = new ArrayList<Formation>();
+        FindIterable<Document> documents = collection.find();
+        MongoCursor<Document> cursor = documents.iterator();
+        while (cursor.hasNext()) {
+            Document document = cursor.next();
+            Formation formation = new Formation(
+                    document.getInteger("id_F"),
+                    document.getString("Intitule"),
+                    (ArrayList<String>) document.get("ListeDisciplines")
+            );
+            formations.add(formation);
+        }
+        return formations;
     }
+
 }

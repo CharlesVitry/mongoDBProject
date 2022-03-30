@@ -8,13 +8,13 @@ public class Formation {
     private String Intitule;
     private ArrayList<String> ListeDisciplines;
 
-
     public Formation(int id_f, String Intitule, ArrayList<String> ListeDisciplines) {
         super();
         this.id_F = id_F;
         this.Intitule = Intitule;
         this.ListeDisciplines = ListeDisciplines;
     }
+
     public int getid_f() {
         return id_F;
     }
@@ -35,5 +35,12 @@ public class Formation {
         this.ListeDisciplines = ListeDisciplines;
     }
 
-
+    @Override
+    public String toString() {
+        return "Formation{" +
+                "id_F=" + id_F +
+                ", Intitule='" + Intitule + '\'' +
+                ", ListeDisciplines=" + ListeDisciplines +
+                '}';
+    }
 }

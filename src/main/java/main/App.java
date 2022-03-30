@@ -21,15 +21,19 @@ public class App<ad1>
 {
     public static void main( String[] args ) {
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
+        Dao<Etudiant> etudiantDao = DaoFactory.getEtudiantDAO();
+        Dao<Formation> formationDao = DaoFactory.getFormationDAO();
 
         Adresse ad1 = new Adresse(45, "Rue rabelaie", "Angers", 49000, "49", 49.3, 49.7);
         //adresseDao.create(ad1);
-
-        Adresse add2 = adresseDao.find(ad1);
-        System.out.println(add2);
+        System.out.println(adresseDao.find(ad1));
 
         Formation form1 = new Formation(145, "MathInfo", new ArrayList<String>());
+        //formationDao.create(form1);
+        System.out.println(formationDao.find(form1));
+
         Etudiant et1 = new Etudiant(235472, "Paul", "Paul", ad1, form1, "present");
-        adresseDao.create(et1);
+        //etudiantDao.create(et1);
+        System.out.println(etudiantDao.find(et1));
     }
 }
