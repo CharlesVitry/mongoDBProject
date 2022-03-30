@@ -19,7 +19,7 @@ public class FormationDAO extends Dao<Formation>{
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
     @Override
-    public boolean create(Etudiant obj) {
+    public boolean create(Formation obj) {
         Document document = new Document();
 
         document.put("id_F", obj.getid_f());
@@ -33,11 +33,16 @@ public class FormationDAO extends Dao<Formation>{
         return true;
     }
 
-
     @Override
-    public boolean create(Formation obj) {
+    public boolean delete(Formation obj) {
         return false;
     }
+
+    @Override
+    public boolean update(Formation obj) {
+        return false;
+    }
+
 
     @Override
     public Formation find(Formation obj) {
@@ -63,6 +68,6 @@ public class FormationDAO extends Dao<Formation>{
     @Override
     public ArrayList<Formation> findAll() {
 
-        return None;
+
     }
 }
