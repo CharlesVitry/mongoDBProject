@@ -8,13 +8,15 @@ import com.mongodb.client.model.Filters;
 import model.*;
 import org.bson.Document;
 import model.Adresse;
+
+import java.sql.Array;
 import java.util.ArrayList;
 
 
 
-public class EtablissementDao extends Dao<Etablissement>{
+public class EtablissementDao extends Dao<Etablissement> {
 
-    MongoCollection<Document> collection = database.getCollection("etudiant");
+    MongoCollection<Document> collection = database.getCollection("etablissement");
 
 
     @Override
@@ -27,10 +29,65 @@ public class EtablissementDao extends Dao<Etablissement>{
         document.put("TypeEtablissement", obj.getTypeEtablissement());
         document.put("statut", obj.getStatut());
         document.put("Universite_de_Rattachement", obj.getUniversite_de_Rattachement());
-        document.put("adresse", obj.getAdresse());
-        document.put("Liste_Etudiant", obj.getListe_Etudiant());
+
+        // adresse établissement
+        Document adrDocument = new Document();
+        adrDocument.put("numero", obj.getAdresse().getNumero());
+        adrDocument.put("voie", obj.getAdresse().getVoie());
+        adrDocument.put("ville", obj.getAdresse().getVille());
+        adrDocument.put("codePostal", obj.getAdresse().getCodePostal());
+        adrDocument.put("departement", obj.getAdresse().getDepartement());
+        adrDocument.put("longitude", obj.getAdresse().getLongitude());
+        adrDocument.put("latitude", obj.getAdresse().getLatitude());
+
+        document.put("adresse", adrDocument);
+
+        // création liste étudiant
+        ArrayList<Document> etudiants = new ArrayList<Document>();
+        for (Etudiant etudiant : obj.getListe_Etudiant()) {
+            Document etDocument = new Document();
+
+            etDocument.put("id_E", etudiant.getId_E());
+            etDocument.put("nom", etudiant.getNom());
+            etDocument.put("prenom", etudiant.getPrenom());
+
+            // adresse de l'étudiant
+            Document adretDocument = new Document();
+            adretDocument.put("numero", etudiant.getAdresse().getNumero());
+            adretDocument.put("voie", etudiant.getAdresse().getVoie());
+            adretDocument.put("ville", etudiant.getAdresse().getVille());
+            adretDocument.put("codePostal", etudiant.getAdresse().getCodePostal());
+            adretDocument.put("departement", etudiant.getAdresse().getDepartement());
+            adretDocument.put("longitude", etudiant.getAdresse().getLongitude());
+            adretDocument.put("latitude", etudiant.getAdresse().getLatitude());
+
+            etDocument.put("adresse", adretDocument);
+
+            // formation de l'etudiant
+            Document foretDocument = new Document();
+            foretDocument.put("id_F", etudiant.getFormation().getid_f());
+            foretDocument.put("Intitule", etudiant.getFormation().getIntitule());
+            foretDocument.put("ListeDisciplines", etudiant.getFormation().getListeDisciplines());
+
+            etDocument.put("formation", foretDocument);
+
+            etDocument.put("present", etudiant.getPresent());
+            etudiants.add(etDocument);
+        }
+        document.put("Liste_Etudiant", etudiants);
+
         document.put("Liste_De_Diplome", obj.getListe_De_Diplome());
-        document.put("Liste_De_Formations", obj.getListe_De_Formations());
+
+        // création liste des formations :
+        ArrayList<Document> formations = new ArrayList<Document>();
+        for (Formation formation : obj.getListe_De_Formations()) {
+            Document forDocument = new Document();
+            forDocument.put("id_F", formation.getid_f());
+            forDocument.put("Intitule", formation.getIntitule());
+            forDocument.put("ListeDisciplines", formation.getListeDisciplines());
+            formations.add(forDocument);
+        }
+        document.put("Liste_De_Formations", formations);
 
         collection.insertOne(document);
         System.out.println("Etablissement créer avec succès !");
@@ -49,7 +106,8 @@ public class EtablissementDao extends Dao<Etablissement>{
 
     @Override
     public Etablissement find(Etablissement obj) {
-        Document document = collection.find(Filters.eq("id_eta", obj.getId_Eta())).first();
+        //prblm ici
+        Document document = collection.find(Filters.eq("id_Eta", obj.getId_Eta())).first();
 
         Document adrDocument = (Document) document.get("adresse");
         Adresse adresse = new Adresse(
@@ -62,24 +120,65 @@ public class EtablissementDao extends Dao<Etablissement>{
                 adrDocument.getDouble("latitude")
         );
 
+        ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
+        for (Document etudDoc : (ArrayList<Document>) document.get("Liste_Etudiant")) {
+            Document adretDocument = (Document) document.get("adresse");
+            Adresse adresseet = new Adresse(
+                    adretDocument.getInteger("numero"),
+                    adretDocument.getString("voie"),
+                    adretDocument.getString("ville"),
+                    adretDocument.getInteger("codePostal"),
+                    adretDocument.getString("departement"),
+                    adretDocument.getDouble("longitude"),
+                    adretDocument.getDouble("latitude")
+            );
+
+            Document formDocument = (Document) document.get("formation");
+            Formation formation = new Formation(
+                    formDocument.getInteger("id_F"),
+                    formDocument.getString("Intitule"),
+                    (ArrayList<String>) formDocument.get("ListeDisciplines")
+            );
+
+            Etudiant etu = new Etudiant(
+                    etudDoc.getInteger("id_E"),
+                    etudDoc.getString("nom"),
+                    etudDoc.getString("prenom"),
+                    adresseet,
+                    formation,
+                    etudDoc.getString("present")
+
+            );
+            etudiants.add(etu);
+        }
+
+        ArrayList<Formation> formations = new ArrayList<Formation>();
+        for (Document forDoc : (ArrayList<Document>) document.get("Liste_De_Formations")) {
+            Formation formation = new Formation(
+                    forDoc.getInteger("id_F"),
+                    forDoc.getString("Intitule"),
+                    (ArrayList<String>) forDoc.get("ListeDisciplines")
+            );
+            formations.add(formation);
+        }
+
+
         Etablissement etablissement = new Etablissement(
-                document.getInteger("id_Eta"),
+                document.getInteger("id_E"),
                 document.getString("sigle"),
                 document.getString("nom"),
                 document.getString("telephone"),
                 document.getString("TypeEtablissement"),
                 document.getString("statut"),
                 document.getString("Universite_de_Rattachement"),
-                document.get("adresse"), (ArrayList<String>) document.get("Liste_Etudiant") ,
-                (ArrayList<String>) document.get("Liste_De_Diplome") ,
-                (ArrayList<String>) document.get("Liste_De_Formations")
+                adresse,
+                etudiants,
+                (ArrayList<String>) document.get("Liste_De_Diplome"),
+                formations
 
         );
 
-        return obj;
-
-
-
+        return etablissement;
     }
 
 
@@ -94,20 +193,8 @@ public class EtablissementDao extends Dao<Etablissement>{
         MongoCursor<Document> cursor = documents.iterator();
         while(cursor.hasNext()){
             Document document = cursor.next();
-            Etablissement etablissement = new Etablissement(
-                    document.getInteger("id_Eta"),
-            document.getString("sigle"),
-            document.getString("nom"),
-            document.getString("telephone"),
-            document.getString("TypeEtablissement"),
-            document.getString("statut"),
-            document.getString("Universite_de_Rattachement"),
-            document.get("adresse"  ),
-                     (ArrayList<String>) document.get("Liste_Etudiant") ,
-           (ArrayList<String>) document.get("Liste_De_Diplome") ,
-             (ArrayList<String>) document.get("Liste_De_Formations")
-            );
-            Etablissements.add(etablissement);
+
+
         }
         return Etablissements;
     }

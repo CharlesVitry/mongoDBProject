@@ -15,7 +15,6 @@ public class Etablissement {
     private ArrayList<String> Liste_De_Diplome;
     private ArrayList<Formation> Liste_De_Formations;
 
-
     public Etablissement(int id_Eta, String sigle, String nom, String telephone, String typeEtablissement, String statut, String universite_de_Rattachement, Adresse adresse, ArrayList<Etudiant> liste_Etudiant, ArrayList<String> liste_De_Diplome, ArrayList<Formation> liste_De_Formations) {
         this.id_Eta = id_Eta;
         this.sigle = sigle;
@@ -118,7 +117,22 @@ public class Etablissement {
         Liste_De_Formations = liste_De_Formations;
     }
 
-
+    @Override
+    public String toString() {
+        return "Etablissement{" +
+                "id_Eta=" + id_Eta +
+                ", sigle='" + sigle + '\'' +
+                ", nom='" + nom + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", TypeEtablissement='" + TypeEtablissement + '\'' +
+                ", statut='" + statut + '\'' +
+                ", Universite_de_Rattachement='" + Universite_de_Rattachement + '\'' +
+                ", adresse=" + adresse +
+                ", Liste_Etudiant=" + Liste_Etudiant +
+                ", Liste_De_Diplome=" + Liste_De_Diplome +
+                ", Liste_De_Formations=" + Liste_De_Formations +
+                '}';
+    }
 
 
 }

@@ -12,6 +12,7 @@ import org.bson.Document;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -25,7 +26,7 @@ public class App<ad1>
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
         Dao<Etudiant> etudiantDao = DaoFactory.getEtudiantDAO();
         Dao<Formation> formationDao = DaoFactory.getFormationDAO();
-        Dao<Etablissement> EtablissementDao = DaoFactory.getEtablissementDAO();
+        Dao<Etablissement> etablissementDao = DaoFactory.getEtablissementDAO();
 
         Adresse ad1 = new Adresse(45, "Rue rabelaie", "Angers", 49000, "49", 49.3, 49.7);
         adresseDao.create(ad1);
@@ -39,10 +40,20 @@ public class App<ad1>
         etudiantDao.create(et1);
         System.out.println(etudiantDao.find(et1));
 
-        //Etablissement eta1 = new Etablissement(1,"sigle","JASA","+33(0)6 87 14 89","secondaire","privé","UCO",ad1,
-        //        new ArrayList<String>(),new ArrayList<String>(),new ArrayList<String>() );
-        //EtablissementDao.create(eta1);
 
 
+        ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
+        etudiants.add(et1);
+
+        ArrayList<String> diplomes = new ArrayList<String>();
+        diplomes.add("Licences");
+        diplomes.add("Master");
+
+        ArrayList<Formation> formations = new ArrayList<Formation>();
+        formations.add(form1);
+
+        Etablissement eta1 = new Etablissement(45784, "UCO", "UCO ANGERS", "0245784554", "Université", "public", "Nantes", ad1, etudiants, diplomes,  formations);
+        etablissementDao.create(eta1);
+        System.out.println(etablissementDao.find(eta1));
     }
 }
