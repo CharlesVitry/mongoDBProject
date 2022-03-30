@@ -17,17 +17,6 @@ import java.util.ArrayList;
 public class EtablissementDao extends Dao<Etablissement>{
 
     MongoCollection<Document> collection = database.getCollection("etablissement");
-
-    @Override
-    public boolean create(Adresse obj) {
-        return false;
-    }
-
-    @Override
-    public boolean create(Etudiant obj) {
-        return false;
-    }
-
     @Override
     public boolean create(Etablissement obj) {
         Document document = new Document();

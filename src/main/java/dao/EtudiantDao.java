@@ -15,7 +15,6 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
-    @Override
     public boolean create(Etudiant obj) {
         Document document = new Document();
         document.put("id_E", obj.getId_E());
@@ -59,7 +58,7 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     @Override
     public Etudiant find(Etudiant obj) {
-        Document document = collection.find(Filters.eq("id_E", et.getId_E())).first();
+        Document document = collection.find(Filters.eq("id_E", obj.getId_E())).first();
 
         Document adrDocument = (Document) document.get("adresse");
         Adresse adresse = new Adresse(
@@ -76,7 +75,7 @@ public class EtudiantDao extends Dao<Etudiant> {
         Formation formation = new Formation(
             formDocument.getInteger("id_F"),
             formDocument.getString("Intitule"),
-            formDocument.getString("")
+            (ArrayList<String>) formDocument.get("ListeDisciplines")
         );
 
         Etudiant etu = new Etudiant(

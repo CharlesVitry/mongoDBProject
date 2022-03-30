@@ -21,6 +21,7 @@ public class App<ad1>
 {
     public static void main( String[] args ) {
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
+        Dao<Etudiant> etudiantDao = DaoFactory.getEtudiantDAO();
 
         Adresse ad1 = new Adresse(45, "Rue rabelaie", "Angers", 49000, "49", 49.3, 49.7);
         //adresseDao.create(ad1);
@@ -28,8 +29,14 @@ public class App<ad1>
         Adresse add2 = adresseDao.find(ad1);
         System.out.println(add2);
 
-        Formation form1 = new Formation(145, "MathInfo", new ArrayList<String>());
+
+        ArrayList<String> listDiscip = new ArrayList<>(){{
+            add("maths");
+            add("info");
+        }};
+        Formation form1 = new Formation(145, "MathInfo", listDiscip);
         Etudiant et1 = new Etudiant(235472, "Paul", "Paul", ad1, form1, "present");
-        adresseDao.create(et1);
+        etudiantDao.create(et1);
+        etudiantDao.find(et1);
     }
 }
