@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class EtablissementDao extends Dao<Etablissement>{
 
-    MongoCollection<Document> collection = database.getCollection("etablissement");
+    MongoCollection<Document> collection = database.getCollection("etudiant");
 
 
     @Override
