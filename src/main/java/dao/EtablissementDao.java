@@ -19,7 +19,6 @@ public class EtablissementDao extends Dao<Etablissement>{
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
 
-
     @Override
     public boolean create(Etablissement obj) {
         Document document = new Document();
