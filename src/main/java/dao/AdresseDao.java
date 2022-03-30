@@ -4,8 +4,8 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
-import com.mongodb.client.result.UpdateResult;
 import model.Adresse;
+import model.Etudiant;
 import org.bson.Document;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class AdresseDao extends Dao<Adresse>{
 	MongoCollection<Document> collection = database.getCollection("etablissement");
 	
 	@Override
-	public boolean create(Adresse obj) {
+	public boolean create(Etudiant obj) {
 		Document document = new Document();
 		document.put("numero", obj.getNumero());
 		document.put("voie", obj.getVoie());

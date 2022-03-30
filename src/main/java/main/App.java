@@ -4,6 +4,8 @@ import com.mongodb.client.model.InsertOneModel;
 import dao.Dao;
 import dao.DaoFactory;
 import model.Adresse;
+import model.Etudiant;
+import model.Formation;
 import org.bson.Document;
 
 import java.io.BufferedReader;
@@ -26,7 +28,8 @@ public class App<ad1>
         Adresse add2 = adresseDao.find(ad1);
         System.out.println(add2);
 
-        Etudiant et1 = new Etudiant()
-
+        Formation form1 = new Formation(145, "MathInfo", new ArrayList<String>());
+        Etudiant et1 = new Etudiant(235472, "Paul", "Paul", ad1, form1, "present");
+        adresseDao.create(et1);
     }
 }
