@@ -53,17 +53,18 @@ public class EtablissementDao extends Dao<Etablissement>{
     public Etablissement find(Etablissement obj) {
         Document document = collection.find(Filters.eq("numero", obj.getNumero())).first();
         Etablissement etablissement = new Etablissement(
-                document.getInteger("id_Eta");
-                document.getString("sigle");
-                document.getString("nom");
-                document.getString("telephone");
-                document.getString("TypeEtablissement");
-                document.getString("statut");
-                document.getString("Universite_de_Rattachement");
-                document.get("adresse"  );
-                document.get("Liste_Etudiant");
-                document.get("Liste_De_Diplome");
-                document.get("Liste_De_Formations");
+                document.getInteger("id_Eta"),
+                document.getString("sigle"),
+                document.getString("nom"),
+                document.getString("telephone"),
+                document.getString("TypeEtablissement"),
+                document.getString("statut"),
+                document.getString("Universite_de_Rattachement"),
+                document.get("adresse"  ),
+                ArrayList<String> Liste_Etudiant = (ArrayList<String>) document.get("Liste_Etudiant") ,
+                ArrayList<String> Liste_De_Diplome = (ArrayList<String>) document.get("Liste_De_Diplome") ,
+                ArrayList<String> Liste_De_Formations = (ArrayList<String>) document.get("Liste_De_Formations") 
+
                 );
 
 
@@ -86,17 +87,17 @@ public class EtablissementDao extends Dao<Etablissement>{
         while(cursor.hasNext()){
             Document document = cursor.next();
             Etablissement etablissement = new Etablissement(
-                    document.getInteger("id_Eta");
-            document.getString("sigle");
-            document.getString("nom");
-            document.getString("telephone");
-            document.getString("TypeEtablissement");
-            document.getString("statut");
-            document.getString("Universite_de_Rattachement");
-            document.get("adresse"  );
-            document.get("Liste_Etudiant");
-            document.get("Liste_De_Diplome");
-            document.get("Liste_De_Formations");
+                    document.getInteger("id_Eta"),
+            document.getString("sigle"),
+            document.getString("nom"),
+            document.getString("telephone"),
+            document.getString("TypeEtablissement"),
+            document.getString("statut"),
+            document.getString("Universite_de_Rattachement"),
+            document.get("adresse"  ),
+                    ArrayList<String> Liste_Etudiant = (ArrayList<String>) document.get("Liste_Etudiant") ,
+            ArrayList<String> Liste_De_Diplome = (ArrayList<String>) document.get("Liste_De_Diplome") ,
+            ArrayList<String> Liste_De_Formations = (ArrayList<String>) document.get("Liste_De_Formations")
             );
             Etablissements.add(etablissement);
         }
