@@ -17,6 +17,8 @@ import java.util.ArrayList;
 public class EtablissementDao extends Dao<Etablissement>{
 
     MongoCollection<Document> collection = database.getCollection("etablissement");
+
+
     @Override
     public boolean create(Etablissement obj) {
         Document document = new Document();
@@ -59,9 +61,9 @@ public class EtablissementDao extends Dao<Etablissement>{
                 document.getString("statut"),
                 document.getString("Universite_de_Rattachement"),
                 document.get("adresse"  ),
-                ArrayList<String> Liste_Etudiant = (ArrayList<String>) document.get("Liste_Etudiant") ,
-                ArrayList<String> Liste_De_Diplome = (ArrayList<String>) document.get("Liste_De_Diplome") ,
-                ArrayList<String> Liste_De_Formations = (ArrayList<String>) document.get("Liste_De_Formations") 
+               (ArrayList<String>) document.get("Liste_Etudiant") ,
+                (ArrayList<String>) document.get("Liste_De_Diplome") ,
+               (ArrayList<String>) document.get("Liste_De_Formations")
 
                 );
 
@@ -93,9 +95,9 @@ public class EtablissementDao extends Dao<Etablissement>{
             document.getString("statut"),
             document.getString("Universite_de_Rattachement"),
             document.get("adresse"  ),
-                    ArrayList<String> Liste_Etudiant = (ArrayList<String>) document.get("Liste_Etudiant") ,
-            ArrayList<String> Liste_De_Diplome = (ArrayList<String>) document.get("Liste_De_Diplome") ,
-            ArrayList<String> Liste_De_Formations = (ArrayList<String>) document.get("Liste_De_Formations")
+                     (ArrayList<String>) document.get("Liste_Etudiant") ,
+           (ArrayList<String>) document.get("Liste_De_Diplome") ,
+             (ArrayList<String>) document.get("Liste_De_Formations")
             );
             Etablissements.add(etablissement);
         }

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class FormationDAO extends Dao<Formation>{
 
-    MongoCollection<Document> collection = database.getCollection("formation");
+    MongoCollection<Document> collection = database.getCollection("etablissement");
 
     @Override
     public boolean create(Formation obj) {
@@ -33,9 +33,16 @@ public class FormationDAO extends Dao<Formation>{
         return true;
     }
 
-    public boolean delete(Formation obj){return true; }
+    @Override
+    public boolean delete(Formation obj) {
+        return false;
+    }
 
-    public boolean update(Formation obj){return true; }
+    @Override
+    public boolean update(Formation obj) {
+        return false;
+    }
+
 
     @Override
     public Formation find(Formation obj) {
@@ -61,6 +68,6 @@ public class FormationDAO extends Dao<Formation>{
     @Override
     public ArrayList<Formation> findAll() {
 
-        return None;
+
     }
 }
