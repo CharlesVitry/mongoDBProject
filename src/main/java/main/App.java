@@ -21,9 +21,12 @@ public class App<ad1>
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
 
         Adresse ad1 = new Adresse(45, "Rue rabelaie", "Angers", 49000, "49", 49.3, 49.7);
-        adresseDao.create(ad1);
+        //adresseDao.create(ad1);
 
         Adresse add2 = adresseDao.find(ad1);
         System.out.println(add2);
+
+        Etudiant et1 = new Etudiant()
+
     }
 }

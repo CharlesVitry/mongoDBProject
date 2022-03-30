@@ -6,6 +6,8 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.result.UpdateResult;
 import model.Etudiant;
+import model.Adresse;
+import model.Formation;
 import org.bson.Document;
 
 import java.util.ArrayList;
@@ -47,8 +49,8 @@ public class EtudiantDao extends Dao<Etudiant> {
             document.getInteger("id_E"),
             document.getString("nom"),
             document.getString("prenom"),
-            document.getObjectId("adresse"),
-            document.getObjectId("formation"),
+            (Adresse) document.get("adresse"),
+            (Formation) document.get("formation"),
             document.getString("present")
 
         );
@@ -63,18 +65,19 @@ public class EtudiantDao extends Dao<Etudiant> {
         MongoCursor<Document> cursor = documents.iterator();
         while(cursor.hasNext()){
             Document document = cursor.next();
+
             Etudiant etudiant = new Etudiant(
                     document.getInteger("id_E"),
                     document.getString("nom"),
                     document.getString("prenom"),
-                    document.getObjectId("adresse"),
-                    document.getObjectId("formation"),
+
+                    (Adresse) document.get("adresse"),
+                    (Formation) document.get("formation"),
                     document.getString("present")
 
             );
-
+            etudiants.add(etudiant);
         }
-        etudiants.add(etudiant)
         return etudiants;
     }
 }

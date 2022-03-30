@@ -53,7 +53,7 @@ public class AdresseDao extends Dao<Adresse>{
 				document.getDouble("longitude"),
 				document.getDouble("latitude")
 		);
-
+		Document adrDocument = (Document) document.get("adresse");
 		return adr;
 	}
 
