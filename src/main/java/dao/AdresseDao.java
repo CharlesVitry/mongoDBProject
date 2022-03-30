@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class AdresseDao extends Dao<Adresse>{
 
-	MongoCollection<Document> collection = database.getCollection("etablissement");
+	MongoCollection<Document> collection = database.getCollection("adresse");
 	
 	@Override
 	public boolean create(Adresse obj) {

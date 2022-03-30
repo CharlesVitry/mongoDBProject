@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class FormationDAO extends Dao<Formation> {
 
-    MongoCollection<Document> collection = database.getCollection("etablissement");
+    MongoCollection<Document> collection = database.getCollection("formation");
 
     @Override
     public boolean create(Formation obj) {
