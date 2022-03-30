@@ -31,6 +31,8 @@ public class AdresseDao extends Dao<Adresse>{
 		return true;
 	}
 
+
+
 	@Override
 	public boolean delete(Adresse obj) {
 		return true;

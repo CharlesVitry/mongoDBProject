@@ -34,6 +34,10 @@ public class FormationDAO extends Dao<Formation>{
     }
 
 
+    @Override
+    public boolean create(Formation obj) {
+        return false;
+    }
 
     @Override
     public Formation find(Formation obj) {
