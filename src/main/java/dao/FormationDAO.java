@@ -43,13 +43,13 @@ public class FormationDAO extends Dao<Formation>{
         Formation formation = new Formation(
                 document.getInteger("id_F"),
                 document.getString("Intitule"),
-        ArrayList<String> ListeDisciplines = (ArrayList<String>) document.get("ListeDisciplines")
-                );
+                (ArrayList<String>) document.get("ListeDisciplines")
+        );
 
 
 
 
-        return obj;
+        return formation;
 
     }
 
