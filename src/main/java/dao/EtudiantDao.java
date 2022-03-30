@@ -44,6 +44,15 @@ public class EtudiantDao extends Dao<Etudiant> {
     @Override
     public Etudiant find(Etudiant et) {
         Document document = collection.find(Filters.eq("id_E", et.getId_E())).first();
+        Adresse  adresseDoc = new Adresse (
+                adresseDoc.getInteger("numero"),
+                adresseDoc.getString("voie"),
+                adresseDoc.getString("ville"),
+                adresseDoc.getInteger("codePostal"),
+                adresseDoc.getString("departement"),
+                adresseDoc.getDouble("longitude"),
+                adresseDoc.getDouble("latitude"));
+
         Etudiant etu = new Etudiant(
             document.getInteger("id_E"),
             document.getString("nom"),
