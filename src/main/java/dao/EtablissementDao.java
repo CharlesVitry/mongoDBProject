@@ -5,6 +5,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 
+import model.Adresse;
 import model.Etablissement;
 import model.Etudiant;
 import org.bson.Document;
@@ -18,7 +19,17 @@ public class EtablissementDao extends Dao<Etablissement>{
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
     @Override
+    public boolean create(Adresse obj) {
+        return false;
+    }
+
+    @Override
     public boolean create(Etudiant obj) {
+        return false;
+    }
+
+    @Override
+    public boolean create(Etablissement obj) {
         Document document = new Document();
         document.put("id_Eta", obj.getId_Eta());
         document.put("sigle", obj.getSigle());
@@ -49,7 +60,7 @@ public class EtablissementDao extends Dao<Etablissement>{
 
     @Override
     public Etablissement find(Etablissement obj) {
-        Document document = collection.find(Filters.eq("numero", obj.getNumero())).first();
+        Document document = collection.find(Filters.eq("id_eta", obj.getId_Eta())).first();
         Etablissement etablissement = new Etablissement(
                 document.getInteger("id_Eta"),
                 document.getString("sigle"),
