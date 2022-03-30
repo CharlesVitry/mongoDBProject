@@ -14,4 +14,8 @@ public class DaoFactory {
 	public static Dao<Etudiant> getEtudiantDAO() { return new EtudiantDao(); }
 
 	public static Dao<Formation> getFormationDAO() {return new FormationDAO(); }
+
+	public static Dao<Etablissement> getEtablissementDAO(){ return  new EtablissementDao();}
+
+
 }
