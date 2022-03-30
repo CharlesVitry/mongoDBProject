@@ -30,7 +30,7 @@ public class App<ad1>
         System.out.println(add2);
 
 
-        ArrayList<String> listDiscip = new ArrayList<>(){{
+        ArrayList<String> listDiscip = new ArrayList<String>(){{
             add("maths");
             add("info");
         }};
