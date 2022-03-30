@@ -59,26 +59,18 @@ public class FormationDAO extends Dao<Formation>{
 
     @Override
     public ArrayList<Formation> findAll() {
-        ArrayList<Etablissement> Etablissements = new ArrayList<Etablissement>();
+        ArrayList<Formation> Formations = new ArrayList<Formation>();
         FindIterable<Document> documents = collection.find();
         MongoCursor<Document> cursor = documents.iterator();
         while(cursor.hasNext()){
             Document document = cursor.next();
-            Etablissement etablissement = new Etablissement(
-                    document.getInteger("id_Eta");
-            document.getString("sigle");
-            document.getString("nom");
-            document.getString("telephone");
-            document.getString("TypeEtablissement");
-            document.getString("statut");
-            document.getString("Universite_de_Rattachement");
-            document.get("adresse"  );
-            document.get("Liste_Etudiant");
-            document.get("Liste_De_Diplome");
-            document.get("Liste_De_Formations");
+            Formation formation = new Formation(
+                     document.getInteger("id_F"),
+                    document.getString("Intitule"),
+                    ArrayList<String> ListeDisciplines = (ArrayList<String>) document.get("ListeDisciplines")
             );
-            Etablissements.add(etablissement);
+            Formations.add(formation);
         }
-        return Etablissements;
+        return Formations;
     }
 }
