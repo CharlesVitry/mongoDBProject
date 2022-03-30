@@ -21,8 +21,24 @@ public class EtudiantDao extends Dao<Etudiant> {
         document.put("id_E", obj.getId_E());
         document.put("nom", obj.getNom());
         document.put("prenom", obj.getPrenom());
-        document.put("adresse", obj.getAdresse());
-        document.put("formation", obj.getFormation());
+
+        Document adrDocument = new Document();
+        adrDocument.put("numero", obj.getAdresse().getNumero());
+        adrDocument.put("voie", obj.getAdresse().getVoie());
+        adrDocument.put("ville", obj.getAdresse().getVille());
+        adrDocument.put("codePostal", obj.getAdresse().getCodePostal());
+        adrDocument.put("departement", obj.getAdresse().getDepartement());
+        adrDocument.put("longitude", obj.getAdresse().getLongitude());
+        adrDocument.put("latitude", obj.getAdresse().getLatitude());
+
+        document.put("adresse", adrDocument);
+
+        Document forDocument = new Document();
+        forDocument.put("id_F", obj.getFormation().getid_f());
+        forDocument.put("Intitule", obj.getFormation().getIntitule());
+        forDocument.put("ListeDisciplines", obj.getFormation().getListeDisciplines());
+        document.put("formation", forDocument);
+
         document.put("present", obj.getPresent());
 
         collection.insertOne(document);
@@ -42,28 +58,38 @@ public class EtudiantDao extends Dao<Etudiant> {
     }
 
     @Override
-    public Etudiant find(Etudiant et) {
+    public Etudiant find(Etudiant obj) {
         Document document = collection.find(Filters.eq("id_E", et.getId_E())).first();
-        Adresse  adresseDoc = new Adresse (
-                adresseDoc.getInteger("numero"),
-                adresseDoc.getString("voie"),
-                adresseDoc.getString("ville"),
-                adresseDoc.getInteger("codePostal"),
-                adresseDoc.getString("departement"),
-                adresseDoc.getDouble("longitude"),
-                adresseDoc.getDouble("latitude"));
+
+        Document adrDocument = (Document) document.get("adresse");
+        Adresse adresse = new Adresse(
+                adrDocument.getInteger("numero"),
+                adrDocument.getString("voie"),
+                adrDocument.getString("ville"),
+                adrDocument.getInteger("codePostal"),
+                adrDocument.getString("departement"),
+                adrDocument.getDouble("longitude"),
+                adrDocument.getDouble("latitude")
+        );
+
+        Document formDocument = (Document) document.get("formation");
+        Formation formation = new Formation(
+            formDocument.getInteger("id_F"),
+            formDocument.getString("Intitule"),
+            formDocument.getString("")
+        );
 
         Etudiant etu = new Etudiant(
             document.getInteger("id_E"),
             document.getString("nom"),
             document.getString("prenom"),
-            (Adresse) document.get("adresse"),
-            (Formation) document.get("formation"),
+            adresse,
+            formation,
             document.getString("present")
 
         );
 
-        return et;
+        return etu;
     }
 
     @Override
@@ -74,17 +100,9 @@ public class EtudiantDao extends Dao<Etudiant> {
         while(cursor.hasNext()){
             Document document = cursor.next();
 
-            Etudiant etudiant = new Etudiant(
-                    document.getInteger("id_E"),
-                    document.getString("nom"),
-                    document.getString("prenom"),
 
-                    (Adresse) document.get("adresse"),
-                    (Formation) document.get("formation"),
-                    document.getString("present")
-
-            );
-            etudiants.add(etudiant);
+            
+            //etudiants.add(etudiant);
         }
         return etudiants;
     }
