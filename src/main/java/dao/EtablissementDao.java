@@ -5,11 +5,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 
-import model.Adresse;
-import model.Etablissement;
-import model.Etudiant;
+import model.*;
 import org.bson.Document;
-
+import model.Adresse;
 import java.util.ArrayList;
 
 
@@ -52,6 +50,18 @@ public class EtablissementDao extends Dao<Etablissement>{
     @Override
     public Etablissement find(Etablissement obj) {
         Document document = collection.find(Filters.eq("id_eta", obj.getId_Eta())).first();
+
+        Document adrDocument = (Document) document.get("adresse");
+        Adresse adresse = new Adresse(
+                adrDocument.getInteger("numero"),
+                adrDocument.getString("voie"),
+                adrDocument.getString("ville"),
+                adrDocument.getInteger("codePostal"),
+                adrDocument.getString("departement"),
+                adrDocument.getDouble("longitude"),
+                adrDocument.getDouble("latitude")
+        );
+
         Etablissement etablissement = new Etablissement(
                 document.getInteger("id_Eta"),
                 document.getString("sigle"),
@@ -60,17 +70,15 @@ public class EtablissementDao extends Dao<Etablissement>{
                 document.getString("TypeEtablissement"),
                 document.getString("statut"),
                 document.getString("Universite_de_Rattachement"),
-                document.get("adresse"  ),
-               (ArrayList<String>) document.get("Liste_Etudiant") ,
+                document.get("adresse"), (ArrayList<String>) document.get("Liste_Etudiant") ,
                 (ArrayList<String>) document.get("Liste_De_Diplome") ,
-               (ArrayList<String>) document.get("Liste_De_Formations")
+                (ArrayList<String>) document.get("Liste_De_Formations")
 
-                );
-
-
-
+        );
 
         return obj;
+
+
 
     }
 

@@ -25,10 +25,11 @@ public class Etablissement {
         this.TypeEtablissement = typeEtablissement;
         this.statut = statut;
         this.Universite_de_Rattachement = universite_de_rattachement;
-        this.adresse = (Adresse) adresse;
+        this.adresse = (Adresse) this.adresse;
         this.Liste_Etudiant = liste_etudiant;
         this.Liste_De_Diplome = liste_de_diplome;
         this.Liste_De_Formations = liste_de_formations;
+
     }
 
     public void setId_Eta(int id_Eta) {
