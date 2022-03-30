@@ -39,9 +39,9 @@ public class App<ad1>
         etudiantDao.create(et1);
         System.out.println(etudiantDao.find(et1));
 
-        Etablissement eta1 = new Etablissement(1,"sigle","JASA","+33(0)6 87 14 89","secondaire","privé","UCO",ad1,
-                new ArrayList<String>(),new ArrayList<String>(),new ArrayList<String>() );
-        EtablissementDao.create(eta1);
+        //Etablissement eta1 = new Etablissement(1,"sigle","JASA","+33(0)6 87 14 89","secondaire","privé","UCO",ad1,
+        //        new ArrayList<String>(),new ArrayList<String>(),new ArrayList<String>() );
+        //EtablissementDao.create(eta1);
 
 
     }
