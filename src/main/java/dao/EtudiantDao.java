@@ -101,7 +101,7 @@ public class EtudiantDao extends Dao<Etudiant> {
             Document document = cursor.next();
 
 
-            
+
             //etudiants.add(etudiant);
         }
         return etudiants;
