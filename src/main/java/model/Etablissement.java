@@ -11,9 +11,9 @@ public class Etablissement {
     private String statut; //public privé privé sous contrat
     private String Universite_de_Rattachement;
     private Adresse adresse;
-    private ArrayList<String> Liste_Etudiant;
+    private ArrayList<Etudiant> Liste_Etudiant;
     private ArrayList<String> Liste_De_Diplome;
-    private ArrayList<String> Liste_De_Formations;
+    private ArrayList<Formation> Liste_De_Formations;
 
 
 
