@@ -20,13 +20,13 @@ public class Etablissement {
         this.sigle = sigle;
         this.nom = nom;
         this.telephone = telephone;
-        TypeEtablissement = typeEtablissement;
+        this.TypeEtablissement = typeEtablissement;
         this.statut = statut;
-        Universite_de_Rattachement = universite_de_Rattachement;
+        this.Universite_de_Rattachement = universite_de_Rattachement;
         this.adresse = adresse;
-        Liste_Etudiant = liste_Etudiant;
-        Liste_De_Diplome = liste_De_Diplome;
-        Liste_De_Formations = liste_De_Formations;
+        this.Liste_Etudiant = liste_Etudiant;
+        this.Liste_De_Diplome = liste_De_Diplome;
+        this.Liste_De_Formations = liste_De_Formations;
     }
 
     public int getId_Eta() {

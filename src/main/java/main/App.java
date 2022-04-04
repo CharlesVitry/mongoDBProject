@@ -24,7 +24,43 @@ import java.util.List;
 
 /**
  * main class
+ *
+ *
+ *
  */
+
+// TO DO
+/*
+
+Demande de renseignements
+Elle doit respecter le pattern DAO et le pattern Singleton
+Le fichier permettant la transformation XSLT (.xsl)
+
+A FAIRE
+Le projet doit comporter un jeu de données afin que l’application puisse être tester
+De rajouter/modifier un étudiant
+• De rajouter/modifier un établissement
+• De rajouter/modifier une formation
+• De rechercher un étudiant (par numéro d’étudiant) /un établissement (par numéro
+de SIRET ou par commune) / une formation (par intitulé)
+• De lister l’ensemble des formations, établissements, étudiants
+• De faire une extraction des données des établissements sous format XML (en
+utilisant DOM, SAX ou JAXB)
+• De lister les cours d’un étudiant
+• L’application doit aussi générer une page HTML représentant les différentes
+informations des établissements (à l’aide d’une transformation XSLT)
+• De réinitialiser la base (en injectant le fichier json concernant les universités, ainsi
+que le jeu de données)
+
+
+
+ */
+
+
+
+
+
+
 public class App<ad1>
 {
     public static void main( String[] args ) {
@@ -63,6 +99,9 @@ public class App<ad1>
         // NE MARCHE PAS
         //System.out.println(etablissementDao.find(eta1));
 
+
+
+        // Le programme devra initialiser la base avec un jeu de donnée
         try{
             BufferedReader br = new BufferedReader(new FileReader("etablissements.json"));
             String line;
@@ -74,7 +113,7 @@ public class App<ad1>
                     Document document = Document.parse(bson.toString());
                     Document fields = (Document) document.get("fields");
 
-                    fields.get("region"));
+                 //   fields.get("region");)
                 }
 
             }
