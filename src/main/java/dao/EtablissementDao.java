@@ -19,6 +19,8 @@ public class EtablissementDao extends Dao<Etablissement> {
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
 
+
+
     @Override
     public boolean create(Etablissement obj) {
         Document document = new Document();
@@ -90,7 +92,7 @@ public class EtablissementDao extends Dao<Etablissement> {
         document.put("Liste_De_Formations", formations);
 
         collection.insertOne(document);
-        System.out.println("Etablissement créer avec succès !");
+      //  System.out.println("Etablissement créer avec succès !");
         return true;
     }
 
@@ -164,7 +166,7 @@ public class EtablissementDao extends Dao<Etablissement> {
 
 
         Etablissement etablissement = new Etablissement(
-                document.getInteger("id_E"),
+                document.getString("id_E"),
                 document.getString("sigle"),
                 document.getString("nom"),
                 document.getString("telephone"),

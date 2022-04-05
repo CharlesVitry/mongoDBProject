@@ -27,7 +27,7 @@ public class AdresseDao extends Dao<Adresse>{
 		document.put("latitude", obj.getLatitude());
 
 		collection.insertOne(document);
-		System.out.println("Adresse créé avec succès !");
+		//System.out.println("Adresse créé avec succès !");
 		return true;
 	}
 

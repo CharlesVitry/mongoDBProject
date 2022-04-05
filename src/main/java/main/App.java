@@ -1,9 +1,7 @@
 package main;
 
-import com.mongodb.client.model.InsertOneModel;
 import dao.Dao;
 import dao.DaoFactory;
-import dao.EtablissementDao;
 import model.Adresse;
 import model.Etablissement;
 import model.Etudiant;
@@ -16,11 +14,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.nio.Buffer;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 /**
  * main class
@@ -44,13 +38,18 @@ De rajouter/modifier un étudiant
 • De rechercher un étudiant (par numéro d’étudiant) /un établissement (par numéro
 de SIRET ou par commune) / une formation (par intitulé)
 • De lister l’ensemble des formations, établissements, étudiants
+
+à voir demain
 • De faire une extraction des données des établissements sous format XML (en
 utilisant DOM, SAX ou JAXB)
 • De lister les cours d’un étudiant
+
 • L’application doit aussi générer une page HTML représentant les différentes
 informations des établissements (à l’aide d’une transformation XSLT)
+
+
 • De réinitialiser la base (en injectant le fichier json concernant les universités, ainsi
-que le jeu de données)
+que le jeu de données) == Retirer les données, puis re-ajouter les etablissments
 
 
 
@@ -64,6 +63,9 @@ que le jeu de données)
 public class App<ad1>
 {
     public static void main( String[] args ) {
+
+
+
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
         Dao<Etudiant> etudiantDao = DaoFactory.getEtudiantDAO();
         Dao<Formation> formationDao = DaoFactory.getFormationDAO();
@@ -93,11 +95,9 @@ public class App<ad1>
         ArrayList<Formation> formations = new ArrayList<Formation>();
         formations.add(form1);
 
-        Etablissement eta1 = new Etablissement(45784, "UCO", "UCO ANGERS", "0245784554", "Université", "public", "Nantes", ad1, etudiants, diplomes,  formations);
+       Etablissement eta1 = new Etablissement("hf8ui91az", "UCO", "UCO ANGERS", "0245784554", "Université", "public", "Nantes", ad1, etudiants, diplomes,  formations);
         etablissementDao.create(eta1);
 
-        // NE MARCHE PAS
-        //System.out.println(etablissementDao.find(eta1));
 
 
 
@@ -111,9 +111,11 @@ public class App<ad1>
                 System.out.println(documents);
                 for(BsonValue bson : documents.getValues()){
                     Document document = Document.parse(bson.toString());
-                    Document fields = (Document) document.get("fields");
+                    LectureJSON.LectureJSON_Etablissement(document, etablissementDao, adresseDao);
 
-                 //   fields.get("region");)
+                    LectureJSON.LectureJSON_Etablissement(document,etablissementDao,adresseDao);
+
+
                 }
 
             }

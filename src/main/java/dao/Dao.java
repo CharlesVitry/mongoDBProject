@@ -5,6 +5,7 @@ import main.MongoDBConnection;
 import model.Adresse;
 import model.Etablissement;
 import model.Etudiant;
+import org.bson.Document;
 
 import java.util.ArrayList;
 
@@ -19,5 +20,4 @@ public abstract class Dao<T> {
 	public abstract boolean update(T obj);
 	public abstract T find(T obj);
 	public abstract ArrayList<T> findAll();
-	
 }

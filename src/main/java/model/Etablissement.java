@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Etablissement {
 
-    private int id_Eta;
+    private String id_Eta;
     private String sigle;
     private String nom;
     private String telephone;
@@ -15,7 +15,7 @@ public class Etablissement {
     private ArrayList<String> Liste_De_Diplome;
     private ArrayList<Formation> Liste_De_Formations;
 
-    public Etablissement(int id_Eta, String sigle, String nom, String telephone, String typeEtablissement, String statut, String universite_de_Rattachement, Adresse adresse, ArrayList<Etudiant> liste_Etudiant, ArrayList<String> liste_De_Diplome, ArrayList<Formation> liste_De_Formations) {
+    public Etablissement(String id_Eta, String sigle, String nom, String telephone, String typeEtablissement, String statut, String universite_de_Rattachement, Adresse adresse, ArrayList<Etudiant> liste_Etudiant, ArrayList<String> liste_De_Diplome, ArrayList<Formation> liste_De_Formations) {
         this.id_Eta = id_Eta;
         this.sigle = sigle;
         this.nom = nom;
@@ -29,11 +29,11 @@ public class Etablissement {
         this.Liste_De_Formations = liste_De_Formations;
     }
 
-    public int getId_Eta() {
+    public String getId_Eta() {
         return id_Eta;
     }
 
-    public void setId_Eta(int id_Eta) {
+    public void setId_Eta(String id_Eta) {
         this.id_Eta = id_Eta;
     }
 
