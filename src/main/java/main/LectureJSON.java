@@ -7,10 +7,7 @@ import org.bson.Document;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -118,9 +115,13 @@ public class LectureJSON {
         marshaller.marshal(etablissements,domResult);
 
         Transformer transformer = TransformerFactory.newInstance().newTransformer();
-        transformer.setOutputProperty("http://xml.apache.org/xslt}indent-amount","2");
+
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
+
+
         transformer.transform(new DOMSource(domResult.getNode()), new StreamResult(cut));
 
     }
-    
+
 }

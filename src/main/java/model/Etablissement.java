@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
-@XmlRootElement
+@XmlRootElement(name="etablissement")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Etablissement {
     @XmlElement
@@ -22,9 +22,13 @@ public class Etablissement {
     private String statut; //public privé privé sous contrat
     @XmlElement
     private String Universite_de_Rattachement;
+    @XmlElement
     private Adresse adresse;
+    @XmlElement
     private ArrayList<Etudiant> Liste_Etudiant;
+    @XmlElement
     private ArrayList<String> Liste_De_Diplome;
+    @XmlElement
     private ArrayList<Formation> Liste_De_Formations;
 
     public Etablissement(String id_Eta, String sigle, String nom, String telephone, String typeEtablissement, String statut, String universite_de_Rattachement, Adresse adresse, ArrayList<Etudiant> liste_Etudiant, ArrayList<String> liste_De_Diplome, ArrayList<Formation> liste_De_Formations) {
