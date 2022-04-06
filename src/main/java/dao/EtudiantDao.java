@@ -1,5 +1,6 @@
 package dao;
 
+import com.mongodb.client.ClientSession;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -15,12 +16,15 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     MongoCollection<Document> collection = database.getCollection("etudiant");
 
-    public boolean create(Etudiant obj) {
+
+    private Document generateDocument(Etudiant obj){
         Document document = new Document();
+
         document.put("id_E", obj.getId_E());
         document.put("nom", obj.getNom());
         document.put("prenom", obj.getPrenom());
 
+        //ajout adresse
         Document adrDocument = new Document();
         adrDocument.put("numero", obj.getAdresse().getNumero());
         adrDocument.put("voie", obj.getAdresse().getVoie());
@@ -40,26 +44,10 @@ public class EtudiantDao extends Dao<Etudiant> {
 
         document.put("present", obj.getPresent());
 
-        collection.insertOne(document);
-        System.out.println("Etudiant créé avec succès !");
-        return true;
+        return document;
     }
 
-    @Override
-    public boolean delete(Etudiant obj) {
-
-        return false;
-    }
-
-    @Override
-    public boolean update(Etudiant obj) {
-        return false;
-    }
-
-    @Override
-    public Etudiant find(Etudiant obj) {
-        Document document = collection.find(Filters.eq("id_E", obj.getId_E())).first();
-
+    private Etudiant generateObject(Document document){
         Document adrDocument = (Document) document.get("adresse");
         Adresse adresse = new Adresse(
                 adrDocument.getInteger("numero"),
@@ -73,22 +61,48 @@ public class EtudiantDao extends Dao<Etudiant> {
 
         Document formDocument = (Document) document.get("formation");
         Formation formation = new Formation(
-            formDocument.getInteger("id_F"),
-            formDocument.getString("Intitule"),
-            (ArrayList<String>) formDocument.get("ListeDisciplines")
+                formDocument.getInteger("id_F"),
+                formDocument.getString("Intitule"),
+                (ArrayList<String>) formDocument.get("ListeDisciplines")
         );
 
         Etudiant etu = new Etudiant(
-            document.getInteger("id_E"),
-            document.getString("nom"),
-            document.getString("prenom"),
-            adresse,
-            formation,
-            document.getString("present")
+                document.getInteger("id_E"),
+                document.getString("nom"),
+                document.getString("prenom"),
+                adresse,
+                formation,
+                document.getString("present")
 
         );
 
         return etu;
+
+
+
+    }
+
+    public boolean create(Etudiant obj) {
+        collection.insertOne(generateDocument(obj));
+        return true;
+    }
+
+    @Override
+    public boolean delete(Etudiant obj) {
+        collection.deleteOne(Filters.eq("id_E",obj.getId_E()));
+        return true;
+    }
+
+    @Override
+    public boolean update(Etudiant obj) {
+        collection.updateOne(Filters.eq("id_E",obj.getId_E()),generateDocument(obj));
+        return true;
+    }
+
+    @Override
+    public Etudiant find(Etudiant obj) {
+        Document document = collection.find(Filters.eq("id_E", obj.getId_E())).first();
+       return generateObject(document);
     }
 
     @Override
@@ -98,10 +112,7 @@ public class EtudiantDao extends Dao<Etudiant> {
         MongoCursor<Document> cursor = documents.iterator();
         while(cursor.hasNext()){
             Document document = cursor.next();
-
-
-
-            //etudiants.add(etudiant);
+            etudiants.add(generateObject(document));
         }
         return etudiants;
     }

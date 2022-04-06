@@ -1,14 +1,26 @@
 package model;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Etablissement {
-
+    @XmlElement
     private String id_Eta;
+    @XmlElement
     private String sigle;
+    @XmlElement
     private String nom;
+    @XmlElement
     private String telephone;
+    @XmlElement
     private String TypeEtablissement;
+    @XmlElement
     private String statut; //public privé privé sous contrat
+    @XmlElement
     private String Universite_de_Rattachement;
     private Adresse adresse;
     private ArrayList<Etudiant> Liste_Etudiant;
@@ -27,6 +39,10 @@ public class Etablissement {
         this.Liste_Etudiant = liste_Etudiant;
         this.Liste_De_Diplome = liste_De_Diplome;
         this.Liste_De_Formations = liste_De_Formations;
+    }
+
+    public Etablissement() {
+
     }
 
     public String getId_Eta() {

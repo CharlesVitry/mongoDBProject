@@ -1,12 +1,22 @@
 package main;
 
 import dao.Dao;
-import model.Adresse;
-import model.Etablissement;
-import model.Etudiant;
-import model.Formation;
+import model.*;
 import org.bson.Document;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 
 public class LectureJSON {
@@ -55,11 +65,6 @@ public class LectureJSON {
         else{
              cp = 0;
         }
-
-
-
-
-
 //System.out.println(fields.get("cp"));
             Adresse ad1 = new Adresse( numero,
                 voie,
@@ -68,7 +73,7 @@ public class LectureJSON {
                 (String) fields.get("departement"),
                 (Double) fields.get("longitude_x"),
                 (Double) fields.get("latitude_y"));
-        adresseDao.create(ad1);
+       // adresseDao.create(ad1);
 
 
         //AJOUT ETABLISSEMENT
@@ -77,7 +82,7 @@ public class LectureJSON {
             ArrayList<String> diplomes = new ArrayList<String>();
             ArrayList<Formation> formations = new ArrayList<Formation>();
 
-            Etablissement eta1 = new Etablissement((String) document.get("_id"),
+            Etablissement eta1 = new Etablissement((String) fields.get("n_siret"),
                     "",
                     (String) fields.get("nom"),
                     (String) fields.get("telephone"),
@@ -90,35 +95,7 @@ public class LectureJSON {
                     formations);
             etablissementDao.create(eta1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        } catch (NumberFormatException e) {
+        } catch (NullPointerException e) {
             e.printStackTrace();
         }
 
@@ -132,18 +109,18 @@ public class LectureJSON {
 
 
     }
+    //créé classe etab
+    public static void generateXml(Etablissements etablissements) throws JAXBException, FileNotFoundException, TransformerException {
+        JAXBContext context = JAXBContext.newInstance(etablissements.getClass());
+        Marshaller marshaller = context.createMarshaller();
+        OutputStream cut = new FileOutputStream("src/etablissement.xml");
+        DOMResult domResult = new DOMResult();
+        marshaller.marshal(etablissements,domResult);
 
+        Transformer transformer = TransformerFactory.newInstance().newTransformer();
+        transformer.setOutputProperty("http://xml.apache.org/xslt}indent-amount","2");
+        transformer.transform(new DOMSource(domResult.getNode()), new StreamResult(cut));
 
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+    
 }

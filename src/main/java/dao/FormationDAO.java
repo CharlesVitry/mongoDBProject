@@ -11,6 +11,7 @@ import  model.Formation;
 import model.Etablissement;
 import org.bson.Document;
 
+import java.text.Normalizer;
 import java.util.ArrayList;
 
 
@@ -19,43 +20,51 @@ public class FormationDAO extends Dao<Formation> {
 
     MongoCollection<Document> collection = database.getCollection("formation");
 
-    @Override
-    public boolean create(Formation obj) {
+    private Document generateDocument(Formation obj){
         Document document = new Document();
 
         document.put("id_F", obj.getid_f());
         document.put("Intitule", obj.getIntitule());
         document.put("ListeDisciplines", obj.getListeDisciplines());
 
+        return(document);
+    }
 
-        collection.insertOne(document);
-        System.out.println("Formation créé avec succès !");
+    private Formation generateObject(Document document){
+        Formation formation = new Formation(
+
+        document.getInteger("id_F"),
+                document.getString("Intitule"),
+                (ArrayList<String>) document.get("ListeDisciplines"));
+
+        return(formation);
+    }
+
+    @Override
+    public boolean create(Formation obj) {
+        collection.insertOne(generateDocument(obj));
+       // System.out.println("Formation créé avec succès !");
         return true;
     }
 
     @Override
     public boolean delete(Formation obj) {
-        return false;
+        collection.deleteOne(Filters.eq("id_F", obj.getid_f()));
+        return true;
+
     }
 
     @Override
     public boolean update(Formation obj) {
-        return false;
+        collection.updateOne(Filters.eq("id_F", obj.getid_f()),generateDocument(obj));
+        return true;
     }
 
 
     @Override
     public Formation find(Formation obj) {
         Document document = collection.find(Filters.eq("id_F", obj.getid_f())).first();
-        Formation formation = new Formation(
-                document.getInteger("id_F"),
-                document.getString("Intitule"),
-                (ArrayList<String>) document.get("ListeDisciplines")
-        );
-
-
-        return formation;
-
+        return generateObject(document);
     }
 
 
@@ -66,12 +75,7 @@ public class FormationDAO extends Dao<Formation> {
         MongoCursor<Document> cursor = documents.iterator();
         while (cursor.hasNext()) {
             Document document = cursor.next();
-            Formation formation = new Formation(
-                    document.getInteger("id_F"),
-                    document.getString("Intitule"),
-                    (ArrayList<String>) document.get("ListeDisciplines")
-            );
-            formations.add(formation);
+            formations.add(generateObject(document));
         }
         return formations;
     }

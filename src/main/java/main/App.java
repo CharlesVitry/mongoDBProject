@@ -2,10 +2,7 @@ package main;
 
 import dao.Dao;
 import dao.DaoFactory;
-import model.Adresse;
-import model.Etablissement;
-import model.Etudiant;
-import model.Formation;
+import model.*;
 import org.bson.BsonArray;
 import org.bson.BsonValue;
 import org.bson.Document;
@@ -16,6 +13,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.TransformerException;
+
 /**
  * main class
  *
@@ -25,6 +28,14 @@ import java.util.ArrayList;
 
 // TO DO
 /*
+CHOIX A FAIRE : soit stocker etudiants direct dans établissement soit stocké que les numéros d'étudiants.
+
+
+// A QUESTIONNER : comment ajouter Object ID
+how to update (ptete regarder LM)
+comment lister ?
+générer page Html . => demain
+
 
 Demande de renseignements
 Elle doit respecter le pattern DAO et le pattern Singleton
@@ -62,10 +73,7 @@ que le jeu de données) == Retirer les données, puis re-ajouter les etablissmen
 
 public class App<ad1>
 {
-    public static void main( String[] args ) {
-
-
-
+    public static void main( String[] args ) throws JAXBException, FileNotFoundException, TransformerException {
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
         Dao<Etudiant> etudiantDao = DaoFactory.getEtudiantDAO();
         Dao<Formation> formationDao = DaoFactory.getFormationDAO();
@@ -83,10 +91,28 @@ public class App<ad1>
         etudiantDao.create(et1);
         System.out.println(etudiantDao.find(et1));
 
+        Etudiant et2 = new Etudiant(23325472, "Mathieu", "zf", ad1, form1, "present");
+        etudiantDao.create(et2);
 
+        Etudiant et3 = new Etudiant(23574472, "Rael", "jh", ad1, form1, "present");
+        etudiantDao.create(et3);
 
         ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
-        etudiants.add(et1);
+
+
+        etudiantDao.delete(et3);
+
+        for (Etudiant e:etudiantDao.findAll()){
+            System.out.println(e);
+
+        }
+        etudiantDao.delete(et3);
+
+        System.out.println("============");
+        for (Etudiant e:etudiantDao.findAll()){
+            System.out.println(e);
+
+        }
 
         ArrayList<String> diplomes = new ArrayList<String>();
         diplomes.add("Licences");
@@ -124,5 +150,23 @@ public class App<ad1>
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+        Etablissements etablissements = new Etablissements();
+        etablissements.setEtablissements(etablissementDao.findAll());
+
+        LectureJSON.generateXml(etablissements);
+
+
+
+
+
+
+
+
     }
+
+
+
+
 }
