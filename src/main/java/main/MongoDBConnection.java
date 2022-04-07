@@ -29,7 +29,7 @@ public class MongoDBConnection {
 	            properties.load(input);
 	            // je récupère les valeurs des propriétés
 	            this.url = properties.getProperty("url");
-	            this.database = properties.getProperty("database");
+	            database = properties.getProperty("database");
 	        }catch (Exception e) {
 	            e.printStackTrace();
 	        }
