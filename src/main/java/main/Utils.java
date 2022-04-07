@@ -1,6 +1,7 @@
 package main;
 
 
+import dao.AdresseDao;
 import dao.Dao;
 import model.*;
 import org.bson.BsonArray;
@@ -19,12 +20,89 @@ import java.util.ArrayList;
 
 public class Utils {
 
-    public static boolean Jeux_De_Donnees_Ajouts(){
+    //idée int de limite de print.
+    public static void Affichage_liste_Etudiants(Dao<Etudiant> etudiantDao){
+        for (Etudiant e:etudiantDao.findAll()){
+            System.out.println(e);
+        }
+    }
+    public static void Affichage_liste_Adresses(Dao<Adresse> adresseDao ){
+        for (Adresse a:adresseDao .findAll()){
+            System.out.println(a);
+        }
+    }
+
+    public static void Affichage_liste_Etablissements(   Dao<Etablissement> etablissementDao ){
+        for (Etablissement e:etablissementDao .findAll()){
+            System.out.println(e);
+        }
+    }
+
+    public static void Affichage_liste_Formations(Dao<Formation> formationDao ){
+        for (Formation f:formationDao .findAll()){
+            System.out.println(f);
+        }
+    }
+
+    public static void Affichage_liste_etudiants(Dao<Etudiant> etudiantDao){
+        for (Etudiant e:etudiantDao.findAll()){
+            System.out.println(e);
+        }
+    }
 
 
 
+    public static boolean Jeux_De_Donnees_Ajouts(Dao<Adresse> adresseDao,Dao<Etudiant> etudiantDao,Dao<Formation> formationDao){
 
 
+        // 10 formations
+        Formation form1 = new Formation(1, "MathInfo", new ArrayList<String>());
+        Formation form2 = new Formation(2, "Génie civil", new ArrayList<String>());
+        Formation form3 = new Formation(3, "Physique", new ArrayList<String>());
+        Formation form4 = new Formation(4, "Drosophile", new ArrayList<String>());
+        Formation form5 = new Formation(5, "Droit", new ArrayList<String>());
+        Formation form6 = new Formation(6, "Economie & Gestion", new ArrayList<String>());
+        Formation form7 = new Formation(7, "Arts et Lettres", new ArrayList<String>());
+        Formation form8 = new Formation(8, "Musicologie", new ArrayList<String>());
+        Formation form9 = new Formation(9, "Anglais", new ArrayList<String>());
+        Formation form10 = new Formation(10, "Arts du spectacle", new ArrayList<String>());
+        formationDao.create(form1);
+        formationDao.create(form2);
+        formationDao.create(form3);
+        formationDao.create(form4);
+        formationDao.create(form5);
+        formationDao.create(form6);
+        formationDao.create(form7);
+        formationDao.create(form8);
+        formationDao.create(form9);
+        formationDao.create(form10);
+
+        Adresse ad1 = new Adresse(4, "Rue Rabelaie", "Angers", 49000, "49", 49.3, 49.7);
+        //adresseDao.create(ad1);
+
+
+        //10 étudiants
+        Etudiant et1 = new Etudiant(235472, "Paul", "LaMousse", ad1, form1, "present");
+        Etudiant et2 = new Etudiant(23325472, "Mathieu", "Sommet", ad1, form2, "present");
+        Etudiant et3 = new Etudiant(23574472, "Arthur", "Ronde", ad1, form3, "present");
+        Etudiant et4 = new Etudiant(23574472, "Loic", "Breton", ad1, form4, "present");
+        Etudiant et5 = new Etudiant(23574472, "Florian", "DuJardin", ad1, form5, "present");
+        Etudiant et6 = new Etudiant(23574472, "Eleonore", "Clai", ad1, form6, "present");
+        Etudiant et7 = new Etudiant(23574472, "Esteban", "Citaidor", ad1, form7, "present");
+        Etudiant et8 = new Etudiant(23574472, "Sofia", "Desmond", ad1, form8, "present");
+        Etudiant et9 = new Etudiant(23574472, "Theodore", "Louve", ad1, form8, "present");
+        Etudiant et10 = new Etudiant(23574472, "Fanny", "Acab", ad1, form8, "present");
+
+        etudiantDao.create(et1);
+        etudiantDao.create(et2);
+        etudiantDao.create(et3);
+        etudiantDao.create(et4);
+        etudiantDao.create(et5);
+        etudiantDao.create(et6);
+        etudiantDao.create(et7);
+        etudiantDao.create(et8);
+        etudiantDao.create(et9);
+        etudiantDao.create(et10);
         return true;
     }
 
