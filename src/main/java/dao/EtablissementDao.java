@@ -200,4 +200,10 @@ public class EtablissementDao extends Dao<Etablissement> {
         }
         return Etablissements;
     }
+
+    @Override
+    public boolean DropCollection() {
+        collection.drop();
+        return true;
+    }
 }

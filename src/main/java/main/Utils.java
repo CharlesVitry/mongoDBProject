@@ -20,7 +20,11 @@ import java.util.ArrayList;
 
 public class Utils {
 
-    //idée int de limite de print.
+    public static ArrayList<String> Liste_de_Cours_Etudiant(Etudiant obj){
+        ArrayList<String> formations_Etudiant  = obj.getFormation().getListeDisciplines();
+        return formations_Etudiant;
+    }
+
     public static void Affichage_liste_Etudiants(Dao<Etudiant> etudiantDao){
         for (Etudiant e:etudiantDao.findAll()){
             System.out.println(e);
@@ -82,16 +86,16 @@ public class Utils {
 
 
         //10 étudiants
-        Etudiant et1 = new Etudiant(235472, "Paul", "LaMousse", ad1, form1, "present");
-        Etudiant et2 = new Etudiant(23325472, "Mathieu", "Sommet", ad1, form2, "present");
-        Etudiant et3 = new Etudiant(23574472, "Arthur", "Ronde", ad1, form3, "present");
-        Etudiant et4 = new Etudiant(23574472, "Loic", "Breton", ad1, form4, "present");
-        Etudiant et5 = new Etudiant(23574472, "Florian", "DuJardin", ad1, form5, "present");
-        Etudiant et6 = new Etudiant(23574472, "Eleonore", "Clai", ad1, form6, "present");
-        Etudiant et7 = new Etudiant(23574472, "Esteban", "Citaidor", ad1, form7, "present");
-        Etudiant et8 = new Etudiant(23574472, "Sofia", "Desmond", ad1, form8, "present");
-        Etudiant et9 = new Etudiant(23574472, "Theodore", "Louve", ad1, form8, "present");
-        Etudiant et10 = new Etudiant(23574472, "Fanny", "Acab", ad1, form8, "present");
+        Etudiant et1 = new Etudiant(1, "Paul", "LaMousse", ad1, form1, "present");
+        Etudiant et2 = new Etudiant(2, "Mathieu", "Sommet", ad1, form2, "present");
+        Etudiant et3 = new Etudiant(3, "Arthur", "Ronde", ad1, form3, "present");
+        Etudiant et4 = new Etudiant(4, "Loic", "Breton", ad1, form4, "present");
+        Etudiant et5 = new Etudiant(5, "Florian", "DuJardin", ad1, form5, "present");
+        Etudiant et6 = new Etudiant(6, "Eleonore", "Clai", ad1, form6, "present");
+        Etudiant et7 = new Etudiant(7, "Esteban", "Citaidor", ad1, form7, "present");
+        Etudiant et8 = new Etudiant(8, "Sofia", "Desmond", ad1, form8, "present");
+        Etudiant et9 = new Etudiant(9, "Theodore", "Louve", ad1, form8, "present");
+        Etudiant et10 = new Etudiant(10, "Fanny", "Acab", ad1, form8, "present");
 
         etudiantDao.create(et1);
         etudiantDao.create(et2);

@@ -32,11 +32,9 @@ public class FormationDAO extends Dao<Formation> {
 
     private Formation generateObject(Document document){
         Formation formation = new Formation(
-
-        document.getInteger("id_F"),
+                document.getInteger("id_F"),
                 document.getString("Intitule"),
                 (ArrayList<String>) document.get("ListeDisciplines"));
-
         return(formation);
     }
 
@@ -63,7 +61,7 @@ public class FormationDAO extends Dao<Formation> {
 
     @Override
     public Formation find(Formation obj) {
-        Document document = collection.find(Filters.eq("id_F", obj.getid_f())).first();
+        Document document = collection.find(Filters.eq("Intitule", obj.getIntitule())).first();
         return generateObject(document);
     }
 
@@ -78,6 +76,12 @@ public class FormationDAO extends Dao<Formation> {
             formations.add(generateObject(document));
         }
         return formations;
+    }
+
+    @Override
+    public boolean DropCollection() {
+        collection.drop();
+        return true;
     }
 
 }

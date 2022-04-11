@@ -20,4 +20,5 @@ public abstract class Dao<T> {
 	public abstract boolean update(T obj);
 	public abstract T find(T obj);
 	public abstract ArrayList<T> findAll();
+	public abstract boolean DropCollection();
 }

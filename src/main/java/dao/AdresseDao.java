@@ -79,4 +79,10 @@ public class AdresseDao extends Dao<Adresse>{
 		}
 		return adresses;
 	}
+
+	@Override
+	public boolean DropCollection() {
+		collection.drop();
+		return true;
+	}
 }

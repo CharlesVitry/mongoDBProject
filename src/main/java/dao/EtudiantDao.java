@@ -1,6 +1,5 @@
 package dao;
 
-import com.mongodb.client.ClientSession;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -82,6 +81,8 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     }
 
+
+
     public boolean create(Etudiant obj) {
         collection.insertOne(generateDocument(obj));
         return true;
@@ -116,4 +117,10 @@ public class EtudiantDao extends Dao<Etudiant> {
         }
         return etudiants;
     }
+    public boolean DropCollection(){
+        collection.drop();
+        return true;
+
+    }
+
 }

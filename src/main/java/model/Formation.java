@@ -10,7 +10,7 @@ public class Formation {
 
     public Formation(int id_f, String Intitule, ArrayList<String> ListeDisciplines) {
         super();
-        this.id_F = id_F;
+        this.id_F = id_f;
         this.Intitule = Intitule;
         this.ListeDisciplines = ListeDisciplines;
     }
