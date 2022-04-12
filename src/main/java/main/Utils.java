@@ -20,6 +20,8 @@ import java.util.ArrayList;
 
 public class Utils {
 
+
+
     public static ArrayList<String> Liste_de_Cours_Etudiant(Etudiant obj){
         ArrayList<String> formations_Etudiant  = obj.getFormation().getListeDisciplines();
         return formations_Etudiant;
@@ -27,19 +29,21 @@ public class Utils {
 
     public static void Affichage_liste_Etudiants(Dao<Etudiant> etudiantDao){
         for (Etudiant e:etudiantDao.findAll()){
-            System.out.println(e);
+            System.out.println(e.toString());
         }
+
     }
     public static void Affichage_liste_Adresses(Dao<Adresse> adresseDao ){
-        for (Adresse a:adresseDao .findAll()){
+        for (Adresse a:adresseDao.findAll()){
             System.out.println(a);
         }
     }
 
-    public static void Affichage_liste_Etablissements(   Dao<Etablissement> etablissementDao ){
-        for (Etablissement e:etablissementDao .findAll()){
-            System.out.println(e);
+    public static void Affichage_liste_Etablissements(   Etablissements etablissements ){
+        for (Etablissement e:etablissements.getEtablissements()){
+            System.out.println(e.toString());
         }
+
     }
 
     public static void Affichage_liste_Formations(Dao<Formation> formationDao ){
@@ -59,8 +63,10 @@ public class Utils {
     public static boolean Jeux_De_Donnees_Ajouts(Dao<Adresse> adresseDao,Dao<Etudiant> etudiantDao,Dao<Formation> formationDao){
 
 
+
+
         // 10 formations
-        Formation form1 = new Formation(1, "MathInfo", new ArrayList<String>());
+        Formation form1 = new Formation(1, "MathInfo",new ArrayList<String>());
         Formation form2 = new Formation(2, "Génie civil", new ArrayList<String>());
         Formation form3 = new Formation(3, "Physique", new ArrayList<String>());
         Formation form4 = new Formation(4, "Drosophile", new ArrayList<String>());
@@ -90,7 +96,7 @@ public class Utils {
         Etudiant et2 = new Etudiant(2, "Mathieu", "Sommet", ad1, form2, "present");
         Etudiant et3 = new Etudiant(3, "Arthur", "Ronde", ad1, form3, "present");
         Etudiant et4 = new Etudiant(4, "Loic", "Breton", ad1, form4, "present");
-        Etudiant et5 = new Etudiant(5, "Florian", "DuJardin", ad1, form5, "present");
+        Etudiant et5 = new Etudiant(5, "Florian", "DuJardin", ad1, form1, "present");
         Etudiant et6 = new Etudiant(6, "Eleonore", "Clai", ad1, form6, "present");
         Etudiant et7 = new Etudiant(7, "Esteban", "Citaidor", ad1, form7, "present");
         Etudiant et8 = new Etudiant(8, "Sofia", "Desmond", ad1, form8, "present");

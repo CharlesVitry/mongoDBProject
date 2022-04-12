@@ -154,5 +154,10 @@ public class Etablissement {
                 '}';
     }
 
+    public String[] MinimaltoString() {
+        return new String[]{ nom,sigle, telephone, statut};
+
+    }
+
 
 }

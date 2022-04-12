@@ -103,6 +103,7 @@ public class EtudiantDao extends Dao<Etudiant> {
     @Override
     public Etudiant find(Etudiant obj) {
         Document document = collection.find(Filters.eq("id_E", obj.getId_E())).first();
+        //System.out.println("Etudiant trouvé");
        return generateObject(document);
     }
 

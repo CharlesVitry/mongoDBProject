@@ -43,4 +43,7 @@ public class Formation {
                 ", ListeDisciplines=" + ListeDisciplines +
                 '}';
     }
+    public String[] MinimaltoString() {
+        return new String[]{String.valueOf(id_F),Intitule, String.valueOf(ListeDisciplines)};
+    }
 }

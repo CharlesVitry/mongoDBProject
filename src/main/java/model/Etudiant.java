@@ -84,6 +84,9 @@ public class Etudiant {
                 ", present='" + present + '\'' +
                 '}';
     }
+    public String[] MinimaltoString() {
+        return new String[]{String.valueOf(id_E),nom,prenom,present};
+    }
 
 }
 

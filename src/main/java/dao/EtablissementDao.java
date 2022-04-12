@@ -197,6 +197,79 @@ public class EtablissementDao extends Dao<Etablissement> {
             Document document = cursor.next();
 
 
+            Document adrDocument = (Document) document.get("adresse");
+            Adresse adresse = new Adresse(
+                    adrDocument.getInteger("numero"),
+                    adrDocument.getString("voie"),
+                    adrDocument.getString("ville"),
+                    adrDocument.getInteger("codePostal"),
+                    adrDocument.getString("departement"),
+                    adrDocument.getDouble("longitude"),
+                    adrDocument.getDouble("latitude")
+            );
+
+            ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
+            for (Document etudDoc : (ArrayList<Document>) document.get("Liste_Etudiant")) {
+                Document adretDocument = (Document) document.get("adresse");
+                Adresse adresseet = new Adresse(
+                        adretDocument.getInteger("numero"),
+                        adretDocument.getString("voie"),
+                        adretDocument.getString("ville"),
+                        adretDocument.getInteger("codePostal"),
+                        adretDocument.getString("departement"),
+                        adretDocument.getDouble("longitude"),
+                        adretDocument.getDouble("latitude")
+                );
+
+                Document formDocument = (Document) document.get("formation");
+                Formation formation = new Formation(
+                        formDocument.getInteger("id_F"),
+                        formDocument.getString("Intitule"),
+                        (ArrayList<String>) formDocument.get("ListeDisciplines")
+                );
+
+                Etudiant etu = new Etudiant(
+                        etudDoc.getInteger("id_E"),
+                        etudDoc.getString("nom"),
+                        etudDoc.getString("prenom"),
+                        adresseet,
+                        formation,
+                        etudDoc.getString("present")
+
+                );
+                etudiants.add(etu);
+            }
+
+            ArrayList<Formation> formations = new ArrayList<Formation>();
+            for (Document forDoc : (ArrayList<Document>) document.get("Liste_De_Formations")) {
+                Formation formation = new Formation(
+                        forDoc.getInteger("id_F"),
+                        forDoc.getString("Intitule"),
+                        (ArrayList<String>) forDoc.get("ListeDisciplines")
+                );
+                formations.add(formation);
+            }
+
+
+            Etablissement etablissement = new Etablissement(
+                    document.getString("id_E"),
+                    document.getString("sigle"),
+                    document.getString("nom"),
+                    document.getString("telephone"),
+                    document.getString("TypeEtablissement"),
+                    document.getString("statut"),
+                    document.getString("Universite_de_Rattachement"),
+                    adresse,
+                    etudiants,
+                    (ArrayList<String>) document.get("Liste_De_Diplome"),
+                    formations
+
+            );
+
+
+            Etablissements.add(etablissement);
+
+
         }
         return Etablissements;
     }
