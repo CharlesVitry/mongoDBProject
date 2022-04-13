@@ -2,7 +2,7 @@
 
 ## Base de données MongoDB avec implémentation Java Maven
 
-| Propriétés   | |
+| Propriétés   | Valeur |
 |-------|--------------|
 |Langage   | Java  |       
 |Base de données| MongoDB | 
