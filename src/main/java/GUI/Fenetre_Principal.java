@@ -29,7 +29,7 @@ public class Fenetre_Principal {
     /**
      * Create the application.
      */
-    public Fenetre_Principal() {
+    public Fenetre_Principal() throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         initialize();
 
     }
@@ -108,11 +108,8 @@ public class Fenetre_Principal {
     /**
      * Initialize the contents of the frame.
      */
-    private void initialize() {
-
-
-
-
+    private void initialize() throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+        //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
         frEtablissement = new JFrame("GESTION ETABLISSEMENT 2022");
         frEtablissement.setTitle("SUPER GESTIONNAIRE ETABLISSEMENT 1.0");
