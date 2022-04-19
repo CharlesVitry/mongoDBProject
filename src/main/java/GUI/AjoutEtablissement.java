@@ -322,7 +322,6 @@ public class AjoutEtablissement extends JFrame {
 		
 		
 		
-		
 		contentPane.setLayout(gl_contentPane);
 
 

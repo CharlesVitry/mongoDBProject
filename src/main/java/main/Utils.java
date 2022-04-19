@@ -126,8 +126,6 @@ public class Utils {
                 for(BsonValue bson : documents.getValues()){
                     Document document = Document.parse(bson.toString());
                     Utils.LectureJSON_Etablissement(document, etablissementDao);
-
-                    Utils.LectureJSON_Etablissement(document,etablissementDao);
                 }
             }
             return true;

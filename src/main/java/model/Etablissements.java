@@ -9,8 +9,6 @@ import java.util.ArrayList;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Etablissements {
 
-
-
     @XmlElement
     private ArrayList<Etablissement> etablissements;
 
