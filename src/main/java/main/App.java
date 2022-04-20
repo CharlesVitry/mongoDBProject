@@ -4,8 +4,10 @@ import GUI.Fenetre_Principal;
 import dao.Dao;
 import dao.DaoFactory;
 import model.*;
+import org.xml.sax.SAXException;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.xml.bind.JAXBException;
@@ -18,7 +20,7 @@ import javax.xml.transform.TransformerException;
  */
 
 public class App {
-    public static void main( String[] args ) throws JAXBException, FileNotFoundException, TransformerException {
+    public static void main( String[] args ) throws JAXBException, IOException, TransformerException, SAXException {
 
         //DAO
         Dao<Adresse> adresseDao = DaoFactory.getAdresseDAO();
@@ -129,6 +131,9 @@ public class App {
         //De faire une extraction des données des établissements sous format XML (en
         //        utilisant DOM, SAX ou JAXB)
         Utils.generateXml(etablissements);
+
+        //Generation HTML
+        Utils.generateWithXSLtransformer();
 
         //Demarrage Interface
         try {

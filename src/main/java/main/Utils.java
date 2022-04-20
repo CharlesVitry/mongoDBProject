@@ -17,6 +17,10 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.*;
 import java.util.ArrayList;
+import javax.xml.transform.*;
+import javax.xml.transform.stream.*;
+import org.xml.sax.*;
+import java.io.IOException;
 
 public class Utils {
 
@@ -272,6 +276,14 @@ public class Utils {
 
         transformer.transform(new DOMSource(domResult.getNode()), new StreamResult(cut));
 
+    }
+
+
+    public static void generateWithXSLtransformer() throws TransformerException, TransformerConfigurationException,
+    SAXException, IOException	{
+        TransformerFactory tFactory = TransformerFactory.newInstance();
+        Transformer transformer = tFactory.newTransformer(new StreamSource("Transformation.xsl"));
+        transformer.transform(new StreamSource("etablissement.xml"), new StreamResult("ResultatTransfo.html"));
     }
 
 }
