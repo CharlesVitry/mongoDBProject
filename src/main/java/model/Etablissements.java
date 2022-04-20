@@ -9,7 +9,7 @@ import java.util.ArrayList;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Etablissements {
 
-    @XmlElement
+    @XmlElement(name ="Etablissement") //On met le name en établissement pour que la balise de l'xml ne soit pas défini à établissements.
     private ArrayList<Etablissement> etablissements;
 
     public Etablissements(ArrayList<Etablissement> etablissements) {

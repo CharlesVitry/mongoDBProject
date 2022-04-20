@@ -60,6 +60,10 @@ public class App {
         Etudiant etudiant = new Etudiant(235488, "Charles", "Vitry", ad1, formation, "present");
         etudiantDao.create(etudiant);
 
+
+        etudiant = new Etudiant(235488, "Charles", "Vitry", ad1, formation, "abscent");
+        etudiantDao.update(etudiant);
+
         // De rajouter/modifier un établissement
         ArrayList<Etudiant> etudiants = new ArrayList<>();
         ArrayList<String> diplomes = new ArrayList<>();

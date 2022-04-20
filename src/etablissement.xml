@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <etablissements>
-  <etablissements>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT de Laval</nom>
     <telephone>02 43 59 49 01</telephone>
@@ -16,8 +16,8 @@
       <ville>Laval</ville>
       <voie>2 rue des Doct Calmette et Guerin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ITM</sigle>
     <nom>ITM Graduate school</nom>
     <telephone>06 03 93 50 33</telephone>
@@ -33,8 +33,8 @@
       <ville>Le Mans</ville>
       <voie>Chemin aux Boeufs, Technoparc des 24h du Mans</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de préparation à l'administration générale</nom>
     <telephone>02 40 14 16 11</telephone>
@@ -50,8 +50,8 @@
       <ville>Nantes</ville>
       <voie>Chemin de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR d'odontologie</nom>
     <telephone>02 40 41 29 21</telephone>
@@ -67,8 +67,8 @@
       <ville>Nantes</ville>
       <voie>Place Alexis Ricordeau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent de l'Hyrôme</nom>
     <telephone>02 41 30 61 41</telephone>
@@ -84,8 +84,8 @@
       <ville>Chemillé-en-Anjou</ville>
       <voie>1 rue Nationale</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure des beaux-arts</nom>
     <telephone>02 72 16 48 78</telephone>
@@ -101,8 +101,8 @@
       <ville>Le Mans</ville>
       <voie>8 avenue de Rostov sur le Don</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure des Pays de Loire</nom>
     <telephone>02 41 73 20 30</telephone>
@@ -118,8 +118,8 @@
       <ville>Angers</ville>
       <voie>9 rue André Le Nôtre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté de santé</nom>
     <telephone>02 41 73 59 79</telephone>
@@ -135,8 +135,8 @@
       <ville>Angers</ville>
       <voie>8 rue Roger Amsler</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure d'optique de l'Ouest</nom>
     <telephone>02 41 36 25 25</telephone>
@@ -152,8 +152,8 @@
       <ville>Angers</ville>
       <voie>0 rue Alexandre Fleming</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR Lettres langues sciences humaines - Antenne Cholet</nom>
     <telephone>02 41 49 22 50</telephone>
@@ -169,8 +169,8 @@
       <ville>Cholet</ville>
       <voie>2 boulevard Pierre Lecoq</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Fab’Academy du pôle formation UIMM- Centre du Mans</nom>
     <telephone>02 43 21 77 77</telephone>
@@ -186,8 +186,8 @@
       <ville>Le Mans</ville>
       <voie>1 rue du Ribay</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Henri Bergson</nom>
     <telephone>02 41 36 12 55</telephone>
@@ -203,8 +203,8 @@
       <ville>Angers</ville>
       <voie>5 rue de la Barre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Fernand Renaudeau - site du lycée de la Mode</nom>
     <telephone>02 41 71 00 53</telephone>
@@ -220,8 +220,8 @@
       <ville>Cholet</ville>
       <voie>0 rue Carteron</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure d'Agro-développement international</nom>
     <telephone>02 53 61 84 60</telephone>
@@ -237,8 +237,8 @@
       <ville>Angers</ville>
       <voie>4 rue Joseph Lakanal</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTA</sigle>
     <nom>LEGTA La Germinière</nom>
     <telephone>02 43 47 82 00</telephone>
@@ -254,8 +254,8 @@
       <ville>Rouillon</ville>
       <voie>La Germinière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole privée des sciences informatiques Nantes</nom>
     <telephone>02 40 76 60 87</telephone>
@@ -271,8 +271,8 @@
       <ville>Nantes</ville>
       <voie>6 boulevard du général de Gaulle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR Les Herbiers</nom>
     <telephone>02 51 91 09 72</telephone>
@@ -288,8 +288,8 @@
       <ville>Les Herbiers</ville>
       <voie>4 rue de la Chesnaie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre régional tennis 44</nom>
     <telephone>02 40 03 18 91</telephone>
@@ -305,8 +305,8 @@
       <ville>Vertou</ville>
       <voie>route de la Ville au Blanc</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>L'institut supérieur des arts appliqués - LISAA</nom>
     <telephone>02 40 20 30 50</telephone>
@@ -322,8 +322,8 @@
       <ville>Nantes</ville>
       <voie>3 rue Baron</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Georges Clemenceau</nom>
     <telephone>02 51 94 30 21</telephone>
@@ -339,8 +339,8 @@
       <ville>Chantonnay</ville>
       <voie>Place de la République</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École nationale supérieure d'arts et métiers - campus Arts et Métiers d'Angers</nom>
     <telephone>02 41 20 73 73</telephone>
@@ -356,8 +356,8 @@
       <ville>Angers</ville>
       <voie>2 boulevard du Ronceray</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Blaise Pascal</nom>
     <telephone>02 41 92 18 11</telephone>
@@ -373,8 +373,8 @@
       <ville>Segré-en-Anjou-Bleu</ville>
       <voie>2 rue du Lycée</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CESI</sigle>
     <nom>CESI école supérieure de l'alternance - campus du Mans</nom>
     <telephone>02 28 01 40 12</telephone>
@@ -390,8 +390,8 @@
       <ville>Le Mans</ville>
       <voie>4 avenue Frédéric Auguste Bartholdi</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>European school of business and international affairs</nom>
     <telephone>02 43 61 05 12</telephone>
@@ -407,8 +407,8 @@
       <ville>Le Mans</ville>
       <voie>2 rue des Grandes courbes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut d'études judiciaires</nom>
     <telephone>02 40 14 15 22</telephone>
@@ -424,8 +424,8 @@
       <ville>Nantes</ville>
       <voie>Chemin de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté des langues et cultures étrangères</nom>
     <telephone>02 40 14 10 99</telephone>
@@ -441,8 +441,8 @@
       <ville>Nantes</ville>
       <voie>Chemin la Censive du tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nantaise supérieure d'enseignement commercial</nom>
     <telephone>02 40 48 41 13</telephone>
@@ -458,8 +458,8 @@
       <ville>Nantes</ville>
       <voie>1 place de la Bourse</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée La Perverie</nom>
     <telephone>02 40 14 53 70</telephone>
@@ -475,8 +475,8 @@
       <ville>Nantes</ville>
       <voie>3 rue de la Perverie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Albert Chassagne</nom>
     <telephone>02 40 27 51 72</telephone>
@@ -492,8 +492,8 @@
       <ville>Paimboeuf</ville>
       <voie>5 rue Alexis Maneyrol</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée François Truffaut</nom>
     <telephone>02 51 35 33 07</telephone>
@@ -509,8 +509,8 @@
       <ville>Challans</ville>
       <voie>8 rue de la Cailletière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>BTP</sigle>
     <nom>BTP CFA Vendée AFORBAT</nom>
     <telephone>02 51 62 70 70</telephone>
@@ -526,8 +526,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>3 Rond Point du Coteau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École supérieure des techniques aéronautiques et de construction automobile - Laval</nom>
     <telephone>02 43 59 47 00</telephone>
@@ -543,8 +543,8 @@
       <ville>Laval</ville>
       <voie>rue Georges Charpak, parc universitaire Laval Changé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut technologique européen des métiers de la musique</nom>
     <telephone>02 43 39 39 00</telephone>
@@ -560,8 +560,8 @@
       <ville>Le Mans</ville>
       <voie>1 avenue Olivier Messiaen</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Union régionale Les Francas Pays-de-la-Loire</nom>
     <telephone>02 51 25 08 48</telephone>
@@ -577,8 +577,8 @@
       <ville>Nantes</ville>
       <voie>5 boulevard de Berlin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole centrale de Nantes</nom>
     <telephone>02 40 37 16 00</telephone>
@@ -594,8 +594,8 @@
       <ville>Nantes</ville>
       <voie>1 rue de La Noë</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers - Centre hospitalier régional</nom>
     <telephone>02 43 43 43 30</telephone>
@@ -611,8 +611,8 @@
       <ville>Le Mans</ville>
       <voie>4 avenue Rubillard</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Aimé Césaire</nom>
     <telephone>02 28 01 06 00</telephone>
@@ -628,8 +628,8 @@
       <ville>Clisson</ville>
       <voie>1 Esplanade d'Alatri</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nationale supérieure d'architecture de Nantes</nom>
     <telephone>02 40 16 01 21</telephone>
@@ -645,8 +645,8 @@
       <ville>Nantes</ville>
       <voie>6 quai François Mitterrand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École internationale Tunon</nom>
     <telephone>02 51 82 25 25</telephone>
@@ -662,8 +662,8 @@
       <ville>Saint-Herblain</ville>
       <voie>4 chemin de la Chatterie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Jean Moulin</nom>
     <telephone>02 41 96 63 60</telephone>
@@ -679,8 +679,8 @@
       <ville>Angers</ville>
       <voie>1 place Jean Moulin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut régional de formation sanitaire et sociale de la Croix-Rouge française des Pays de la Loire</nom>
     <telephone>02 43 67 95 95</telephone>
@@ -696,8 +696,8 @@
       <ville>Laval</ville>
       <voie>5 rue du Chef de Bataillon Henri Géret</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Audencia SciencesCom</nom>
     <telephone>02 40 44 90 00</telephone>
@@ -713,8 +713,8 @@
       <ville>Nantes</ville>
       <voie>1 bd de la Prairie au Duc</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IRSS</sigle>
     <nom>IRSS</nom>
     <telephone>02 41 62 19 97</telephone>
@@ -730,8 +730,8 @@
       <ville>Nantes</ville>
       <voie>1 rue Célestin Freinet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LP</sigle>
     <nom>LP Les Horizons</nom>
     <telephone>02 43 29 21 50</telephone>
@@ -747,8 +747,8 @@
       <ville>Saint-Saturnin</ville>
       <voie>Rue Victor Duruy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers Gavy - Centre hospitalier de Saint-Nazaire</nom>
     <telephone>02 40 70 08 11</telephone>
@@ -764,8 +764,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>1 chemin des Infirmières, Centre Hospitalier Gavy""</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFP</sigle>
     <nom>CFP Le Pinier Neuf</nom>
     <telephone>02 41 71 35 36</telephone>
@@ -781,8 +781,8 @@
       <ville>Beaupréau-en-Mauges</ville>
       <voie>avenue Henry de Gontaut Biron</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure de formation agricole - ESA</nom>
     <telephone>02 41 23 55 55</telephone>
@@ -798,8 +798,8 @@
       <ville>Angers</ville>
       <voie>5 rue Rabelais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté libre de l'Ouest - UCO Laval</nom>
     <telephone>02 43 64 36 64</telephone>
@@ -815,8 +815,8 @@
       <ville>Laval</ville>
       <voie>5 rue du Mans, Campus enseignement catholique de la M</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IPAC</sigle>
     <nom>IPAC Bachelor Factory</nom>
     <telephone>02 41 73 97 44</telephone>
@@ -832,8 +832,8 @@
       <ville>Angers</ville>
       <voie>9 rue le Nôtre, Campus d'Angers</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR La Futaie - antenne des MFR de Mayenne - Port Brillet</nom>
     <telephone>02 43 01 82 80</telephone>
@@ -849,8 +849,8 @@
       <ville>Port-Brillet</ville>
       <voie>4 route de la Charpenterie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Cnam de Laval</nom>
     <telephone>02 43 26 22 37</telephone>
@@ -866,8 +866,8 @@
       <ville>Saint-Berthevin</ville>
       <voie>5 boulevard de l'Industrie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ircom - campus Angers</nom>
     <telephone>02 41 79 64 64</telephone>
@@ -883,8 +883,8 @@
       <ville>Les Ponts-de-Cé</ville>
       <voie>3 rue Edouard Guinel</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ESEO</sigle>
     <nom>ESEO - campus Angers</nom>
     <telephone>02 41 86 67 67</telephone>
@@ -900,8 +900,8 @@
       <ville>Angers</ville>
       <voie>0 boulevard Jeanneteau, ESEO Angers</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA du lycée Nature</nom>
     <telephone>02 51 09 82 72</telephone>
@@ -917,8 +917,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>allée des Druides</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Externat Chavagnes</nom>
     <telephone>02 40 20 00 60</telephone>
@@ -934,8 +934,8 @@
       <ville>Nantes</ville>
       <voie>1 avenue Camus</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Emmanuel Mounier</nom>
     <telephone>02 41 43 96 61</telephone>
@@ -951,8 +951,8 @@
       <ville>Angers</ville>
       <voie>1 boulevard Robert Schuman</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre Pierre Cointreau NEGOVENTIS 49</nom>
     <telephone>02 41 20 53 60</telephone>
@@ -968,8 +968,8 @@
       <ville>Angers</ville>
       <voie>2 avenue de Lattre de Tassigny, Centre Pierre-Cointreau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole dentaire du grand ouest</nom>
     <telephone>02 51 66 01 61</telephone>
@@ -985,8 +985,8 @@
       <ville>Les Herbiers</ville>
       <voie>2 rue de l'Oiselière, Pôle Teliance Bâtiment A</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>EUREKA</sigle>
     <nom>EUREKA Formation</nom>
     <telephone>02 51 89 04 89</telephone>
@@ -1002,8 +1002,8 @@
       <ville>Nantes</ville>
       <voie>3 rue du Pré Gauchet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Robert Garnier</nom>
     <telephone>02 43 60 11 60</telephone>
@@ -1019,8 +1019,8 @@
       <ville>La Ferté-Bernard</ville>
       <voie>Avenue du Général de Gaulle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent d'Estournelles de Constant</nom>
     <telephone>02 43 94 05 10</telephone>
@@ -1036,8 +1036,8 @@
       <ville>La Flèche</ville>
       <voie>Boulevard du Québec</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure d'informatique électronique automatique - campus de Laval</nom>
     <telephone>02 43 59 24 24</telephone>
@@ -1053,8 +1053,8 @@
       <ville>Laval</ville>
       <voie>8 rue Docteurs Calmette et Guérin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national supérieur du professorat et de l'éducation (antenne)</nom>
     <telephone>02 53 80 41 00</telephone>
@@ -1070,8 +1070,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>1 rue Hubert Cailler</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Notre-Dame</nom>
     <telephone>02 51 69 19 33</telephone>
@@ -1087,8 +1087,8 @@
       <ville>Fontenay-le-Comte</ville>
       <voie>9 rue Rabelais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Audencia Business School</nom>
     <telephone>02 40 37 30 10</telephone>
@@ -1104,8 +1104,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>6 rue Olivier de Clisson</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CESI</sigle>
     <nom>CESI école supérieure de l'alternance - campus de Nantes</nom>
     <telephone>02 28 01 15 55</telephone>
@@ -1121,8 +1121,8 @@
       <ville>Nantes</ville>
       <voie>1 avenue Augustin Louis Cauchy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Edouard Branly</nom>
     <telephone>02 51 24 06 06</telephone>
@@ -1138,8 +1138,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>5 boulevard Edouard Branly</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École Silvya Terrade Angers</nom>
     <telephone>02 41 68 21 21</telephone>
@@ -1155,8 +1155,8 @@
       <ville>Angers</ville>
       <voie>Place du chapeau de gendarme</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>My Digital School</nom>
     <telephone>02 40 89 85 63</telephone>
@@ -1172,8 +1172,8 @@
       <ville>Saint-Herblain</ville>
       <voie>4 chemin de le Chatterie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Conservatoire à rayonnement régional</nom>
     <telephone>02 41 24 14 50</telephone>
@@ -1189,8 +1189,8 @@
       <ville>Angers</ville>
       <voie>6 avenue Montaigne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté de psychologie</nom>
     <telephone>02 40 14 10 20</telephone>
@@ -1206,8 +1206,8 @@
       <ville>Nantes</ville>
       <voie>Rue de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut régional d'administration</nom>
     <telephone>02 40 74 34 77</telephone>
@@ -1223,8 +1223,8 @@
       <ville>Nantes</ville>
       <voie>1 rue de la Bourgeonnière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de lettres, langues et sciences humaines</nom>
     <telephone>02 43 83 31 90</telephone>
@@ -1240,8 +1240,8 @@
       <ville>Le Mans</ville>
       <voie>Avenue Olivier Messiaen</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Mouilleron-en-Pareds</nom>
     <telephone>02 51 00 30 54</telephone>
@@ -1257,8 +1257,8 @@
       <ville>Mouilleron-Saint-Germain</ville>
       <voie>0 rue du Pavé, Mouilleron en Pareds</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur d'optique</nom>
     <telephone>02 51 81 05 00</telephone>
@@ -1274,8 +1274,8 @@
       <ville>Nantes</ville>
       <voie>4 rue de la Rainière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de droit, économie et gestion</nom>
     <telephone>02 41 96 21 35</telephone>
@@ -1291,8 +1291,8 @@
       <ville>Angers</ville>
       <voie>3 allée François Mitterrand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur du transport et de la logistique internationale - Groupe AFT IFTIM</nom>
     <telephone>02 40 18 13 20</telephone>
@@ -1308,8 +1308,8 @@
       <ville>Sainte-Luce-sur-Loire</ville>
       <voie>2 rue Jean Mermoz, ZAC Maison Neuve</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure des beaux-arts d'Angers</nom>
     <telephone>02 72 79 86 90</telephone>
@@ -1325,8 +1325,8 @@
       <ville>Angers</ville>
       <voie>2 rue Bressigny</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut Agro Rennes Angers - campus d'Angers</nom>
     <telephone>02 41 22 54 54</telephone>
@@ -1342,8 +1342,8 @@
       <ville>Angers</ville>
       <voie>2 rue André le Nôtre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Gabriel Touchard - Washington</nom>
     <telephone>02 43 50 16 20</telephone>
@@ -1359,8 +1359,8 @@
       <ville>Le Mans</ville>
       <voie>8 place Washington</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ENI</sigle>
     <nom>ENI Ecole informatique</nom>
     <telephone>02 28 03 17 28</telephone>
@@ -1376,8 +1376,8 @@
       <ville>Saint-Herblain</ville>
       <voie>3 rue Michael Faraday</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFAA</sigle>
     <nom>CFAA 49 Edgard Pisani</nom>
     <telephone>02 41 40 19 28</telephone>
@@ -1393,8 +1393,8 @@
       <ville>Montreuil-Bellay</ville>
       <voie>Route de Meron</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieur de développement et management</nom>
     <telephone>02 72 25 69 80</telephone>
@@ -1410,8 +1410,8 @@
       <ville>Nantes</ville>
       <voie>6 rue de la Rainière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Sadi Carnot - Jean Bertin</nom>
     <telephone>02 41 53 50 00</telephone>
@@ -1427,8 +1427,8 @@
       <ville>Saumur</ville>
       <voie>5 rue Marceau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>URMA</sigle>
     <nom>URMA Mayenne - site 30 boulevard de Volney</nom>
     <telephone>02 43 64 11 00</telephone>
@@ -1444,8 +1444,8 @@
       <ville>Laval</ville>
       <voie>0 boulevard Volney</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Auguste et Jean Renoir</nom>
     <telephone>02 41 72 10 50</telephone>
@@ -1461,8 +1461,8 @@
       <ville>Angers</ville>
       <voie>5 impasse Ampère</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Campus Tech</nom>
     <telephone>02 41 96 65 10</telephone>
@@ -1478,8 +1478,8 @@
       <ville>Saint-Barthélémy-d'Anjou</ville>
       <voie>8 rue du 8 mai 1945</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut des carrières européennes de l'expertise</nom>
     <telephone>02 40 35 36 37</telephone>
@@ -1495,8 +1495,8 @@
       <ville>Nantes</ville>
       <voie>7 boulevard des Martyrs Nantais de la Résistance</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CAP</sigle>
     <nom>CAP VERS</nom>
     <telephone>02 40 89 95 10</telephone>
@@ -1512,8 +1512,8 @@
       <ville>Saint-Herblain</ville>
       <voie>4 chemin de la Chatterie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Prytanée national militaire</nom>
     <telephone>02 43 48 60 33</telephone>
@@ -1529,8 +1529,8 @@
       <ville>La Flèche</ville>
       <voie>2 rue du Collège</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre d'enseignement supérieur en optique lunetterie</nom>
     <telephone>02 85 52 32 02</telephone>
@@ -1546,8 +1546,8 @@
       <ville>Nantes</ville>
       <voie>9 boulevard Einstein</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté des Humanités</nom>
     <telephone>02 41 81 66 61</telephone>
@@ -1563,8 +1563,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Saint-Pierre La Joliverie - Pôle des arts graphiques</nom>
     <telephone>02 40 80 82 03</telephone>
@@ -1580,8 +1580,8 @@
       <ville>Nantes</ville>
       <voie>2 place Albert Camus</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>URMA</sigle>
     <nom>URMA - Loire-Atlantique - site de Sainte-Luce-sur-Loire</nom>
     <telephone>02 40 18 96 96</telephone>
@@ -1597,8 +1597,8 @@
       <ville>Sainte-Luce-sur-Loire</ville>
       <voie>Place Jacques Chesne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de santé - département pharmacie</nom>
     <telephone>02 41 22 66 00</telephone>
@@ -1614,8 +1614,8 @@
       <ville>Angers</ville>
       <voie>6 boulevard Daviers</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Gabriel Guist'hau</nom>
     <telephone>02 51 84 82 20</telephone>
@@ -1631,8 +1631,8 @@
       <ville>Nantes</ville>
       <voie>3 rue du Boccage</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national supérieur du professorat et de l'éducation (antenne)</nom>
     <telephone>02 43 77 69 00</telephone>
@@ -1648,8 +1648,8 @@
       <ville>Le Mans</ville>
       <voie>1 boulevard Pythagore</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTPA</sigle>
     <nom>LEGTPA Nature</nom>
     <telephone>02 51 09 82 82</telephone>
@@ -1665,8 +1665,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>Allée des Druides</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CESI</sigle>
     <nom>CESI Ecole d'ingénieurs - campus de Saint-Nazaire</nom>
     <telephone>02 40 00 17 00</telephone>
@@ -1682,8 +1682,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>boulevard de l'Université, Campus Gavy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure des géomètres et topographes Cnam</nom>
     <telephone>02 43 43 31 00</telephone>
@@ -1699,8 +1699,8 @@
       <ville>Le Mans</ville>
       <voie>1 boulevard Pythagore</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Bourg Chevreau Sainte-Anne</nom>
     <telephone>02 41 92 28 52</telephone>
@@ -1716,8 +1716,8 @@
       <ville>Segré-en-Anjou-Bleu</ville>
       <voie>7 rue du 8 Mai 1945</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Livet</nom>
     <telephone>02 51 81 23 23</telephone>
@@ -1733,8 +1733,8 @@
       <ville>Nantes</ville>
       <voie>6 rue Dufour</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure de commerce et management de la Mayenne</nom>
     <telephone>02 43 91 47 43</telephone>
@@ -1750,8 +1750,8 @@
       <ville>Laval</ville>
       <voie>rue Léonard de Vinci, Campus CCI</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation de manipulateurs d'électroradiologie médicale</nom>
     <telephone>02 40 84 68 36</telephone>
@@ -1767,8 +1767,8 @@
       <ville>Nantes</ville>
       <voie>0 route St-Sébastien-Sur-Loire</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Service universitaire des langues</nom>
     <telephone>02 53 48 77 01</telephone>
@@ -1784,8 +1784,8 @@
       <ville>Nantes</ville>
       <voie>chemin la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Jeanne Delanoue</nom>
     <telephone>02 41 63 74 74</telephone>
@@ -1801,8 +1801,8 @@
       <ville>Cholet</ville>
       <voie>1 boulevard Jeanne d'Arc</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Léonard de Vinci</nom>
     <telephone>02 51 45 33 00</telephone>
@@ -1818,8 +1818,8 @@
       <ville>Montaigu-Vendée</ville>
       <voie>Rue du Fromenteau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Europe Robert Schuman</nom>
     <telephone>02 41 49 73 00</telephone>
@@ -1835,8 +1835,8 @@
       <ville>Cholet</ville>
       <voie>9 avenue de l'Europe</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA La Joliverie</nom>
     <telephone>02 51 71 36 20</telephone>
@@ -1852,8 +1852,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>1 bis route de Clisson</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de bijouterie</nom>
     <telephone>02 41 83 53 93</telephone>
@@ -1869,8 +1869,8 @@
       <ville>Saumur</ville>
       <voie>square Balzac</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Réaumur</nom>
     <telephone>02 43 67 24 00</telephone>
@@ -1886,8 +1886,8 @@
       <ville>Laval</ville>
       <voie>9 avenue Chanzy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ESMA</sigle>
     <nom>ESMA Cinécréatis Nantes</nom>
     <telephone>02 40 74 00 32</telephone>
@@ -1903,8 +1903,8 @@
       <ville>Nantes</ville>
       <voie>6 rue René Siegfried</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée privé Gabriel Deshayes</nom>
     <telephone>02 40 00 76 76</telephone>
@@ -1920,8 +1920,8 @@
       <ville>Saint-Gildas-des-Bois</ville>
       <voie>4 route de Redon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École Silvya Terrade Nantes</nom>
     <telephone>02 40 20 38 34</telephone>
@@ -1937,8 +1937,8 @@
       <ville>Nantes</ville>
       <voie>1 place de la Galarne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>BACF</sigle>
     <nom>BACF</nom>
     <telephone>02 40 89 99 40</telephone>
@@ -1954,8 +1954,8 @@
       <ville>Nantes</ville>
       <voie>4 rue du bois joli</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Montesquieu</nom>
     <telephone>02 43 76 93 20</telephone>
@@ -1971,8 +1971,8 @@
       <ville>Le Mans</ville>
       <voie>1 rue Montesquieu</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut d'informatique appliquée</nom>
     <telephone>02 43 91 47 47</telephone>
@@ -1988,8 +1988,8 @@
       <ville>Saint-Berthevin</ville>
       <voie>5 boulevard de l'industrie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Joubert Emilien Maillard</nom>
     <telephone>02 40 83 00 25</telephone>
@@ -2005,8 +2005,8 @@
       <ville>Ancenis-Saint-Géréon</ville>
       <voie>0 rue du Pressoir Rouge</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École de communication visuelle - ECV Atlantique</nom>
     <telephone>02 40 69 15 13</telephone>
@@ -2022,8 +2022,8 @@
       <ville>Nantes</ville>
       <voie>7 rue Deshoulières</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nationale supérieure maritime - site de Nantes</nom>
     <telephone>09 70 00 04 30</telephone>
@@ -2039,8 +2039,8 @@
       <ville>Nantes</ville>
       <voie>8 rue Gabriel Péri</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national supérieur du professorat et de l'éducation (antenne)</nom>
     <telephone>02 53 59 24 35</telephone>
@@ -2056,8 +2056,8 @@
       <ville>Changé</ville>
       <voie>3 rue George Charpak, Parc universitaire de Laval</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IRSS</sigle>
     <nom>IRSS</nom>
     <telephone>02 41 62 19 97</telephone>
@@ -2073,8 +2073,8 @@
       <ville>Cholet</ville>
       <voie>Eurespace - rue Eugène Brémond</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel les Savarières</nom>
     <telephone>02 40 80 54 84</telephone>
@@ -2090,8 +2090,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>5 avenue de Glinde</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTA</sigle>
     <nom>LEGTA Bel Air</nom>
     <telephone>02 51 50 11 44</telephone>
@@ -2107,8 +2107,8 @@
       <ville>Fontenay-le-Comte</ville>
       <voie>1 boulevard Hoche</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Pierre Mendès France</nom>
     <telephone>02 51 36 87 87</telephone>
@@ -2124,8 +2124,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>boulevard Arago</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT de La Roche sur Yon</nom>
     <telephone>02 51 47 84 40</telephone>
@@ -2141,8 +2141,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>8 boulevard Gaston Defferre CS 500 20</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de sciences et techniques</nom>
     <telephone>02 43 83 32 01</telephone>
@@ -2158,8 +2158,8 @@
       <ville>Le Mans</ville>
       <voie>Avenue Olivier Messiaen</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre national de danse contemporaine</nom>
     <telephone>02 44 01 22 66</telephone>
@@ -2175,8 +2175,8 @@
       <ville>Angers</ville>
       <voie>7 rue de la tannerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>My Digital School</nom>
     <telephone>02 52 21 00 38</telephone>
@@ -2192,8 +2192,8 @@
       <ville>Beaucouzé</ville>
       <voie>8 rue Joseph Fourier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Châteaubriant</nom>
     <telephone>02 40 28 36 84</telephone>
@@ -2209,8 +2209,8 @@
       <ville>Châteaubriant</ville>
       <voie>2 rue Pierre Blays</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA de l'AFPIA SolFi2A</nom>
     <telephone>02 51 94 08 31</telephone>
@@ -2226,8 +2226,8 @@
       <ville>Montaigu-Vendée</ville>
       <voie>1 rue Alfred de Vigny, Saint Hilaire de Loulay</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée André Malraux</nom>
     <telephone>02 43 39 28 50</telephone>
@@ -2243,8 +2243,8 @@
       <ville>Allonnes</ville>
       <voie>3 rue Beau Soleil</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint-Benoît - site Collégiale</nom>
     <telephone>02 41 88 09 00</telephone>
@@ -2260,8 +2260,8 @@
       <ville>Angers</ville>
       <voie>5 Cloître Saint-Martin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Notre-Dame de Bonnes Nouvelles Ensemble Dom Sortais</nom>
     <telephone>02 41 71 35 36</telephone>
@@ -2277,8 +2277,8 @@
       <ville>Beaupréau-en-Mauges</ville>
       <voie>3 rue Mongazon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national des formations notariales</nom>
     <telephone>02 40 74 08 76</telephone>
@@ -2294,8 +2294,8 @@
       <ville>Nantes</ville>
       <voie>9 rue de Coulmiers</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTAP</sigle>
     <nom>LEGTAP Briacé</nom>
     <telephone>02 40 06 43 33</telephone>
@@ -2311,8 +2311,8 @@
       <ville>Le Landreau</ville>
       <voie>Briacé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Notre-Dame</nom>
     <telephone>02 43 85 01 01</telephone>
@@ -2328,8 +2328,8 @@
       <ville>Le Mans</ville>
       <voie>3 avenue François Mitterrand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut régional de formation aux métiers de la rééducation et de la réadaptation des Pays de la Loire</nom>
     <telephone>02 51 79 09 79</telephone>
@@ -2345,8 +2345,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>4 rue de la Baugerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA en transport et logistique - AFTRAL site de Nantes</nom>
     <telephone>02 40 18 13 13</telephone>
@@ -2362,8 +2362,8 @@
       <ville>Sainte-Luce-sur-Loire</ville>
       <voie>2 rue Jean Mermoz, ZAC de la Maison neuve</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Urbain Mongazon</nom>
     <telephone>02 41 66 41 33</telephone>
@@ -2379,8 +2379,8 @@
       <ville>Angers</ville>
       <voie>1 rue du Colombier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>AFOREM</sigle>
     <nom>AFOREM</nom>
     <telephone>02 43 88 29 42</telephone>
@@ -2396,8 +2396,8 @@
       <ville>La Chapelle-Saint-Aubin</ville>
       <voie>zone artisanale Le bas palluau les vignes, Zone ActiNord</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Fab'Academy du pôle de formation UIMM - Centre de Saint-Nazaire</nom>
     <telephone>02 40 53 85 47</telephone>
@@ -2413,8 +2413,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>4 rue de l'étoile du matin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT d'Angers</nom>
     <telephone>02 44 68 87 00</telephone>
@@ -2430,8 +2430,8 @@
       <ville>Angers</ville>
       <voie>4 boulevard Lavoisier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFPP</sigle>
     <nom>CFPP d'Ancenis</nom>
     <telephone>02 40 96 41 20</telephone>
@@ -2447,8 +2447,8 @@
       <ville>Ancenis-Saint-Géréon</ville>
       <voie>7 boulevard Joseph Vincent</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Cnam Annexe de Nantes</nom>
     <telephone>02 40 90 50 00</telephone>
@@ -2464,8 +2464,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>boulevard de l'Université, campus Gavy Océanis</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Campus Academy Ouest</nom>
     <telephone>09 72 62 47 47</telephone>
@@ -2481,8 +2481,8 @@
       <ville>Nantes</ville>
       <voie>1 rue Pierre Adolphe Bobierre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Saint Aubin-La Salle</nom>
     <telephone>02 41 33 43 00</telephone>
@@ -2498,8 +2498,8 @@
       <ville>Verrières-en-Anjou</ville>
       <voie>rue Hélène Boucher, Saint-Sylvain-d'Anjou</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTA</sigle>
     <nom>LEGTA Le Fresne</nom>
     <telephone>02 41 68 60 00</telephone>
@@ -2515,8 +2515,8 @@
       <ville>Angers</ville>
       <voie>Chemin du Fresne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Sainte-Marie du Port</nom>
     <telephone>02 51 95 12 40</telephone>
@@ -2529,8 +2529,8 @@
       <longitude>0.0</longitude>
       <numero>0</numero>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>MBway</nom>
     <telephone>02 41 73 96 91</telephone>
@@ -2546,8 +2546,8 @@
       <ville>Angers</ville>
       <voie>9 rue André Le Nôtre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers Croix-Rouge française - Antenne de Saint Jean de Monts</nom>
     <telephone>02 51 59 91 75</telephone>
@@ -2563,8 +2563,8 @@
       <ville>Saint-Jean-de-Monts</ville>
       <voie>1 rue Henry Dunant</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut des métiers de l'enseignement supérieur</nom>
     <telephone>02 51 84 52 52</telephone>
@@ -2580,8 +2580,8 @@
       <ville>Nantes</ville>
       <voie>7 rue de Bréa</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>SOFTEC</sigle>
     <nom>SOFTEC</nom>
     <telephone>02 41 43 38 22</telephone>
@@ -2597,8 +2597,8 @@
       <ville>Avrillé</ville>
       <voie>chemin du Bocage</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté de théologie et de sciences religieuses</nom>
     <telephone>02 41 81 66 22</telephone>
@@ -2614,8 +2614,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Brossaud-Blancho</nom>
     <telephone>02 40 53 30 02</telephone>
@@ -2631,8 +2631,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>0 avenue de Coubertin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Raoul Vadepied</nom>
     <telephone>02 43 01 62 44</telephone>
@@ -2648,8 +2648,8 @@
       <ville>Evron</ville>
       <voie>Boulevard Rossignol</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national supérieur du professorat et de l'éducation (antenne)</nom>
     <telephone>02 41 22 74 00</telephone>
@@ -2665,8 +2665,8 @@
       <ville>Angers</ville>
       <voie>7 rue Dacier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>CFA-FC Métiers de nos territoires - Pays de la Loire</nom>
     <telephone>02 41 97 80 54</telephone>
@@ -2682,8 +2682,8 @@
       <ville>Les Ponts-de-Cé</ville>
       <voie>2 chemin des grandes maisons</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Euridis Business School</nom>
     <telephone>02 34 88 03 50</telephone>
@@ -2699,8 +2699,8 @@
       <ville>Nantes</ville>
       <voie>5 place Aristide Briand, Carré Lafayette</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>SUP' DE COM école supérieure de communication</nom>
     <telephone>02 72 34 18 12</telephone>
@@ -2716,8 +2716,8 @@
       <ville>Nantes</ville>
       <voie>6 boulevard Général de Gaulle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ensemble universitaire de Gavy - antenne universitaire Nantes</nom>
     <telephone>02 40 90 50 90</telephone>
@@ -2733,8 +2733,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>Boulevard de l'Université</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nationale supérieure d'ingénieurs du Mans</nom>
     <telephone>02 43 83 35 93</telephone>
@@ -2750,8 +2750,8 @@
       <ville>Le Mans</ville>
       <voie>Rue Aristote</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Blanche de Castille</nom>
     <telephone>02 40 52 54 60</telephone>
@@ -2767,8 +2767,8 @@
       <ville>Nantes</ville>
       <voie>43-45 boulevard Jules Verne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole du Centre hospitalier du Nord Mayenne</nom>
     <telephone>02 43 08 22 26</telephone>
@@ -2784,8 +2784,8 @@
       <ville>Mayenne</ville>
       <voie>9 boulevard Paul Lintier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Nantes YNOV Campus</nom>
     <telephone>02 28 44 04 40</telephone>
@@ -2801,8 +2801,8 @@
       <ville>Nantes</ville>
       <voie>0 bd du Général de Gaulle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Guy Môquet - Etienne Lenoir</nom>
     <telephone>02 40 81 56 56</telephone>
@@ -2818,8 +2818,8 @@
       <ville>Châteaubriant</ville>
       <voie>9 rue de l'Europe</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École Silvya Terrade Le Mans</nom>
     <telephone>02 43 20 74 39</telephone>
@@ -2835,8 +2835,8 @@
       <ville>Le Mans</ville>
       <voie>1 quai Ledru Rollin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Eurespace formation Cholet</nom>
     <telephone>02 41 49 10 20</telephone>
@@ -2852,8 +2852,8 @@
       <ville>Cholet</ville>
       <voie>Rue Eugène Bremond</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Aristide Briand</nom>
     <telephone>02 40 00 25 25</telephone>
@@ -2869,8 +2869,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>0 boulevard de Coubertin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Cnam</nom>
     <telephone>02 40 16 10 95</telephone>
@@ -2886,8 +2886,8 @@
       <ville>Nantes</ville>
       <voie>5 boulevard Guy Mollet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté libre de l'Ouest - UCO Nantes</nom>
     <telephone>02 40 20 82 52</telephone>
@@ -2903,8 +2903,8 @@
       <ville>Rezé</ville>
       <voie>1 rue des Naudières</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de la Croix-Rouge française Institut de formation en soins infirmiers 44</nom>
     <telephone>02 40 14 87 32</telephone>
@@ -2920,8 +2920,8 @@
       <ville>Rezé</ville>
       <voie>6 rue de la gare, 1er étage</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole Pivaut supérieure technique privée d'arts appliqués</nom>
     <telephone>02 40 29 15 92</telephone>
@@ -2937,8 +2937,8 @@
       <ville>Nantes</ville>
       <voie>6 rue Henri Cochard</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent François Rabelais</nom>
     <telephone>02 51 69 24 80</telephone>
@@ -2954,8 +2954,8 @@
       <ville>Fontenay-le-Comte</ville>
       <voie>5 rue Rabelais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Ambroise Paré</nom>
     <telephone>02 43 59 17 59</telephone>
@@ -2971,8 +2971,8 @@
       <ville>Laval</ville>
       <voie>7 rue du Lycee</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>URMA</sigle>
     <nom>URMA Loire-Atlantique - site de la Maison de l'apprentissage</nom>
     <telephone>02 28 54 17 01</telephone>
@@ -2988,8 +2988,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>6 rue Michel Ange</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Section générale et technologique du LP Edouard Branly</nom>
     <telephone>02 51 24 06 06</telephone>
@@ -3005,8 +3005,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>5 Boulevard Branly</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Mareuil-sur-Lay</nom>
     <telephone>02 51 30 50 64</telephone>
@@ -3022,8 +3022,8 @@
       <ville>Mareuil-sur-Lay-Dissais</ville>
       <voie>4 rue du Marchiou</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT de Nantes - site de Carquefou</nom>
     <telephone>02 28 09 20 00</telephone>
@@ -3039,8 +3039,8 @@
       <ville>Carquefou</ville>
       <voie>2 avenue du Professeur Jean Rouxel</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur de l'électronique et du numérique Yncréa Ouest - campus de Nantes</nom>
     <telephone>02 30 13 05 60</telephone>
@@ -3056,8 +3056,8 @@
       <ville>Carquefou</ville>
       <voie>3 Q avenue du Champ de Manoeuvre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Bournezeau</nom>
     <telephone>02 51 40 71 19</telephone>
@@ -3073,8 +3073,8 @@
       <ville>Bournezeau</ville>
       <voie>4 route de la Roche Sur Yon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole Brassart Nantes</nom>
     <telephone>02 40 69 20 14</telephone>
@@ -3090,8 +3090,8 @@
       <ville>Nantes</ville>
       <voie>4 - 6 rue d'Erlon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure des professions immobilières - campus Nantes</nom>
     <telephone>02 40 49 87 46</telephone>
@@ -3107,8 +3107,8 @@
       <ville>Nantes</ville>
       <voie>5 rue Louis de Broglie, Parc d'affaires de le rivière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Nelson Mandela</nom>
     <telephone>02 51 72 86 60</telephone>
@@ -3124,8 +3124,8 @@
       <ville>Nantes</ville>
       <voie>0 rue Pierre Vidal Naquet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole européenne de graphisme publicitaire</nom>
     <telephone>02 41 88 24 50</telephone>
@@ -3141,8 +3141,8 @@
       <ville>Verrières-en-Anjou</ville>
       <voie>3 rue Rose Red Naomi, Saint-Sylvain-d'Anjou</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut catholique de Vendée</nom>
     <telephone>02 51 46 12 13</telephone>
@@ -3158,8 +3158,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>7 boulevard des Belges</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Jeanne d'Arc</nom>
     <telephone>02 51 48 87 00</telephone>
@@ -3175,8 +3175,8 @@
       <ville>Montaigu-Vendée</ville>
       <voie>3 bis boulevard Parpaillon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Claude Chappe</nom>
     <telephone>02 43 21 10 17</telephone>
@@ -3192,8 +3192,8 @@
       <ville>Arnage</ville>
       <voie>Rue des Collèges</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre de ressources, d'expertise et de performance sportive des Pays de la Loire</nom>
     <telephone>02 28 23 69 23</telephone>
@@ -3209,8 +3209,8 @@
       <ville>Nantes</ville>
       <voie>4 place Gabriel Trarieux</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR santé - département médecine</nom>
     <telephone>02 41 73 58 00</telephone>
@@ -3226,8 +3226,8 @@
       <ville>Angers</ville>
       <voie>8 rue Roger Amsler</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de lettres et langages</nom>
     <telephone>02 40 14 10 20</telephone>
@@ -3243,8 +3243,8 @@
       <ville>Nantes</ville>
       <voie>Rue de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Orion</nom>
     <telephone>02 43 01 62 30</telephone>
@@ -3260,8 +3260,8 @@
       <ville>Evron</ville>
       <voie>7 bd Maréchal Leclerc</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ARIFTS</sigle>
     <nom>ARIFTS - site nantais</nom>
     <telephone>02 40 75 69 94</telephone>
@@ -3277,8 +3277,8 @@
       <ville>Rezé</ville>
       <voie>0 rue Marion Cahour, Cité de la formation santé social</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de médecine et techniques médicales</nom>
     <telephone>02 40 41 28 28</telephone>
@@ -3294,8 +3294,8 @@
       <ville>Nantes</ville>
       <voie>1 rue Gaston Veil</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté de droit et science politique</nom>
     <telephone>02 40 14 15 15</telephone>
@@ -3311,8 +3311,8 @@
       <ville>Nantes</ville>
       <voie>chemin de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de sciences</nom>
     <telephone>02 41 73 53 53</telephone>
@@ -3328,8 +3328,8 @@
       <ville>Angers</ville>
       <voie>2 boulevard Lavoisier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure professionnelle AFTEC</nom>
     <telephone>02 43 59 70 10</telephone>
@@ -3345,8 +3345,8 @@
       <ville>Changé</ville>
       <voie>5 rue Marie Curie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEAP</sigle>
     <nom>LEAP Val de Sarthe</nom>
     <telephone>02 43 55 08 00</telephone>
@@ -3362,8 +3362,8 @@
       <ville>Sablé-sur-Sarthe</ville>
       <voie>Route du Mans</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ESUP</sigle>
     <nom>ESUP Angers</nom>
     <telephone>02 41 25 35 15</telephone>
@@ -3379,8 +3379,8 @@
       <ville>Angers</ville>
       <voie>6 place La fayette</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole d'arts du choletais</nom>
     <telephone>02 72 77 23 40</telephone>
@@ -3396,8 +3396,8 @@
       <ville>Cholet</ville>
       <voie>impasse des Charuelles</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Gaspard Monge - La Chauvinière</nom>
     <telephone>02 40 16 71 00</telephone>
@@ -3413,8 +3413,8 @@
       <ville>Nantes</ville>
       <voie>2 rue de la Fantaisie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Notre-Dame</nom>
     <telephone>02 51 49 79 00</telephone>
@@ -3430,8 +3430,8 @@
       <ville>Challans</ville>
       <voie>2 rue de Bois Fossé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Saint-Joseph La Joliverie</nom>
     <telephone>02 40 80 82 00</telephone>
@@ -3447,8 +3447,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>1 route de Clisson</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CNPC</sigle>
     <nom>CNPC Sport business campus</nom>
     <telephone>06 70 92 82 94</telephone>
@@ -3464,8 +3464,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>8 boulevard des Pas Enchantés, Lycée La Baugerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Fab'Academy du pôle formation UIMM - Centre de Nantes</nom>
     <telephone>02 51 13 21 51</telephone>
@@ -3481,8 +3481,8 @@
       <ville>Bouguenais</ville>
       <voie>9 rue de l'Halbrane</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Jean Perrin</nom>
     <telephone>02 40 32 44 00</telephone>
@@ -3498,8 +3498,8 @@
       <ville>Rezé</ville>
       <voie>0 rue du Château de Rezé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Nantes université</nom>
     <telephone>02 40 99 83 83</telephone>
@@ -3515,8 +3515,8 @@
       <ville>Nantes</ville>
       <voie>1 quai de Tourville</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Instituts et écoles de formation IFSI - IFAS - IFA - CHU d'Angers</nom>
     <telephone>02 41 35 34 34</telephone>
@@ -3532,8 +3532,8 @@
       <ville>Angers</ville>
       <voie>CHU - 4 rue Larrey</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Web international school Nantes</nom>
     <telephone>02 40 76 60 87</telephone>
@@ -3549,8 +3549,8 @@
       <ville>Nantes</ville>
       <voie>6 boulevard Général de Gaulle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>GRETA-CFA 49</nom>
     <telephone>02 41 24 11 11</telephone>
@@ -3566,8 +3566,8 @@
       <ville>Angers</ville>
       <voie>3 rue de l'Etanduère</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Funay-Hélène Boucher</nom>
     <telephone>02 43 50 12 30</telephone>
@@ -3583,8 +3583,8 @@
       <ville>Le Mans</ville>
       <voie>7 rue Henri Champion</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IDRAC</sigle>
     <nom>IDRAC Business School</nom>
     <telephone>02 40 29 38 14</telephone>
@@ -3600,8 +3600,8 @@
       <ville>Nantes</ville>
       <voie>6 boulevard Général De Gaulle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté de droit, économie, gestion</nom>
     <telephone>02 72 79 63 66</telephone>
@@ -3617,8 +3617,8 @@
       <ville>Angers</ville>
       <voie>3 Place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole des beaux-arts de Nantes Saint-Nazaire</nom>
     <telephone>02 55 58 65 00</telephone>
@@ -3634,8 +3634,8 @@
       <ville>Nantes</ville>
       <voie>2 rue Frida Kahlo</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure de commerce et management</nom>
     <telephone>02 43 64 37 30</telephone>
@@ -3651,8 +3651,8 @@
       <ville>Laval</ville>
       <voie>8 allée de la Chartrie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Duplessis Mornay</nom>
     <telephone>02 41 53 05 30</telephone>
@@ -3668,8 +3668,8 @@
       <ville>Saumur</ville>
       <voie>1 rue Duruy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>OF</sigle>
     <nom>OF - CFA Campus Academy Angers</nom>
     <telephone>09 72 62 47 47</telephone>
@@ -3685,8 +3685,8 @@
       <ville>Angers</ville>
       <voie>2 avenue de Lattre de Tassigny</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA iA l'intelligence apprentie - campus de Nantes</nom>
     <telephone>02 72 56 84 00</telephone>
@@ -3702,8 +3702,8 @@
       <ville>Nantes</ville>
       <voie>3 boulevard du Bâtonnier Cholet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint Clair Blain site de Derval</nom>
     <telephone>02 40 07 72 72</telephone>
@@ -3719,8 +3719,8 @@
       <ville>Derval</ville>
       <voie>9 rue de Rennes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole des Etablières - site de Challans</nom>
     <telephone>09 70 80 82 21</telephone>
@@ -3736,8 +3736,8 @@
       <ville>Challans</ville>
       <voie>1 rue du Marais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur du tourisme</nom>
     <telephone>02 44 68 81 00</telephone>
@@ -3753,8 +3753,8 @@
       <ville>Les Sables-d'Olonne</ville>
       <voie>rue de l'ancienne sous-préfecture</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LP</sigle>
     <nom>LP Joseph Wresinski - ITEC</nom>
     <telephone>02 52 09 41 01</telephone>
@@ -3770,8 +3770,8 @@
       <ville>Angers</ville>
       <voie>0 rue Valentin Haüy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>BTP</sigle>
     <nom>BTP CFA Loire Atlantique site de Saint Herblain</nom>
     <telephone>02 40 92 17 54</telephone>
@@ -3787,8 +3787,8 @@
       <ville>Saint-Herblain</ville>
       <voie>7 rue de la Rivaudière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Audencia Business school</nom>
     <telephone>02 40 37 34 34</telephone>
@@ -3804,8 +3804,8 @@
       <ville>Nantes</ville>
       <voie>8 route de la Jonelière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTA</sigle>
     <nom>LEGTA de Laval</nom>
     <telephone>02 43 68 24 93</telephone>
@@ -3821,8 +3821,8 @@
       <ville>Laval</ville>
       <voie>1 route de Saint-Nazaire</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT de Saint-Nazaire</nom>
     <telephone>02 40 17 81 59</telephone>
@@ -3838,8 +3838,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>8 rue Michel Ange</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national des formations notariales</nom>
     <telephone>02 41 86 09 17</telephone>
@@ -3855,8 +3855,8 @@
       <ville>Angers</ville>
       <voie>5 rue du château d'Orgemont</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École nationale vétérinaire, agroalimentaire et de l'alimentation de Nantes-Atlantique</nom>
     <telephone>02 51 78 54 54</telephone>
@@ -3872,8 +3872,8 @@
       <ville>Nantes</ville>
       <voie>rue de la Géraudière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre universitaire départemental - antenne de l'université de Nantes</nom>
     <telephone>02 51 45 93 93</telephone>
@@ -3889,8 +3889,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>8 boulevard Gaston Deferre-cs50020, Site de la Courtaisière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Léonard de Vinci</nom>
     <telephone>02 43 04 20 98</telephone>
@@ -3906,8 +3906,8 @@
       <ville>Mayenne</ville>
       <voie>9 boulevard de l'Europe</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut catholique d'arts et métiers - site de Nantes - ICAM Parcours Intégré</nom>
     <telephone>02 40 52 40 52</telephone>
@@ -3923,8 +3923,8 @@
       <ville>Carquefou</ville>
       <voie>5 avenue du Champ de Manoeuvres</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>L'atelier d'arts appliqués</nom>
     <telephone>06 19 25 96 01</telephone>
@@ -3940,8 +3940,8 @@
       <ville>Angers</ville>
       <voie>0 rue Florent Cornilleau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée des métiers Sainte-Anne</nom>
     <telephone>02 40 17 12 00</telephone>
@@ -3957,8 +3957,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>0 boulevard Laennec</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Campus de Pouillé</nom>
     <telephone>02 41 44 87 11</telephone>
@@ -3974,8 +3974,8 @@
       <ville>Les Ponts-de-Cé</ville>
       <voie>9 route de Pouillé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur des matériaux du Mans - ISMANS CESI Le Mans</nom>
     <telephone>02 43 21 40 00</telephone>
@@ -3991,8 +3991,8 @@
       <ville>Le Mans</ville>
       <voie>4 avenue Frédéric Auguste Bartholdi</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Pablo Neruda</nom>
     <telephone>02 40 32 02 49</telephone>
@@ -4008,8 +4008,8 @@
       <ville>Bouguenais</ville>
       <voie>Place Pablo Neruda</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de puéricultrices</nom>
     <telephone>02 41 35 39 26</telephone>
@@ -4025,8 +4025,8 @@
       <ville>Angers</ville>
       <voie>Centre Hospitalier Universitaire</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA de la CCI du Maine et Loire - Centre Pierre Cointreau Angers</nom>
     <telephone>02 41 20 53 60</telephone>
@@ -4042,8 +4042,8 @@
       <ville>Angers</ville>
       <voie>2 avenue de Lattre de Tassigny, Centre Pierre Cointreau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Douanier Rousseau</nom>
     <telephone>02 43 53 04 60</telephone>
@@ -4059,8 +4059,8 @@
       <ville>Laval</ville>
       <voie>7 rue des Archives</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>SupSocial</nom>
     <telephone>09 70 80 82 21</telephone>
@@ -4076,8 +4076,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>rue Benjamin Franklin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ARIFTS</sigle>
     <nom>ARIFTS - site angevin</nom>
     <telephone>02 41 48 20 22</telephone>
@@ -4093,8 +4093,8 @@
       <ville>Angers</ville>
       <voie>6 rue Georges Morel</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Win Sport School - Angers</nom>
     <telephone>02 52 21 00 37</telephone>
@@ -4110,8 +4110,8 @@
       <ville>Angers</ville>
       <voie>9 rue André Le Nôtre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTA</sigle>
     <nom>LEGTA Luçon Pétré</nom>
     <telephone>02 51 27 09 18</telephone>
@@ -4127,8 +4127,8 @@
       <ville>Sainte-Gemme-la-Plaine</ville>
       <voie>route de la Rochelle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Venansault</nom>
     <telephone>02 51 07 38 46</telephone>
@@ -4144,8 +4144,8 @@
       <ville>Venansault</ville>
       <voie>Les Hermitans</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA La Germinière</nom>
     <telephone>02 43 47 07 55</telephone>
@@ -4161,8 +4161,8 @@
       <ville>Rouillon</ville>
       <voie>La Germinière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut catholique d'études supérieures</nom>
     <telephone>02 51 46 12 13</telephone>
@@ -4178,8 +4178,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>7 boulevard des Belges</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Jean Bodin</nom>
     <telephone>02 41 79 70 30</telephone>
@@ -4195,8 +4195,8 @@
       <ville>Les Ponts-de-Cé</ville>
       <voie>Avenue de l'Europe</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée privé d'Avesnières</nom>
     <telephone>02 43 02 82 82</telephone>
@@ -4212,8 +4212,8 @@
       <ville>Laval</ville>
       <voie>1 rue d'Avesnières</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole polytechnique universitaire de l'université d'Angers</nom>
     <telephone>02 44 68 75 00</telephone>
@@ -4229,8 +4229,8 @@
       <ville>Angers</ville>
       <voie>2 avenue Notre Dame du Lac</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Sup santé animale</nom>
     <telephone>09 70 80 82 21</telephone>
@@ -4246,8 +4246,8 @@
       <ville>Montaigu-Vendée</ville>
       <voie>7 rue Edouard Marchand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur de gestion</nom>
     <telephone>02 57 22 08 00</telephone>
@@ -4263,8 +4263,8 @@
       <ville>Nantes</ville>
       <voie>5 rue Lamoricière, Campus de Nantes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Jean de Lattre-de-Tassigny</nom>
     <telephone>02 51 62 63 00</telephone>
@@ -4280,8 +4280,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>5 rue Hubert Cailler</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de droit, des sciences économiques et de gestion - site de Laval</nom>
     <telephone>02 43 59 17 89</telephone>
@@ -4297,8 +4297,8 @@
       <ville>Changé</ville>
       <voie>rue Léonard de Vinci</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>INTECH</sigle>
     <nom>INTECH</nom>
     <telephone>05 53 66 37 70</telephone>
@@ -4314,8 +4314,8 @@
       <ville>Les Sables-d'Olonne</ville>
       <voie>2 Impasse Isaac Newton</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint-Joseph</nom>
     <telephone>02 40 96 03 16</telephone>
@@ -4331,8 +4331,8 @@
       <ville>Ancenis-Saint-Géréon</ville>
       <voie>6 rue du Collège</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers</nom>
     <telephone>02 41 49 66 57</telephone>
@@ -4348,8 +4348,8 @@
       <ville>Cholet</ville>
       <voie>1 rue Marengo</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IAE</sigle>
     <nom>IAE Ecole de management Angers</nom>
     <telephone>02 41 96 21 55</telephone>
@@ -4365,8 +4365,8 @@
       <ville>Angers</ville>
       <voie>3 allée François Mitterrand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de lettres, langues et sciences humaines</nom>
     <telephone>02 41 22 64 21</telephone>
@@ -4382,8 +4382,8 @@
       <ville>Angers</ville>
       <voie>1 boulevard Lavoisier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Campus connecté de Châteaubriant - Derval</nom>
     <telephone>02 72 41 01 00</telephone>
@@ -4399,8 +4399,8 @@
       <ville>Châteaubriant</ville>
       <voie>6A rue d'Ancenis, quai des entrepreneurs</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de management en alternance de Vendée</nom>
     <telephone>02 28 85 34 80</telephone>
@@ -4416,8 +4416,8 @@
       <ville>Montaigu-Vendée</ville>
       <voie>2 rue du Général de Gaulle, Parc d'activité La Bretonnière - Boufféré</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>URMA</sigle>
     <nom>URMA Mayenne - site de Chanzy</nom>
     <telephone>02 43 64 11 00</telephone>
@@ -4433,8 +4433,8 @@
       <ville>Laval</ville>
       <voie>9 avenue Chanzy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers</nom>
     <telephone>02 44 68 78 26</telephone>
@@ -4450,8 +4450,8 @@
       <ville>Saumur</ville>
       <voie>0 Rue des Iles, Le Plus - Pôle régional de formations</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Le Mans université</nom>
     <telephone>02 43 83 30 00</telephone>
@@ -4467,8 +4467,8 @@
       <ville>Le Mans</ville>
       <voie>Avenue Olivier Messiaen</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Fernand Renaudeau</nom>
     <telephone>02 41 49 21 60</telephone>
@@ -4484,8 +4484,8 @@
       <ville>Cholet</ville>
       <voie>1 rue de la Tuilerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IPAC</sigle>
     <nom>IPAC Bachelor Factory</nom>
     <telephone>02 43 59 70 10</telephone>
@@ -4501,8 +4501,8 @@
       <ville>Changé</ville>
       <voie>5 rue Marie Curie, Campus de Laval</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers de la Croix-Rouge française</nom>
     <telephone>02 43 81 06 52</telephone>
@@ -4518,8 +4518,8 @@
       <ville>Le Mans</ville>
       <voie>7 rue Notre-Dame, Croix Rouge Française</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MJM</sigle>
     <nom>MJM Graphic Design</nom>
     <telephone>02 51 84 06 33</telephone>
@@ -4535,8 +4535,8 @@
       <ville>Nantes</ville>
       <voie>9 rue Dugommier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut catholique d'arts et métiers - site de Vendée - ICAM Parcours Apprentissage</nom>
     <telephone>02 51 47 70 70</telephone>
@@ -4552,8 +4552,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>8 boulevard d'Angleterre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Atelier Guist'hau Rollin - L'école de l'image</nom>
     <telephone>02 40 73 18 25</telephone>
@@ -4569,8 +4569,8 @@
       <ville>Nantes</ville>
       <voie>2 bis rue Rollin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Jean XXIII - ISCV</nom>
     <telephone>02 51 64 99 64</telephone>
@@ -4586,8 +4586,8 @@
       <ville>Les Herbiers</ville>
       <voie>Avenue des Sables</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers du CHU de Nantes</nom>
     <telephone>02 40 84 67 03</telephone>
@@ -4603,8 +4603,8 @@
       <ville>Nantes</ville>
       <voie>0 route de Saint-Sébastien</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut Colbert - Cnam</nom>
     <telephone>02 41 66 05 25</telephone>
@@ -4620,8 +4620,8 @@
       <ville>Cholet</ville>
       <voie>boulevard Pierre Lecocq</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Facultés libres de l'Ouest - UCO Angers</nom>
     <telephone>02 41 81 66 00</telephone>
@@ -4637,8 +4637,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Université d'Angers</nom>
     <telephone>02 41 96 23 23</telephone>
@@ -4654,8 +4654,8 @@
       <ville>Angers</ville>
       <voie>0 rue de Rennes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IFEPSA</sigle>
     <nom>IFEPSA Angers - site Les-Ponts-de-Cé</nom>
     <telephone>02 41 45 26 40</telephone>
@@ -4671,8 +4671,8 @@
       <ville>Les Ponts-de-Cé</ville>
       <voie>9 rue des Perrins</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>MBway</nom>
     <telephone>02 40 89 95 17</telephone>
@@ -4688,8 +4688,8 @@
       <ville>Saint-Herblain</ville>
       <voie>4 chemin de la Chatterie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Cnam</nom>
     <telephone>02 43 43 31 30</telephone>
@@ -4705,8 +4705,8 @@
       <ville>La Ferté-Bernard</ville>
       <voie>rue Albert Surmont, Synergie Parc</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Nicolas Appert</nom>
     <telephone>02 51 78 22 00</telephone>
@@ -4722,8 +4722,8 @@
       <ville>Orvault</ville>
       <voie>4 avenue de la Cholière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Joachim du Bellay</nom>
     <telephone>02 41 43 64 12</telephone>
@@ -4739,8 +4739,8 @@
       <ville>Angers</ville>
       <voie>1 avenue Marie Talet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut catholique d'arts et métiers - site de Nantes - ICAM Parcours Ouvert</nom>
     <telephone>02 40 52 40 52</telephone>
@@ -4756,8 +4756,8 @@
       <ville>Carquefou</ville>
       <voie>5 avenue du Champ de Maneuvre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Haute-Follis - Campus enseignement sup EC 53</nom>
     <telephone>02 43 26 17 18</telephone>
@@ -4773,8 +4773,8 @@
       <ville>Laval</ville>
       <voie>5 rue du Mans</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecofac évolution</nom>
     <telephone>02 43 20 30 30</telephone>
@@ -4790,8 +4790,8 @@
       <ville>Le Mans</ville>
       <voie>1 rue Edgar Brandt</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Robert Buron</nom>
     <telephone>02 43 67 24 20</telephone>
@@ -4807,8 +4807,8 @@
       <ville>Laval</ville>
       <voie>8 rue Bellessort</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Clemenceau</nom>
     <telephone>02 51 81 86 10</telephone>
@@ -4824,8 +4824,8 @@
       <ville>Nantes</ville>
       <voie>1 rue Georges Clemenceau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Heinlex</nom>
     <telephone>02 40 70 49 28</telephone>
@@ -4841,8 +4841,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>1 rue Einstein</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint-Joseph</nom>
     <telephone>02 40 28 15 25</telephone>
@@ -4858,8 +4858,8 @@
       <ville>Châteaubriant</ville>
       <voie>3 A rue de la Libération</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint François d'Assise</nom>
     <telephone>02 51 37 04 48</telephone>
@@ -4875,8 +4875,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>1 rond-point Charles Sorin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole polytechnique universitaire de l'université de Nantes - site de Saint-Nazaire</nom>
     <telephone>02 40 90 50 30</telephone>
@@ -4892,8 +4892,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>boulevard de l'université, Gavy-Océanis</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de sciences pharmaceutiques</nom>
     <telephone>02 53 48 00 99</telephone>
@@ -4909,8 +4909,8 @@
       <ville>Nantes</ville>
       <voie>9 rue Bias</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut d'économie et de management de Nantes - Institut d'administration des entreprises</nom>
     <telephone>02 40 14 17 17</telephone>
@@ -4926,8 +4926,8 @@
       <ville>Nantes</ville>
       <voie>Chemin de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Webstart</nom>
     <telephone>02 44 76 29 60</telephone>
@@ -4943,8 +4943,8 @@
       <ville>Nantes</ville>
       <voie>9 rue Dugommier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>BTP</sigle>
     <nom>BTP CFA Maine-et-Loire</nom>
     <telephone>02 41 72 13 40</telephone>
@@ -4960,8 +4960,8 @@
       <ville>Angers</ville>
       <voie>1 rue Darwin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA de la Chambre de commerce et d'industrie de la Sarthe</nom>
     <telephone>02 43 40 60 60</telephone>
@@ -4977,8 +4977,8 @@
       <ville>Le Mans</ville>
       <voie>2 rue Henri Champion, Campus La Californie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure de la banque Nantes</nom>
     <telephone>02 40 48 79 00</telephone>
@@ -4994,8 +4994,8 @@
       <ville>Nantes</ville>
       <voie>2 rue Gaetan Rondeau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Éric Tabarly</nom>
     <telephone>02 51 95 10 00</telephone>
@@ -5011,8 +5011,8 @@
       <ville>Les Sables-d'Olonne</ville>
       <voie>3 rue Éric Tabarly, Olonne-sur-Mer</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté des sciences humaines et sociales</nom>
     <telephone>02 41 81 66 19</telephone>
@@ -5028,8 +5028,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole Pigier Nantes</nom>
     <telephone>02 40 35 28 82</telephone>
@@ -5045,8 +5045,8 @@
       <ville>Saint-Herblain</ville>
       <voie>4 chemin de la Chatterie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR ESTHUA tourisme et culture - site d'Angers</nom>
     <telephone>02 44 68 81 00</telephone>
@@ -5062,8 +5062,8 @@
       <ville>Angers</ville>
       <voie>7 allée François Mitterrand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut des médias avancés</nom>
     <telephone>05 61 56 91 81</telephone>
@@ -5079,8 +5079,8 @@
       <ville>Saint-Herblain</ville>
       <voie>5 boulevard Marcel Paul</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Grand Air</nom>
     <telephone>02 40 11 58 00</telephone>
@@ -5096,8 +5096,8 @@
       <ville>La Baule-Escoublac</ville>
       <voie>2 Avenue de Tréméac</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Carcouet</nom>
     <telephone>02 40 16 18 18</telephone>
@@ -5113,8 +5113,8 @@
       <ville>Nantes</ville>
       <voie>5 boulevard du Massacre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA en transport et logistique - AFTRAL site du Mans</nom>
     <telephone>02 43 75 02 85</telephone>
@@ -5130,8 +5130,8 @@
       <ville>Allonnes</ville>
       <voie>5 rue du Châtelet, ZA du Monne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT de Nantes - site de Nantes</nom>
     <telephone>02 40 30 60 90</telephone>
@@ -5147,8 +5147,8 @@
       <ville>Nantes</ville>
       <voie>3 rue du Maréchal Joffre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR Le Cèdre à Saint-Barthélémy-d'Anjour</nom>
     <telephone>02 41 21 14 21</telephone>
@@ -5164,8 +5164,8 @@
       <ville>Saint-Barthélémy-d'Anjou</ville>
       <voie>0 rue des Claveries, Le Cedre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Saint-Pierre La Joliverie</nom>
     <telephone>02 40 80 82 00</telephone>
@@ -5181,8 +5181,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>1 route de Clisson</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de gestion et de commerce du Maine</nom>
     <telephone>02 43 72 87 12</telephone>
@@ -5198,8 +5198,8 @@
       <ville>Le Mans</ville>
       <voie>7 avenue des Platanes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté de l'éducation</nom>
     <telephone>02 41 81 65 82</telephone>
@@ -5215,8 +5215,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure du bois</nom>
     <telephone>02 40 18 12 12</telephone>
@@ -5232,8 +5232,8 @@
       <ville>Nantes</ville>
       <voie>rue Christian Pauc, Atlanpôle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de géographie et aménagement régional</nom>
     <telephone>02 53 48 75 00</telephone>
@@ -5249,8 +5249,8 @@
       <ville>Nantes</ville>
       <voie>Chemin la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nationale supérieure Mines-Télécom Atlantique Bretagne Pays de la Loire - campus de Nantes</nom>
     <telephone>02 51 85 81 00</telephone>
@@ -5266,8 +5266,8 @@
       <ville>Nantes</ville>
       <voie>4 rue Alfred Kastler, La Chantrerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée général et technologique privé Saint-Stanislas</nom>
     <telephone>02 40 20 17 50</telephone>
@@ -5283,8 +5283,8 @@
       <ville>Nantes</ville>
       <voie>2 rue Saint-Stanislas</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de droit, des sciences économiques et de gestion - site Le Mans</nom>
     <telephone>02 43 83 31 12</telephone>
@@ -5300,8 +5300,8 @@
       <ville>Le Mans</ville>
       <voie>Avenue Olivier Messiaen</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Notre-Dame de la Tourtelière</nom>
     <telephone>02 51 57 16 00</telephone>
@@ -5317,8 +5317,8 @@
       <ville>Pouzauges</ville>
       <voie>Rue Buffon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel le Pinier Neuf</nom>
     <telephone>02 41 71 35 36</telephone>
@@ -5334,8 +5334,8 @@
       <ville>Beaupréau-en-Mauges</ville>
       <voie>Avenue de Gontaut Biron, Beaupreau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École Silvya Terrade Laval</nom>
     <telephone>02 43 53 30 81</telephone>
@@ -5351,8 +5351,8 @@
       <ville>Laval</ville>
       <voie>8 rue de Paris</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent la Baugerie</nom>
     <telephone>02 40 80 66 95</telephone>
@@ -5368,8 +5368,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>8 boulevard des Pas Enchantes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en ergothérapie - Centre hospitalier de Laval</nom>
     <telephone>02 43 91 65 10</telephone>
@@ -5385,8 +5385,8 @@
       <ville>Laval</ville>
       <voie>3 rue du Haut Rocher</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Atlantique</nom>
     <telephone>02 51 29 11 44</telephone>
@@ -5402,8 +5402,8 @@
       <ville>Luçon</ville>
       <voie>5 rue Jean Jaurès</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Saint-Gilles-Croix-de-Vie</nom>
     <telephone>02 51 55 52 12</telephone>
@@ -5419,8 +5419,8 @@
       <ville>Saint-Gilles-Croix-de-Vie</ville>
       <voie>1 rue de la Roche sur Yon, La Bouchère</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de production des Etablières Les trois couleurs</nom>
     <telephone>09 70 80 82 21</telephone>
@@ -5436,8 +5436,8 @@
       <ville>Fontenay-le-Comte</ville>
       <voie>6 rue des Gravants</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers de l'établissement public de santé mentale de la Sarthe</nom>
     <telephone>02 43 78 56 38</telephone>
@@ -5453,8 +5453,8 @@
       <ville>Allonnes</ville>
       <voie>0 avenue du 19 Mars 1962</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CNPH</sigle>
     <nom>CNPH Centre national de promotion horticole</nom>
     <telephone>02 41 45 63 95</telephone>
@@ -5470,8 +5470,8 @@
       <ville>La Ménitre</ville>
       <voie>3 rue du Roi René</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTA</sigle>
     <nom>LEGTA Jules Rieffel</nom>
     <telephone>02 40 94 99 30</telephone>
@@ -5487,8 +5487,8 @@
       <ville>Saint-Herblain</ville>
       <voie>5 rue de la Syonnière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure d'agricultures d'Angers - site d'Angers</nom>
     <telephone>02 41 23 55 55</telephone>
@@ -5504,8 +5504,8 @@
       <ville>Angers</ville>
       <voie>5 rue Rabelais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Joseph Roussel</nom>
     <telephone>02 43 76 93 00</telephone>
@@ -5521,8 +5521,8 @@
       <ville>Le Mans</ville>
       <voie>0 avenue Bollée</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de sages-femmes - HME maternité</nom>
     <telephone>02 40 08 46 10</telephone>
@@ -5538,8 +5538,8 @@
       <ville>Nantes</ville>
       <voie>8 Bd Jean Monnet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole Blondeau</nom>
     <telephone>02 41 50 70 50</telephone>
@@ -5555,8 +5555,8 @@
       <ville>Saumur</ville>
       <voie>La Grande Pièce, Saint-Hilaire Saint Florent</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nationale de la sécurité et de l'administration de la mer</nom>
     <telephone>09 70 00 04 50</telephone>
@@ -5572,8 +5572,8 @@
       <ville>Nantes</ville>
       <voie>rue Gabriel Péri</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole nantaise de commerce</nom>
     <telephone>02 40 48 40 24</telephone>
@@ -5589,8 +5589,8 @@
       <ville>Nantes</ville>
       <voie>6 rue Crébillon</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de sociologie</nom>
     <TypeEtablissement>Unité de formation et de recherche</TypeEtablissement>
@@ -5605,8 +5605,8 @@
       <ville>Nantes</ville>
       <voie>Chemin de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole technique supérieure de chimie de l'Ouest</nom>
     <telephone>02 41 88 98 33</telephone>
@@ -5622,8 +5622,8 @@
       <ville>Angers</ville>
       <voie>0 rue Michelet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR La Pignerie à Laval</nom>
     <telephone>02 43 67 04 93</telephone>
@@ -5639,8 +5639,8 @@
       <ville>Laval</ville>
       <voie>Route Bois de l'Huisserie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée La Herdrie</nom>
     <telephone>02 51 71 32 00</telephone>
@@ -5656,8 +5656,8 @@
       <ville>Basse-Goulaine</ville>
       <voie>rue de la Basse Lande</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Sainte-Catherine</nom>
     <telephone>02 43 39 14 72</telephone>
@@ -5673,8 +5673,8 @@
       <ville>Le Mans</ville>
       <voie>2 rue Saint Aubin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Fab'Academy du pôle formation UIMM - Centre d'Angers</nom>
     <telephone>02 41 73 93 06</telephone>
@@ -5690,8 +5690,8 @@
       <ville>Beaucouzé</ville>
       <voie>4 rue du pavillon, ZI Angers Beaucouzé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Lavoisier</nom>
     <telephone>02 43 04 86 33</telephone>
@@ -5707,8 +5707,8 @@
       <ville>Mayenne</ville>
       <voie>1 rue du Pommier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR Bernay en Champagne</nom>
     <telephone>02 43 20 73 02</telephone>
@@ -5724,8 +5724,8 @@
       <ville>Bernay-Neuvy-en-Champagne</ville>
       <voie>Bordigné, Bernay-en-Champagne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole polytechnique universitaire de l'université de Nantes - site de La Roche-sur-Yon</nom>
     <telephone>02 53 80 41 00</telephone>
@@ -5741,8 +5741,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>8 boulevard Gaston Defferre, Campus la Courtaisière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEGTAP</sigle>
     <nom>LEGTAP Rochefeuille</nom>
     <telephone>02 43 04 11 73</telephone>
@@ -5758,8 +5758,8 @@
       <ville>Mayenne</ville>
       <voie>Vieille Route d'Ambrières</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Fab'Academy du pôle formation UIMM - Centre de la Roche-sur-Yon</nom>
     <telephone>02 51 37 57 17</telephone>
@@ -5775,8 +5775,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>3 rue Kepler - Acti Est les Oudairies</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LAP</sigle>
     <nom>LAP Les Etablières</nom>
     <telephone>09 70 80 82 21</telephone>
@@ -5792,8 +5792,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>Route de Nantes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre de formation Comet</nom>
     <telephone>02 40 08 25 70</telephone>
@@ -5809,8 +5809,8 @@
       <ville>Saint-Herblain</ville>
       <voie>9 route de Vannes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>URMA</sigle>
     <nom>URMA Vendée</nom>
     <telephone>02 51 36 53 00</telephone>
@@ -5826,8 +5826,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>4 rond-point du Coteau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Bâtiment CFA Alençon</nom>
     <telephone>02 33 27 28 62</telephone>
@@ -5843,8 +5843,8 @@
       <ville>Saint-Paterne</ville>
       <voie>Plaine Saint-Gilles</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée La Colinière</nom>
     <telephone>02 40 93 93 33</telephone>
@@ -5860,8 +5860,8 @@
       <ville>Nantes</ville>
       <voie>9 rue du Landreau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Sacré-Coeur La Salle</nom>
     <telephone>02 40 46 49 92</telephone>
@@ -5877,8 +5877,8 @@
       <ville>Nantes</ville>
       <voie>3 rue Francis Portais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre international d'études françaises</nom>
     <telephone>02 41 81 66 30</telephone>
@@ -5894,8 +5894,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Rosa Parks</nom>
     <telephone>02 51 36 46 00</telephone>
@@ -5911,8 +5911,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>9 boulevard Guitton</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent IFOM</nom>
     <telephone>02 40 47 67 28</telephone>
@@ -5928,8 +5928,8 @@
       <ville>Nantes</ville>
       <voie>7 boulevard des Martyrs Nantais</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole de puéricultrices - Centre hospitalier régional</nom>
     <telephone>02 40 84 68 52</telephone>
@@ -5945,8 +5945,8 @@
       <ville>Nantes</ville>
       <voie>0 route de Saint-Sébastien</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CESI</sigle>
     <nom>CESI Ecole d'ingénieurs - campus du Mans</nom>
     <telephone>02 43 21 40 20</telephone>
@@ -5962,8 +5962,8 @@
       <ville>Le Mans</ville>
       <voie>4 avenue Frédéric Auguste Bartholdi</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers du pôle Santé Sarthe et Loir</nom>
     <telephone>02 44 71 34 43</telephone>
@@ -5979,8 +5979,8 @@
       <ville>La Flèche</ville>
       <voie>La Chasse du Point du jour, Le Bailleul</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Olivier Guichard</nom>
     <telephone>02 40 24 93 10</telephone>
@@ -5996,8 +5996,8 @@
       <ville>Guérande</ville>
       <voie>2 rue de la Fauvette</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Albert Camus</nom>
     <telephone>02 51 80 64 64</telephone>
@@ -6013,8 +6013,8 @@
       <ville>Nantes</ville>
       <voie>1 rue Etienne Coutan</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure de la performance</nom>
     <telephone>02 43 50 25 85</telephone>
@@ -6030,8 +6030,8 @@
       <ville>Le Mans</ville>
       <voie>7 avenue des Platanes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IREO</sigle>
     <nom>IREO de Saint-Florent-des Bois</nom>
     <telephone>02 51 31 99 99</telephone>
@@ -6047,8 +6047,8 @@
       <ville>Rives de l'Yon</ville>
       <voie>1 chemin d'Avaud, Saint-Florent des bois</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École supérieure angevine d'informatique et de productique  - site d'Angers</nom>
     <telephone>02 41 96 65 10</telephone>
@@ -6064,8 +6064,8 @@
       <ville>Saint-Barthélémy-d'Anjou</ville>
       <voie>8 rue du 8 mai 1945</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Cnam-Iforis Institut de formation et de recherche en intervention sociale</nom>
     <telephone>02 41 22 17 30</telephone>
@@ -6081,8 +6081,8 @@
       <ville>Angers</ville>
       <voie>4 rue Georges Morel</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole pour l'informatique et les nouvelles technologies</nom>
     <telephone>01 44 08 00 11</telephone>
@@ -6098,8 +6098,8 @@
       <ville>Nantes</ville>
       <voie>5 rue d'Alger</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA iA l'intelligence apprentie - campus Saint-Nazaire</nom>
     <telephone>02 28 54 17 01</telephone>
@@ -6115,8 +6115,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>6 rue Michel Ange, Maison de l'apprentissage</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Le Pont supérieur</nom>
     <telephone>02 40 89 90 50</telephone>
@@ -6132,8 +6132,8 @@
       <ville>Nantes</ville>
       <voie>4 bis rue Gaëtan Rondeau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>BTP</sigle>
     <nom>BTP CFA Sarthe</nom>
     <telephone>02 43 39 92 92</telephone>
@@ -6149,8 +6149,8 @@
       <ville>Le Mans</ville>
       <voie>5 rue de Ribay</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel privé Le Masle</nom>
     <telephone>02 40 22 41 85</telephone>
@@ -6166,8 +6166,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>9 rue Dufrexou</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR Les Forges à La Ferté-Bernard</nom>
     <telephone>02 43 93 60 89</telephone>
@@ -6183,8 +6183,8 @@
       <ville>La Ferté-Bernard</ville>
       <voie>Route de Préval</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR sciences et techniques des activités physiques et sportives</nom>
     <telephone>02 51 83 72 00</telephone>
@@ -6200,8 +6200,8 @@
       <ville>Nantes</ville>
       <voie>5 bis boulevard Guy Mollet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Saint-Michel</nom>
     <telephone>02 51 64 62 62</telephone>
@@ -6217,8 +6217,8 @@
       <ville>Saint-Laurent-sur-Sèvre</ville>
       <voie>2 rue du calvaire</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA iA l'intelligence apprentie - campus La Roche-sur-Yon</nom>
     <telephone>07 63 57 41 28</telephone>
@@ -6234,8 +6234,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>8 boulevard d'Angleterre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Savary de Mauléon</nom>
     <telephone>02 51 95 11 47</telephone>
@@ -6251,8 +6251,8 @@
       <ville>Les Sables-d'Olonne</ville>
       <voie>8 avenue de Bretagne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel François Arago</nom>
     <telephone>02 40 74 25 10</telephone>
@@ -6268,8 +6268,8 @@
       <ville>Nantes</ville>
       <voie>3 rue du Recteur Schmitt</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Les Bourdonnières</nom>
     <telephone>02 40 34 02 60</telephone>
@@ -6285,8 +6285,8 @@
       <ville>Nantes</ville>
       <voie>Rue de la Perrière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Antenne de Cholet - IUT d'Angers</nom>
     <telephone>02 44 68 88 75</telephone>
@@ -6302,8 +6302,8 @@
       <ville>Cholet</ville>
       <voie>boulevard Pierre Lecoq</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Faculté des sciences</nom>
     <telephone>02 41 81 65 71</telephone>
@@ -6319,8 +6319,8 @@
       <ville>Angers</ville>
       <voie>3 place André Leroy</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA Martello - Métiers de l'électricité</nom>
     <telephone>02 40 40 66 67</telephone>
@@ -6336,8 +6336,8 @@
       <ville>Nantes</ville>
       <voie>3 boulevard du Bâtonnier Cholet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR de sciences et techniques</nom>
     <telephone>02 51 12 52 12</telephone>
@@ -6353,8 +6353,8 @@
       <ville>Nantes</ville>
       <voie>2 rue de la Houssiniere</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Arts et métiers Paris - Institut de Laval</nom>
     <telephone>02 43 65 34 11</telephone>
@@ -6370,8 +6370,8 @@
       <ville>Changé</ville>
       <voie>rue Marie Curie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>GRAFIPOLIS</sigle>
     <nom>GRAFIPOLIS</nom>
     <telephone>02 40 50 24 22</telephone>
@@ -6387,8 +6387,8 @@
       <ville>Nantes</ville>
       <voie>1 place Albert Camus</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur européen de formation par l'action</nom>
     <telephone>02 40 33 30 83</telephone>
@@ -6404,8 +6404,8 @@
       <ville>Nantes</ville>
       <voie>8 rue Armand Brossard, Campus de Nantes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR Carquefou</nom>
     <telephone>02 40 52 79 82</telephone>
@@ -6421,8 +6421,8 @@
       <ville>Carquefou</ville>
       <voie>avenue Cugnot, La Charmeliere</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Talensac-Jeanne Bernard</nom>
     <telephone>02 51 72 95 10</telephone>
@@ -6438,8 +6438,8 @@
       <ville>Nantes</ville>
       <voie>8 rue Talensac</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée professionnel Louis-Jacques Goussier</nom>
     <telephone>02 40 32 44 00</telephone>
@@ -6455,8 +6455,8 @@
       <ville>Rezé</ville>
       <voie>0 rue du Château de Rezé</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Campus connecté du choletais</nom>
     <telephone>02 44 09 26 60</telephone>
@@ -6472,8 +6472,8 @@
       <ville>Cholet</ville>
       <voie>2 boulevard Pierre Lecoq</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers</nom>
     <telephone>02 40 55 88 25</telephone>
@@ -6489,8 +6489,8 @@
       <ville>Châteaubriant</ville>
       <voie>Rue François 1er</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut régional de formation aux métiers de la rééducation et de la réadaptation des Pays de la Loire</nom>
     <telephone>02 51 79 09 79</telephone>
@@ -6506,8 +6506,8 @@
       <ville>Saint-Sébastien-sur-Loire</ville>
       <voie>4 rue de la Baugerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée général et technologique privé Saint-Félix - La Salle</nom>
     <telephone>02 44 76 35 00</telephone>
@@ -6523,8 +6523,8 @@
       <ville>Nantes</ville>
       <voie>7 rue du ballet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IRSS</sigle>
     <nom>IRSS</nom>
     <telephone>02 41 62 19 97</telephone>
@@ -6540,8 +6540,8 @@
       <ville>Angers</ville>
       <voie>8 rue Saint Léonard</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Jean Monnet</nom>
     <telephone>02 51 64 80 00</telephone>
@@ -6557,8 +6557,8 @@
       <ville>Les Herbiers</ville>
       <voie>7 rue de la Demoiselle</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Pôle formation UIMM Bretagne - site de  Saint-Nicolas-de-Redon</nom>
     <telephone>02 23 10 04 69</telephone>
@@ -6574,8 +6574,8 @@
       <ville>Saint-Nicolas-de-Redon</ville>
       <voie>5 rue Tabago</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur d'enseignement et recherche production automatisée Cnam</nom>
     <telephone>02 41 66 10 66</telephone>
@@ -6591,8 +6591,8 @@
       <ville>Angers</ville>
       <voie>5 rue de la Barre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint-Joseph du Loquidy</nom>
     <telephone>02 40 74 03 12</telephone>
@@ -6608,8 +6608,8 @@
       <ville>Nantes</ville>
       <voie>3 boulevard Michelet</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA de la coiffure et de l'esthétique</nom>
     <telephone>02 40 71 06 50</telephone>
@@ -6625,8 +6625,8 @@
       <ville>Saint-Herblain</ville>
       <voie>3 rue Vasco de Gama</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Saint-Charles-Sainte-Croix</nom>
     <telephone>02 43 50 16 70</telephone>
@@ -6642,8 +6642,8 @@
       <ville>Le Mans</ville>
       <voie>5 rue Antoine de Saint Exupéry</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Sup'3A</nom>
     <telephone>02 43 23 50 57</telephone>
@@ -6659,8 +6659,8 @@
       <ville>La Chapelle-Saint-Aubin</ville>
       <voie>lieu dit Bas-Palluau, zone ActiNord</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Le Mans sud</nom>
     <telephone>02 43 86 24 16</telephone>
@@ -6676,8 +6676,8 @@
       <ville>Le Mans</ville>
       <voie>8 rue Henri Champion</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR ESTHUA tourisme et culture - antenne site de Saumur</nom>
     <telephone>02 44 68 81 90</telephone>
@@ -6693,8 +6693,8 @@
       <ville>Saumur</ville>
       <voie>4 bis rue Montcel</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IUT</sigle>
     <nom>IUT du Mans</nom>
     <telephone>02 43 83 34 11</telephone>
@@ -6710,8 +6710,8 @@
       <ville>Le Mans</ville>
       <voie>Avenue Olivier Messiaen</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Eurespace formation professionnelle CCI du Choletais</nom>
     <telephone>02 41 20 49 00</telephone>
@@ -6727,8 +6727,8 @@
       <ville>Cholet</ville>
       <voie>rue Eugène Brémond</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée général et technologique Saint Gabriel Saint Michel</nom>
     <telephone>02 51 64 62 62</telephone>
@@ -6744,8 +6744,8 @@
       <ville>Saint-Laurent-sur-Sèvre</ville>
       <voie>2 rue du Calvaire</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée de Narcé</nom>
     <telephone>02 41 54 34 33</telephone>
@@ -6761,8 +6761,8 @@
       <ville>Loire-Authion</ville>
       <voie>Route de Narcé, Brain-sur-l'Authion</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA Spectacles et Techniques Association Française de Formation</nom>
     <telephone>02 40 25 28 36</telephone>
@@ -6778,8 +6778,8 @@
       <ville>Carquefou</ville>
       <voie>7 rue des petites industries</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur de management des entreprises</nom>
     <telephone>02 40 50 56 37</telephone>
@@ -6795,8 +6795,8 @@
       <ville>Nantes</ville>
       <voie>6 rue du Moulin de la Halvêque</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>GRETA</sigle>
     <nom>GRETA - site de Jean Moulin</nom>
     <telephone>02 40 14 56 56</telephone>
@@ -6812,8 +6812,8 @@
       <ville>Nantes</ville>
       <voie>4 boulevard Jean Moulin, immeuble Bellevue - Jean Moulin</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Diginamic - Saint-Herblain</nom>
     <telephone>02 85 67 04 05</telephone>
@@ -6829,8 +6829,8 @@
       <ville>Saint-Herblain</ville>
       <voie>5 rue Jacques Brel</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut français du cheval et de l'équitation</nom>
     <telephone>02 41 53 50 50</telephone>
@@ -6846,8 +6846,8 @@
       <ville>Saumur</ville>
       <voie>Saint- Hilaire</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Sacré-Coeur La Salle - site enseignement supérieur</nom>
     <telephone>02 41 81 42 01</telephone>
@@ -6863,8 +6863,8 @@
       <ville>Angers</ville>
       <voie>20-22 rue Fleming</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée technologique et professionnel la Providence</nom>
     <telephone>02 41 75 28 00</telephone>
@@ -6880,8 +6880,8 @@
       <ville>Cholet</ville>
       <voie>3 avenue Gustave Ferrié</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure des métiers des agences d'emploi</nom>
     <telephone>02 41 20 59 93</telephone>
@@ -6897,8 +6897,8 @@
       <ville>Angers</ville>
       <voie>2 avenue De Lattre de Tassigny</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LPA</sigle>
     <nom>LPA de Nantes Grand Blottereau</nom>
     <telephone>02 40 49 39 98</telephone>
@@ -6914,8 +6914,8 @@
       <ville>Nantes</ville>
       <voie>4 chemin du Ponceau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>LEPP</sigle>
     <nom>LEPP Nazareth</nom>
     <telephone>02 43 44 44 30</telephone>
@@ -6931,8 +6931,8 @@
       <ville>Loir en Vallée</ville>
       <voie>7 rue de l'Abbé Dujarie, Ruillé sur Loir</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Saint-Joseph - La Salle</nom>
     <telephone>02 43 39 16 80</telephone>
@@ -6948,8 +6948,8 @@
       <ville>Pruillé-le-Chétif</ville>
       <voie>Le Pizieux</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Saint-Louis</nom>
     <telephone>02 41 51 11 36</telephone>
@@ -6965,8 +6965,8 @@
       <ville>Saumur</ville>
       <voie>7 rue d'Alsace</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Chevrollier</nom>
     <telephone>02 41 80 96 11</telephone>
@@ -6982,8 +6982,8 @@
       <ville>Angers</ville>
       <voie>2 rue Adrien Recouvreur</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole polytechnique universitaire de l'université de Nantes - site de Nantes</nom>
     <telephone>02 40 68 32 00</telephone>
@@ -6999,8 +6999,8 @@
       <ville>Nantes</ville>
       <voie>rue Christian Pauc</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA Nantes Terre Atlantique</nom>
     <telephone>02 40 94 86 08</telephone>
@@ -7016,8 +7016,8 @@
       <ville>Saint-Herblain</ville>
       <voie>5 rue de La Syonnière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR Institut rural  des Mauges</nom>
     <telephone>02 41 63 02 04</telephone>
@@ -7033,8 +7033,8 @@
       <ville>Beaupréau-en-Mauges</ville>
       <voie>8 rue des cèdres, Beaupréau</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>École nationale vétérinaire, agroalimentaire et de l'alimentation de Nantes-Atlantique Cursus Vétérinaire</nom>
     <telephone>02 40 68 77 77</telephone>
@@ -7050,8 +7050,8 @@
       <ville>Nantes</ville>
       <voie>la Chantrerie, Atlanpole</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Victor Hugo</nom>
     <telephone>02 43 07 11 00</telephone>
@@ -7067,8 +7067,8 @@
       <ville>Château-Gontier-sur-Mayenne</ville>
       <voie>4 rue du Gal Lemonnier</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Conservatoire d'art dramatique et de danse</nom>
     <telephone>02 43 47 38 62</telephone>
@@ -7084,8 +7084,8 @@
       <ville>Le Mans</ville>
       <voie>4 Grande Rue</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR Droit économie et gestion - Antenne site de Cholet</nom>
     <telephone>02 41 49 22 50</telephone>
@@ -7101,8 +7101,8 @@
       <ville>Cholet</ville>
       <voie>2 boulevard Pierre Lecocq</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Ecole supérieure de la banque Angers</nom>
     <telephone>02 40 48 79 00</telephone>
@@ -7118,8 +7118,8 @@
       <ville>Angers</ville>
       <voie>3 allée François Mitterrand</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut national supérieur du professorat et de l'éducation</nom>
     <telephone>02 53 59 23 00</telephone>
@@ -7135,8 +7135,8 @@
       <ville>Nantes</ville>
       <voie>4 chemin de Launay-Violette</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>MFR</sigle>
     <nom>MFR de Château-d'Olonne</nom>
     <telephone>02 51 23 67 80</telephone>
@@ -7152,8 +7152,8 @@
       <ville>Les Sables-d'Olonne</ville>
       <voie>0 rue du Dr Schweitzer, Château-d'Olonne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Marguerite Yourcenar</nom>
     <telephone>02 43 84 02 60</telephone>
@@ -7169,8 +7169,8 @@
       <ville>Le Mans</ville>
       <voie>2 rue Du Miroir</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>IFACOM</sigle>
     <nom>IFACOM - MFR La Ferrière</nom>
     <telephone>02 51 98 42 29</telephone>
@@ -7186,8 +7186,8 @@
       <ville>La Ferrière</ville>
       <voie>1 Le Plessis Bergeret</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>EICnam Pays-de-la-Loire - site de La Roche-sur-Yon</nom>
     <telephone>02 51 44 98 28</telephone>
@@ -7203,8 +7203,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>impasse Périclès</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>L'École de design Nantes Atlantique</nom>
     <telephone>02 51 13 50 70</telephone>
@@ -7220,8 +7220,8 @@
       <ville>Nantes</ville>
       <voie>Rue Christian Pauc, Atlanpole La chantrerie</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR d'Histoire, histoire de l'art et archéologie</nom>
     <telephone>02 40 14 11 03</telephone>
@@ -7237,8 +7237,8 @@
       <ville>Nantes</ville>
       <voie>Chemin de la Censive du Tertre</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>MFR-IR Saint-Fulgent</nom>
     <telephone>02 51 42 63 90</telephone>
@@ -7254,8 +7254,8 @@
       <ville>Saint-Fulgent</ville>
       <voie>4 rue Jules Verne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en soins infirmiers</nom>
     <telephone>02 51 36 62 07</telephone>
@@ -7271,8 +7271,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>3 rue du Maréchal Koenig</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Notre-Dame d'Espérance</nom>
     <telephone>02 40 01 81 82</telephone>
@@ -7288,8 +7288,8 @@
       <ville>Saint-Nazaire</ville>
       <voie>5 rue du Bois Savary</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée du pays de Retz</nom>
     <telephone>02 40 82 40 19</telephone>
@@ -7305,8 +7305,8 @@
       <ville>Pornic</ville>
       <voie>1 rue Georges Charpak</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ESSCA</sigle>
     <nom>ESSCA école de management</nom>
     <telephone>02 41 73 47 47</telephone>
@@ -7322,8 +7322,8 @@
       <ville>Angers</ville>
       <voie>1 rue Joseph Lakanal</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UFR</sigle>
     <nom>UFR ESTHUA tourisme et culture - antenne site de Cholet</nom>
     <telephone>02 41 22 69 50</telephone>
@@ -7339,8 +7339,8 @@
       <ville>Cholet</ville>
       <voie>Boulevard Pierre Lecoq</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Notre-Dame du Roc</nom>
     <telephone>02 51 47 74 74</telephone>
@@ -7356,8 +7356,8 @@
       <ville>La Roche-sur-Yon</ville>
       <voie>Rue Charlemagne</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Sainte-Marie - ESUPEC</nom>
     <telephone>02 41 49 16 50</telephone>
@@ -7373,8 +7373,8 @@
       <ville>Cholet</ville>
       <voie>3 rue Henri Duré</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut supérieur du commerce automobile du Mans ISCAM</nom>
     <telephone>02 43 84 01 32</telephone>
@@ -7390,8 +7390,8 @@
       <ville>Le Mans</ville>
       <voie>2 rue Henri Champion</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation aux affaires et à la gestion</nom>
     <telephone>02 85 52 64 41</telephone>
@@ -7407,8 +7407,8 @@
       <ville>Nantes</ville>
       <voie>6 boulevard du Général de Gaulle, Campus de Nantes</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut de formation en masso-kinésithérapie - Centre hospitalier - Laval</nom>
     <telephone>02 43 91 65 00</telephone>
@@ -7424,8 +7424,8 @@
       <ville>Laval</ville>
       <voie>3 rue du Haut Rocher</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>e-artsup</nom>
     <telephone>01 44 08 00 05</telephone>
@@ -7441,8 +7441,8 @@
       <ville>Nantes</ville>
       <voie>16bis-18 rue de Flandres Dunkerque</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA AGRILIA Formation - site Les Trinottières</nom>
     <telephone>02 41 95 73 86</telephone>
@@ -7458,8 +7458,8 @@
       <ville>Montreuil-sur-Loir</ville>
       <voie>Les Trinottières</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée Charles Péguy</nom>
     <telephone>02 40 54 48 00</telephone>
@@ -7475,8 +7475,8 @@
       <ville>Clisson</ville>
       <voie>3 rue de la Sèvre - Gorges</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Centre de formation et de promotion des MFR de la Ferrière</nom>
     <telephone>02 51 98 41 44</telephone>
@@ -7492,8 +7492,8 @@
       <ville>La Ferrière</ville>
       <voie>2 Le Plessis Bergeret</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>CFA</sigle>
     <nom>CFA de la CCI de Maine-et-Loire - Espace formation du saumurois</nom>
     <telephone>02 41 83 53 53</telephone>
@@ -7509,8 +7509,8 @@
       <ville>Saumur</ville>
       <voie>Square Balzac, Espace formation du Saumurois</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée de l'Immaculée Conception</nom>
     <telephone>02 43 59 23 24</telephone>
@@ -7526,8 +7526,8 @@
       <ville>Laval</ville>
       <voie>5 rue Crossardière</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Lycée polyvalent Raphaël Elizé</nom>
     <telephone>02 43 62 46 50</telephone>
@@ -7543,8 +7543,8 @@
       <ville>Sablé-sur-Sarthe</ville>
       <voie>6 rue Saint-Denis</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle/>
     <nom>Institut des hautes études ostéopathiques</nom>
     <telephone>02 28 07 29 28</telephone>
@@ -7560,8 +7560,8 @@
       <ville>Saint-Herblain</ville>
       <voie>5 boulevard Marcel Paul, Parc de l'Angevinière - Bâtiment F</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>ISEG</sigle>
     <nom>ISEG - Digital Marketing and Communication School</nom>
     <telephone>02 40 89 07 52</telephone>
@@ -7577,8 +7577,8 @@
       <ville>Nantes</ville>
       <voie>8 rue de Bréa</voie>
     </adresse>
-  </etablissements>
-  <etablissements>
+  </Etablissement>
+  <Etablissement>
     <sigle>UCO</sigle>
     <nom>UCO ANGERS</nom>
     <telephone>0245784554</telephone>
@@ -7600,5 +7600,5 @@
       <intitule>Master MASHS</intitule>
       <id_f>49</id_f>
     </Liste_De_Formations>
-  </etablissements>
+  </Etablissement>
 </etablissements>

@@ -9,7 +9,6 @@ import model.*;
 import org.bson.Document;
 import model.Adresse;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 
@@ -19,11 +18,9 @@ public class EtablissementDao extends Dao<Etablissement> {
     MongoCollection<Document> collection = database.getCollection("etablissement");
 
 
-
-
-    @Override
-    public boolean create(Etablissement obj) {
+    private Document generateDocument(Etablissement obj){
         Document document = new Document();
+
         document.put("id_Eta", obj.getId_Eta());
         document.put("sigle", obj.getSigle());
         document.put("nom", obj.getNom());
@@ -91,25 +88,10 @@ public class EtablissementDao extends Dao<Etablissement> {
         }
         document.put("Liste_De_Formations", formations);
 
-        collection.insertOne(document);
-      //  System.out.println("Etablissement créer avec succès !");
-        return true;
+        return document;
     }
 
-    @Override
-    public boolean delete(Etablissement obj) {
-        return false;
-    }
-
-    @Override
-    public boolean update(Etablissement obj) {
-        return false;
-    }
-
-    @Override
-    public Etablissement find(Etablissement obj) {
-        //prblm ici
-        Document document = collection.find(Filters.eq("id_Eta", obj.getId_Eta())).first();
+    private Etablissement generateObject(Document document){
 
         Document adrDocument = (Document) document.get("adresse");
         Adresse adresse = new Adresse(
@@ -181,12 +163,36 @@ public class EtablissementDao extends Dao<Etablissement> {
         );
 
         return etablissement;
+
+
+
     }
 
 
+    @Override
+    public boolean create(Etablissement obj) {
+        collection.insertOne(generateDocument(obj));
+      //  System.out.println("Etablissement créer avec succès !");
+        return true;
+    }
 
+    @Override
+    public boolean delete(Etablissement obj) {
+        collection.deleteOne(Filters.eq("id_Eta", obj.getId_Eta()));
+        return true;
+    }
 
+    @Override
+    public boolean update(Etablissement obj) {
+        collection.findOneAndReplace(Filters.eq("id_Eta", obj.getId_Eta()), generateDocument(obj));
+        return true;
+    }
 
+    @Override
+    public Etablissement find(Etablissement obj) {
+        Document document = collection.find(Filters.eq("id_Eta", obj.getId_Eta())).first();
+        return generateObject(document);
+    }
 
     @Override
     public ArrayList<Etablissement> findAll() {
@@ -195,81 +201,7 @@ public class EtablissementDao extends Dao<Etablissement> {
         MongoCursor<Document> cursor = documents.iterator();
         while(cursor.hasNext()){
             Document document = cursor.next();
-
-
-            Document adrDocument = (Document) document.get("adresse");
-            Adresse adresse = new Adresse(
-                    adrDocument.getInteger("numero"),
-                    adrDocument.getString("voie"),
-                    adrDocument.getString("ville"),
-                    adrDocument.getInteger("codePostal"),
-                    adrDocument.getString("departement"),
-                    adrDocument.getDouble("longitude"),
-                    adrDocument.getDouble("latitude")
-            );
-
-            ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
-            for (Document etudDoc : (ArrayList<Document>) document.get("Liste_Etudiant")) {
-                Document adretDocument = (Document) document.get("adresse");
-                Adresse adresseet = new Adresse(
-                        adretDocument.getInteger("numero"),
-                        adretDocument.getString("voie"),
-                        adretDocument.getString("ville"),
-                        adretDocument.getInteger("codePostal"),
-                        adretDocument.getString("departement"),
-                        adretDocument.getDouble("longitude"),
-                        adretDocument.getDouble("latitude")
-                );
-
-                Document formDocument = (Document) document.get("formation");
-                Formation formation = new Formation(
-                        formDocument.getInteger("id_F"),
-                        formDocument.getString("Intitule"),
-                        (ArrayList<String>) formDocument.get("ListeDisciplines")
-                );
-
-                Etudiant etu = new Etudiant(
-                        etudDoc.getInteger("id_E"),
-                        etudDoc.getString("nom"),
-                        etudDoc.getString("prenom"),
-                        adresseet,
-                        formation,
-                        etudDoc.getString("present")
-
-                );
-                etudiants.add(etu);
-            }
-
-            ArrayList<Formation> formations = new ArrayList<Formation>();
-            for (Document forDoc : (ArrayList<Document>) document.get("Liste_De_Formations")) {
-                Formation formation = new Formation(
-                        forDoc.getInteger("id_F"),
-                        forDoc.getString("Intitule"),
-                        (ArrayList<String>) forDoc.get("ListeDisciplines")
-                );
-                formations.add(formation);
-            }
-
-
-            Etablissement etablissement = new Etablissement(
-                    document.getString("id_E"),
-                    document.getString("sigle"),
-                    document.getString("nom"),
-                    document.getString("telephone"),
-                    document.getString("TypeEtablissement"),
-                    document.getString("statut"),
-                    document.getString("Universite_de_Rattachement"),
-                    adresse,
-                    etudiants,
-                    (ArrayList<String>) document.get("Liste_De_Diplome"),
-                    formations
-
-            );
-
-
-            Etablissements.add(etablissement);
-
-
+            Etablissements.add(generateObject(document));
         }
         return Etablissements;
     }

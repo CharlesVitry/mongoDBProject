@@ -5,7 +5,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Filters;
 import model.Adresse;
-import model.Etudiant;
 import org.bson.Document;
 
 import java.util.ArrayList;
@@ -14,9 +13,8 @@ import java.util.ArrayList;
 public class AdresseDao extends Dao<Adresse>{
 
 	MongoCollection<Document> collection = database.getCollection("adresse");
-	
-	@Override
-	public boolean create(Adresse obj) {
+
+	private Document generateDocument(Adresse obj){
 		Document document = new Document();
 		document.put("numero", obj.getNumero());
 		document.put("voie", obj.getVoie());
@@ -26,7 +24,38 @@ public class AdresseDao extends Dao<Adresse>{
 		document.put("longitude", obj.getLongitude());
 		document.put("latitude", obj.getLatitude());
 
-		collection.insertOne(document);
+
+		return document;
+	}
+
+	private Adresse generateObject(Document document){
+		Adresse adresse = new Adresse(
+				document.getInteger("numero"),
+				document.getString("voie"),
+				document.getString("ville"),
+				document.getInteger("codePostal"),
+				document.getString("departement"),
+				document.getDouble("longitude"),
+				document.getDouble("latitude")
+		);
+		return adresse;
+	}
+
+
+
+
+	@Override
+	public boolean create(Adresse obj) {
+//		Document document = new Document();
+//		document.put("numero", obj.getNumero());
+//		document.put("voie", obj.getVoie());
+//		document.put("ville", obj.getVille());
+//		document.put("codePostal", obj.getCodePostal());
+//		document.put("departement", obj.getDepartement());
+//		document.put("longitude", obj.getLongitude());
+//		document.put("latitude", obj.getLatitude());
+
+		collection.insertOne(generateDocument(obj));
 		//System.out.println("Adresse créé avec succès !");
 		return true;
 	}
@@ -46,17 +75,17 @@ public class AdresseDao extends Dao<Adresse>{
 	@Override
 	public Adresse find(Adresse adr) {
 		Document document = collection.find(Filters.eq("numero", adr.getNumero())).first();
-		Adresse adresse = new Adresse(
-				document.getInteger("numero"),
-				document.getString("voie"),
-				document.getString("ville"),
-				document.getInteger("codePostal"),
-				document.getString("departement"),
-				document.getDouble("longitude"),
-				document.getDouble("latitude")
-		);
-		Document adrDocument = (Document) document.get("adresse");
-		return adr;
+//		Adresse adresse = new Adresse(
+//				document.getInteger("numero"),
+//				document.getString("voie"),
+//				document.getString("ville"),
+//				document.getInteger("codePostal"),
+//				document.getString("departement"),
+//				document.getDouble("longitude"),
+//				document.getDouble("latitude")
+//		);
+	//	Document adrDocument = (Document) document.get("adresse");
+		return generateObject(document);
 	}
 
 	@Override
@@ -66,16 +95,16 @@ public class AdresseDao extends Dao<Adresse>{
 		MongoCursor<Document> cursor = documents.iterator();
 		while(cursor.hasNext()){
 			Document document = cursor.next();
-			Adresse adresse = new Adresse(
-					document.getInteger("numero"),
-					document.getString("voie"),
-					document.getString("ville"),
-					document.getInteger("codePostal"),
-					document.getString("departement"),
-					document.getDouble("longitude"),
-					document.getDouble("latitude")
-			);
-			adresses.add(adresse);
+//			Adresse adresse = new Adresse(
+//					document.getInteger("numero"),
+//					document.getString("voie"),
+//					document.getString("ville"),
+//					document.getInteger("codePostal"),
+//					document.getString("departement"),
+//					document.getDouble("longitude"),
+//					document.getDouble("latitude")
+//			);
+			adresses.add(generateObject(document));
 		}
 		return adresses;
 	}

@@ -21,52 +21,49 @@ import java.util.ArrayList;
 public class Utils {
 
 
-
-    public static ArrayList<String> Liste_de_Cours_Etudiant(Etudiant obj){
-        ArrayList<String> formations_Etudiant  = obj.getFormation().getListeDisciplines();
+    public static ArrayList<String> Liste_de_Cours_Etudiant(Etudiant obj) {
+        ArrayList<String> formations_Etudiant = obj.getFormation().getListeDisciplines();
         return formations_Etudiant;
     }
 
-    public static void Affichage_liste_Etudiants(Dao<Etudiant> etudiantDao){
-        for (Etudiant e:etudiantDao.findAll()){
+    public static void Affichage_liste_Etudiants(Dao<Etudiant> etudiantDao) {
+        for (Etudiant e : etudiantDao.findAll()) {
             System.out.println(e.toString());
         }
 
     }
-    public static void Affichage_liste_Adresses(Dao<Adresse> adresseDao ){
-        for (Adresse a:adresseDao.findAll()){
+
+    public static void Affichage_liste_Adresses(Dao<Adresse> adresseDao) {
+        for (Adresse a : adresseDao.findAll()) {
             System.out.println(a);
         }
     }
 
-    public static void Affichage_liste_Etablissements(   Etablissements etablissements ){
-        for (Etablissement e:etablissements.getEtablissements()){
+    public static void Affichage_liste_Etablissements(Etablissements etablissements) {
+        for (Etablissement e : etablissements.getEtablissements()) {
             System.out.println(e.toString());
         }
 
     }
 
-    public static void Affichage_liste_Formations(Dao<Formation> formationDao ){
-        for (Formation f:formationDao .findAll()){
+    public static void Affichage_liste_Formations(Dao<Formation> formationDao) {
+        for (Formation f : formationDao.findAll()) {
             System.out.println(f);
         }
     }
 
-    public static void Affichage_liste_etudiants(Dao<Etudiant> etudiantDao){
-        for (Etudiant e:etudiantDao.findAll()){
+    public static void Affichage_liste_etudiants(Dao<Etudiant> etudiantDao) {
+        for (Etudiant e : etudiantDao.findAll()) {
             System.out.println(e);
         }
     }
 
 
-
-    public static boolean Jeux_De_Donnees_Ajouts(Dao<Adresse> adresseDao,Dao<Etudiant> etudiantDao,Dao<Formation> formationDao){
-
-
+    public static boolean Jeux_De_Donnees_Ajouts(Dao<Adresse> adresseDao, Dao<Etudiant> etudiantDao, Dao<Formation> formationDao) {
 
 
         // 10 formations
-        Formation form1 = new Formation(1, "MathInfo",new ArrayList<String>());
+        Formation form1 = new Formation(1, "MathInfo", new ArrayList<String>());
         Formation form2 = new Formation(2, "Génie civil", new ArrayList<String>());
         Formation form3 = new Formation(3, "Physique", new ArrayList<String>());
         Formation form4 = new Formation(4, "Drosophile", new ArrayList<String>());
@@ -116,14 +113,14 @@ public class Utils {
         return true;
     }
 
-    public static boolean JsonAdd(Dao<Etablissement> etablissementDao){
-        try{
+    public static boolean JsonAdd(Dao<Etablissement> etablissementDao) {
+        try {
             BufferedReader br = new BufferedReader(new FileReader("etablissements.json"));
             String line;
-            while((line = br.readLine()) != null){
+            while ((line = br.readLine()) != null) {
                 BsonArray documents = BsonArray.parse(line);
                 System.out.println(documents);
-                for(BsonValue bson : documents.getValues()){
+                for (BsonValue bson : documents.getValues()) {
                     Document document = Document.parse(bson.toString());
                     Utils.LectureJSON_Etablissement(document, etablissementDao);
                 }
@@ -135,9 +132,8 @@ public class Utils {
         }
 
 
-
-
     }
+
     public static boolean isNumeric(String strNum) {
         if (strNum == null) {
             return false;
@@ -150,11 +146,11 @@ public class Utils {
         return true;
     }
 
-    private static boolean isStringUpperCase(String str){
+    private static boolean isStringUpperCase(String str) {
         char[] charArray = str.toCharArray();
 
-        for(int i=0; i < charArray.length; i++){
-            if( !Character.isUpperCase( charArray[i] ))
+        for (int i = 0; i < charArray.length; i++) {
+            if (!Character.isUpperCase(charArray[i]))
                 return false;
         }
 
@@ -162,23 +158,21 @@ public class Utils {
     }
 
 
+    public static void LectureJSON_Etablissement(Document document, Dao<Etablissement> etablissementDao) {
+        try {
+            //AJOUT ADRESSE
 
-    public static void LectureJSON_Etablissement(Document document, Dao<Etablissement> etablissementDao){
-        try{
-        //AJOUT ADRESSE
+            //récup des fields pour l'adresse
+            Document fields = (Document) document.get("fields");
 
-        //récup des fields pour l'adresse
-        Document fields = (Document) document.get("fields");
-
-        //Décomposition adresse
-           int numero = 0,cp = 0;
-           String voie = null,commune = null,departement = null;
-           double longitude = 0,latitude = 0;
-
+            //Décomposition adresse
+            int numero = 0, cp = 0;
+            String voie = null, commune = null, departement = null;
+            double longitude = 0, latitude = 0;
 
 
-            if ((String) fields.get("adresse") != null){
-                 commune = (String) fields.get("commune");
+            if ((String) fields.get("adresse") != null) {
+                commune = (String) fields.get("commune");
                 departement = (String) fields.get("departement");
                 longitude = (double) fields.get("longitude_x");
                 latitude = (double) fields.get("latitude_y");
@@ -205,10 +199,8 @@ public class Utils {
                     cp = 0;
                 }
             }
-            else{
-            }
 
-        //Décompostion du nom pour obtenir le SIGLE
+            //Décompostion du nom pour obtenir le SIGLE
             String nom_initial = (String) fields.get("nom");
             String[] nom_parties = nom_initial.split("\\ ");
 
@@ -216,32 +208,29 @@ public class Utils {
             String nom;
 
             //condition pour détecter si l'adresse possède un numéro de rue
-            if (isStringUpperCase(nom_parties[0])){
+            if (isStringUpperCase(nom_parties[0])) {
                 sigle = (nom_parties[0]);
                 //nom = nom_initial.substring(nom_parties[0].length());
                 nom = nom_initial;
             }
-            else{
-
+            else {
                 sigle = "";
                 nom = nom_initial;
             }
 
 
-
-
             //Déclaration de l'adresse
-            Adresse ad1 = new Adresse( numero,
-                voie,
+            Adresse ad1 = new Adresse(numero,
+                    voie,
                     commune,
-               cp,
-                    departement ,
+                    cp,
+                    departement,
                     longitude,
-                latitude);
-       // adresseDao.create(ad1);
+                    latitude);
+            // adresseDao.create(ad1);
 
 
-        //AJOUT ETABLISSEMENT
+            //AJOUT ETABLISSEMENT
 
             ArrayList<Etudiant> etudiants = new ArrayList<>();
             ArrayList<String> diplomes = new ArrayList<>();
@@ -265,22 +254,15 @@ public class Utils {
         }
 
 
-
-
-
-
-
-
-
-
     }
+
     //créé classe etab
     public static void generateXml(Etablissements etablissements) throws JAXBException, FileNotFoundException, TransformerException {
         JAXBContext context = JAXBContext.newInstance(etablissements.getClass());
         Marshaller marshaller = context.createMarshaller();
         OutputStream cut = new FileOutputStream("src/etablissement.xml");
         DOMResult domResult = new DOMResult();
-        marshaller.marshal(etablissements,domResult);
+        marshaller.marshal(etablissements, domResult);
 
         Transformer transformer = TransformerFactory.newInstance().newTransformer();
 

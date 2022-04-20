@@ -54,7 +54,7 @@ public class FormationDAO extends Dao<Formation> {
 
     @Override
     public boolean update(Formation obj) {
-        collection.updateOne(Filters.eq("id_F", obj.getid_f()),generateDocument(obj));
+        collection.findOneAndReplace(Filters.eq("id_F", obj.getid_f()),generateDocument(obj));
         return true;
     }
 
