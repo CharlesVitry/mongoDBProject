@@ -281,9 +281,19 @@ public class Utils {
 
     public static void generateWithXSLtransformer() throws TransformerException, TransformerConfigurationException,
     SAXException, IOException	{
+        //méthode utilisé avant d'avoir un TD
+        /*
         TransformerFactory tFactory = TransformerFactory.newInstance();
         Transformer transformer = tFactory.newTransformer(new StreamSource("Transformation.xsl"));
         transformer.transform(new StreamSource("etablissement.xml"), new StreamResult("ResultatTransfo.html"));
+        */
+
+        TransformerFactory tFactory = TransformerFactory.newInstance();
+        Transformer transformer = tFactory.newTransformer(new StreamSource("src/transformation.xsl"));
+        transformer.transform(new StreamSource("etablissement.xml"), new StreamResult("EtablissementPageWeb.html"));
+
+
+
     }
 
 }
