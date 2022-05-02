@@ -62,16 +62,13 @@ public class App {
         Etudiant etudiant = new Etudiant(235488, "Charles", "Vitry", ad1, formation, "present");
         etudiantDao.create(etudiant);
 
-
-        etudiant = new Etudiant(235488, "Charles", "Vitry", ad1, formation, "abscent");
-        etudiantDao.update(etudiant);
-
         // De rajouter/modifier un établissement
         ArrayList<Etudiant> etudiants = new ArrayList<>();
         ArrayList<String> diplomes = new ArrayList<>();
 
         diplomes.add("Licences");
         diplomes.add("Master");
+        etudiants.add(etudiant);
 
         ArrayList<Formation> formations = new ArrayList<>();
         formations.add(formation);
@@ -79,6 +76,22 @@ public class App {
         Etablissement eta1 = new Etablissement("hf8ui91az", "UCO", "UCO ANGERS", "0245784554", "Université", "public", "Nantes", ad1, etudiants, diplomes,  formations);
         etablissementDao.create(eta1);
         Etablissements etablissements = new Etablissements(etablissementDao.findAll());
+
+
+        //Modifier un étudiant
+        etudiant = new Etudiant(235488, "Charles", "Vitry", ad1, formation, "abscent");
+        etudiantDao.update(etudiant);
+
+
+        System.out.println("====================ETUDIANT UPDATE AKA PROBLEMES====================================================");
+
+        //On a modifié l'étudiant sur "abscent", la liste contient un pointeur vers l'objet, mais lorsque l'on questionne l'établissement, l'update n'a pas été faite
+        System.out.println(eta1.getListe_Etudiant());
+
+        //Pourtant l'objet a bien été modifié
+        System.out.println(etudiant);
+        System.out.println("========================================================================================");
+
 
         // De rechercher un étudiant par numéro d’étudiant
         System.out.println("◉Rechercher un étudiant par numéro d’étudiant");

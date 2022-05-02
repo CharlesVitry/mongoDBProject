@@ -7594,6 +7594,25 @@
       <ville>Angers</ville>
       <voie>Rue Rabelaie</voie>
     </adresse>
+    <Liste_Etudiant>
+      <adresse>
+        <codePostal>49000</codePostal>
+        <departement>49</departement>
+        <latitude>49.7</latitude>
+        <longitude>49.3</longitude>
+        <numero>4</numero>
+        <ville>Angers</ville>
+        <voie>Rue Rabelaie</voie>
+      </adresse>
+      <formation>
+        <intitule>Master MASHS</intitule>
+        <id_f>49</id_f>
+      </formation>
+      <id_E>235488</id_E>
+      <nom>Charles</nom>
+      <prenom>Vitry</prenom>
+      <present>present</present>
+    </Liste_Etudiant>
     <Liste_De_Diplome>Licences</Liste_De_Diplome>
     <Liste_De_Diplome>Master</Liste_De_Diplome>
     <Liste_De_Formations>

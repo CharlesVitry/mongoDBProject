@@ -106,6 +106,8 @@ public class EtablissementDao extends Dao<Etablissement> {
 
         ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
         for (Document etudDoc : (ArrayList<Document>) document.get("Liste_Etudiant")) {
+
+            System.out.println(etudDoc);
             Document adretDocument = (Document) document.get("adresse");
             Adresse adresseet = new Adresse(
                     adretDocument.getInteger("numero"),
@@ -118,10 +120,19 @@ public class EtablissementDao extends Dao<Etablissement> {
             );
 
             Document formDocument = (Document) document.get("formation");
+            //System.out.println(formDocument);
+
+            ArrayList Disciplines_MIASHS = new ArrayList() {{
+                add("Classification Automatique");
+                add("Prévision sur  Séries Chronollogique");
+                add("Technologie XML et Bases de Données");
+            }};
+
             Formation formation = new Formation(
-                    formDocument.getInteger("id_F"),
-                    formDocument.getString("Intitule"),
-                    (ArrayList<String>) formDocument.get("ListeDisciplines")
+                    49, "Master MASHS", Disciplines_MIASHS
+                    //formDocument.getInteger("id_F"),
+                    //formDocument.getString("Intitule"),
+                  //  (ArrayList<String>) formDocument.get("ListeDisciplines")
             );
 
             Etudiant etu = new Etudiant(

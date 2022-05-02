@@ -96,7 +96,6 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     @Override
     public boolean update(Etudiant obj) {
-       // System.out.println(obj.getId_E());
      collection.findOneAndReplace(Filters.eq("id_E", obj.getId_E()), generateDocument(obj));
         return true;
     }
