@@ -149,6 +149,7 @@ public class App {
         Utils.generateWithXSLtransformer();
 
         //Demarrage Interface
+        /*
         try {
             Fenetre_Principal window = new Fenetre_Principal();
             window.frEtablissement.setVisible(true);
@@ -159,7 +160,7 @@ public class App {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+*/
 
 
 

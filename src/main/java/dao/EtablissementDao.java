@@ -8,6 +8,7 @@ import com.mongodb.client.model.Filters;
 import model.*;
 import org.bson.Document;
 import model.Adresse;
+import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 
@@ -179,6 +180,14 @@ public class EtablissementDao extends Dao<Etablissement> {
 
     }
 
+    /*
+    private boolean UpdateEtudiantArraylist(Etablissement obj){
+        obj.getListe_Etudiant();
+
+
+        return true;
+    }
+    */
 
     @Override
     public boolean create(Etablissement obj) {
@@ -195,7 +204,9 @@ public class EtablissementDao extends Dao<Etablissement> {
 
     @Override
     public boolean update(Etablissement obj) {
-        collection.findOneAndReplace(Filters.eq("id_Eta", obj.getId_Eta()), generateDocument(obj));
+      //  collection.findOneAndReplace(Filters.eq("id_Eta", obj.getId_Eta()), generateDocument(obj));
+        Bson Update = new Document("$set",generateDocument(obj));
+        collection.updateOne(Filters.eq("id_Eta", obj.getId_Eta()),Update);
         return true;
     }
 

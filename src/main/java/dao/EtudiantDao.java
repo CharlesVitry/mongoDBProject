@@ -8,6 +8,7 @@ import model.Etudiant;
 import model.Adresse;
 import model.Formation;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 
@@ -96,7 +97,9 @@ public class EtudiantDao extends Dao<Etudiant> {
 
     @Override
     public boolean update(Etudiant obj) {
-     collection.findOneAndReplace(Filters.eq("id_E", obj.getId_E()), generateDocument(obj));
+   //  collection.findOneAndReplace(Filters.eq("id_E", obj.getId_E()), generateDocument(obj));
+        Bson Update = new Document("$set",generateDocument(obj));
+        collection.updateOne(Filters.eq("id_E", obj.getId_E()),Update);
         return true;
     }
 

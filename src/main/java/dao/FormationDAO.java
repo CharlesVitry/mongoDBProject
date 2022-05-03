@@ -10,6 +10,7 @@ import model.Etudiant;
 import  model.Formation;
 import model.Etablissement;
 import org.bson.Document;
+import org.bson.conversions.Bson;
 
 import java.text.Normalizer;
 import java.util.ArrayList;
@@ -54,7 +55,10 @@ public class FormationDAO extends Dao<Formation> {
 
     @Override
     public boolean update(Formation obj) {
-        collection.findOneAndReplace(Filters.eq("id_F", obj.getid_f()),generateDocument(obj));
+     //   collection.findOneAndReplace(Filters.eq("id_F", obj.getid_f()),generateDocument(obj));
+        Bson Update = new Document("$set",generateDocument(obj));
+        collection.updateOne(Filters.eq("id_F", obj.getid_f()), Update);
+
         return true;
     }
 
