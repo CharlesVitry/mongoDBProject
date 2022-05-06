@@ -83,6 +83,7 @@ public class App {
         etudiantDao.update(etudiant);
 
 
+
         System.out.println("====================ETUDIANT UPDATE AKA PROBLEMES====================================================");
 
         //On a modifié l'étudiant sur "abscent", la liste contient un pointeur vers l'objet, mais lorsque l'on questionne l'établissement, l'update n'a pas été faite
@@ -149,7 +150,7 @@ public class App {
         Utils.generateWithXSLtransformer();
 
         //Demarrage Interface
-        /*
+
         try {
             Fenetre_Principal window = new Fenetre_Principal();
             window.frEtablissement.setVisible(true);
@@ -160,7 +161,8 @@ public class App {
         } catch (Exception e) {
             e.printStackTrace();
         }
-*/
+        Utils.OpenInWebBrowser("src/AffichageWeb/Accueil.html");
+
 
 
 

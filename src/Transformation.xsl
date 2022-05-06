@@ -1,140 +1,189 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:output
-    method="html"
-    encoding="UTF-8"
-    doctype-public="-//W3C//DTD HTML 4.01//EN"
-    doctype-system="http://www.w3.org/TR/html4/strict.dtd"
-    indent="yes"
-></xsl:output>
-
+    <xsl:output method="html" encoding="UTF-8" doctype-public="-//W3C//DTD HTML 4.01//EN" doctype-system="http://www.w3.org/TR/html4/strict.dtd" indent="yes"></xsl:output>
     <xsl:template match="/">
-        <html>
+        <html lang="fr">
             <head>
-                <title>Etablissements d'études supérieur Pays de la Loire</title>
+                <meta charset="utf-8"/>
+                <title>Etablissements d&apos;études supérieur Pays de la Loire</title>
                 <link type="text/css" rel="stylesheet" href="style.css"/>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+                <style>
+footer {
+background-color:  #505151
+;
+color: white;
+padding: 20px;
+}
+
+@media screen and (max-width: 750px) {
+.sidenav {
+height: auto;
+padding: 20px;
+}
+
+.row.content {height: 500px}
+
+.sidenav {
+padding-top: 15px;
+height: 100%;
+}
+
+footer {
+color: white;
+padding: 15px;
+}
+
+.row.content {height:auto;} 
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+}
+}
+</style>
             </head>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="Accueil.html">Etablissements </a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="Accueil.html">
+                                <span class="glyphicon glyphicon-home"></span> Accueil</a>
+                        </li>
+                        <li>
+                            <a href="ListeEtablissement.html">Liste des établissements supérieur</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="Contactez-nous.html">
+                                <span class="glyphicon glyphicon-user"></span> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <body>
-                <h1>Etablissements d'études supérieur Pays de la Loire</h1>
-                <table>
-                    <xsl:for-each select="repertoire/personne">
-                        <xsl:choose>
-                            <xsl:when test="@sexe = 'masculin'">
-                                <xsl:call-template name="homme">
-                                    <xsl:with-param name="personne" select="." />
-                                </xsl:call-template>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:call-template name="femme">
-                                    <xsl:with-param name="personne" select="." />
-                                </xsl:call-template>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </table>
+                <div class="container-fluid text-center">
+                    <div class="row content">
+                        <div class="col-sm-2 sidenav"></div>
+                        <div class="col-sm-8 text-left">
+                            <div class="row-fluid">
+                                <h1>Etablissements d&apos;études supérieur Pays de la Loire</h1>
+                                <div class="container">
+                                    <p>Petit commentaire pertinent</p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nom</th>
+                                                    <th>Sigle</th>
+                                                    <th>Type Etablissement</th>
+                                                    <th>Statut</th>
+                                                    <th>Telephone</th>
+                                                    <th>Universite_de_Rattachement</th>
+                                                    <th>Adresse                             -</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <xsl:for-each select="etablissements/Etablissement">
+                                                    <xsl:sort select="nom"/>
+                                                    <xsl:call-template name="etablissement">
+                                                        <xsl:with-param name="Etablissement" select="."/>
+                                                    </xsl:call-template>
+                                                </xsl:for-each>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 sidenav"></div>
+                    </div>
+                </div>
             </body>
         </html>
     </xsl:template>
-
-    <xsl:template name="homme">
-        <xsl:param name="personne" />
+    <xsl:template name="etablissement">
+        <xsl:param name="Etablissement"/>
         <tr>
-            <td  class="homme">
-                <xsl:call-template name="afficherPersonne">
-                    <xsl:with-param name="personne" select="$personne" />
-                </xsl:call-template>
-            </td>
+            <xsl:call-template name="afficherEtablissement">
+                <xsl:with-param name="Etablissement" select="$Etablissement"/>
+            </xsl:call-template>
         </tr>
     </xsl:template>
-
-    <xsl:template name="femme">
-        <xsl:param name="personne" />
-        <tr>
-            <td  class="femme">
-                <xsl:call-template name="afficherPersonne">
-                    <xsl:with-param name="personne" select="$personne" />
-                </xsl:call-template>
-            </td>
-        </tr>
+    <xsl:template name="afficherEtablissement">
+        <xsl:param name="Etablissement"/>
+        <td>
+            <xsl:value-of select="$Etablissement/nom"/>
+        </td>
+        <td>
+            <xsl:value-of select="$Etablissement/sigle"/>
+        </td>
+        <td>
+            <xsl:value-of select="$Etablissement/TypeEtablissement"/>
+        </td>
+        <td>
+            <xsl:value-of select="$Etablissement/statut"/>
+        </td>
+        <td>
+            <xsl:value-of select="$Etablissement/telephone"/>
+        </td>
+        <td>
+            <xsl:value-of select="$Etablissement/Universite_de_Rattachement"/>
+        </td>
+        <td>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Adresse
+    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <xsl:call-template name="afficherAdresse">
+                        <xsl:with-param name="adresse" select="$Etablissement/adresse"/>
+                    </xsl:call-template>
+                </ul>
+            </div>
+        </td>
     </xsl:template>
-
-    <xsl:template name="afficherPersonne">
-        <xsl:param name="personne" />
-        <h2>
-            <xsl:value-of select="$personne/nom" />
-            &#160;
-            <xsl:value-of select="$personne/prenom" />
-        </h2>
-
-        <xsl:call-template name="afficherAdresse">
-            <xsl:with-param name="adresse" select="$personne/adresse" />
-        </xsl:call-template>
-
-        <xsl:if test="count($personne/telephones) != 0">
-            <xsl:call-template name="afficherTelephones">
-                <xsl:with-param name="telephones" select="$personne/telephones" />
-            </xsl:call-template>
-        </xsl:if>
-
-        <xsl:if test="count($personne/emails) != 0">
-            <xsl:call-template name="afficherEmails">
-                <xsl:with-param name="emails" select="$personne/emails" />
-            </xsl:call-template>
-        </xsl:if>
-    </xsl:template>
-
     <xsl:template name="afficherAdresse">
-        <xsl:param name="adresse" />
-        <p class="adresse" >
-            <xsl:value-of select="$adresse/numero" />
-            &#160;
-            <xsl:value-of select="$adresse/voie" />
+        <xsl:param name="adresse"/>
+        <p class="adresse">
+            <li>
+                <a href="#">
+                    <xsl:value-of select="$adresse/codePostal"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <xsl:value-of select="$adresse/ville"/>
+                </a>
+            </li><!--Si le numéro est 0, ne pas l'afficher -->
+            <li>
+                <a href="#">
+                    <xsl:if test="$adresse/numero != 0">
+                        <xsl:value-of select="$adresse/numero"/>
+                    </xsl:if>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <xsl:value-of select="$adresse/voie"/>
+                </a>
+            </li>
             <br/>
-            <xsl:value-of select="$adresse/codePostal" />
-            &#160;
-            <xsl:value-of select="$adresse/ville" />
-            <br/>
-            <xsl:value-of select="$adresse/pays" />
+            <li>
+                <a href="#">
+                    <xsl:value-of select="$adresse/latitude"/>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <xsl:value-of select="$adresse/longitude"/>
+                </a>
+            </li>
         </p>
     </xsl:template>
-
-    <xsl:template name="afficherTelephones">
-        <xsl:param name="telephones" />
-        <h3>Liste des numéros de téléphones :</h3>
-        <ul>
-            <xsl:for-each select="$telephones/telephone">
-                <xsl:call-template name="afficherTelephone">
-                    <xsl:with-param name="telephone" select="." />
-                </xsl:call-template>
-            </xsl:for-each>
-        </ul>
-    </xsl:template>
-
-    <xsl:template name="afficherTelephone">
-        <xsl:param name="telephone" />
-        <li>
-            <xsl:value-of select="$telephone/@type" /> : <xsl:value-of select="$telephone" />
-        </li>
-    </xsl:template>
-
-    <xsl:template name="afficherEmails">
-        <xsl:param name="emails" />
-        <h3>Adresses Emails :</h3>
-        <ul>
-            <xsl:for-each select="$emails/email">
-                <xsl:call-template name="afficherEmail">
-                    <xsl:with-param name="email" select="." />
-                </xsl:call-template>
-            </xsl:for-each>
-        </ul>
-    </xsl:template>
-
-    <xsl:template name="afficherEmail">
-        <xsl:param name="email" />
-        <li>
-            <xsl:value-of select="$email/@type" /> : <xsl:value-of select="$email" />
-        </li>
-    </xsl:template>
-
-
 </xsl:stylesheet>

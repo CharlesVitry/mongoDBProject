@@ -15,6 +15,7 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
 import javax.xml.transform.*;
@@ -137,6 +138,8 @@ public class Utils {
 
 
     }
+
+
 
     public static boolean isNumeric(String strNum) {
         if (strNum == null) {
@@ -290,10 +293,17 @@ public class Utils {
 
         TransformerFactory tFactory = TransformerFactory.newInstance();
         Transformer transformer = tFactory.newTransformer(new StreamSource("src/transformation.xsl"));
-        transformer.transform(new StreamSource("etablissement.xml"), new StreamResult("EtablissementPageWeb.html"));
+        transformer.transform(new StreamSource("etablissement.xml"), new StreamResult("src/AffichageWeb/ListeEtablissement.html"));
 
 
 
     }
+    public static void OpenInWebBrowser(String URL) throws IOException {
+        File htmlFile = new File(URL);
+        Desktop.getDesktop().browse(htmlFile.toURI());
+
+
+    }
+
 
 }
