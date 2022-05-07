@@ -74,7 +74,7 @@ border-radius: 0;
                             <div class="row-fluid">
                                 <h1>Etablissements d&apos;études supérieur Pays de la Loire</h1>
                                 <div class="container">
-                                    <p>Petit commentaire pertinent</p>
+                                    <p>Liste exhaustive</p>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
