@@ -36,13 +36,17 @@ Arrivé dans Intellij il faut importer un projet Maven existant. Dans le fichier
 url=mongodb://localhost:27017
 database=Projet2022
 ```
+### Données
 
+Notre serveur MongoDB possède une Database, dans celle-ci nous constituons les collections suivantes : Adresse, Etablissement, Etudiant & Formation.
+Les BDD MongoDB fonctionnent avec des Documents utilisant le format JSON.
+Ce format permet de représenter de l’information structurée. Nous chargeons le fichier json contenant l’ensemble des établissements d’enseignement supérieur en Pays de la Loire dans notre Database. De plus nous ajoutons Manuellement grâce aux DAO, 10 Etudiants et 10 formations.
 
 ### Pattern Singleton
 
 Nous avons utilisé le pattern Singleton pour établir le lien entre notre base et l’implémentation Java, il sert à mettre en place la connexion entre les deux. L’idée est de créer un objet Connection contenant la connexion déclaré en private. Ce pattern est mis en place dans la classe « MongoDBConnection », cette classe récupère les informations contenues dans le fichier config.properties.
 
-###Pattern DAO et pattern Factory
+### Pattern DAO et pattern Factory
 
 Pour mettre en place le pattern DAO nous avons créé une classe pour chacun des objets, ces classes sont composées des propriétés correspondantes au champs des tables et des getters et setters (le package model). Pour chacune de ces classes on a créé une classe qui réalise les manipulations dans la base de données (AdresseDAO, EtablissementDAO, EtudiantDAO, FormationDAO). Ces dernières permettent de réaliser six opérations sur les données
 - create(T obj) : boolean , pour créer un nouveau document dans une collection
@@ -53,10 +57,24 @@ Pour mettre en place le pattern DAO nous avons créé une classe pour chacun des
 
 Ces classes sont une extension de la superclasse « Dao » pour gérer correctement les connexions avec la base.
 
-Le pattern Dao est accompagné du pattern Factory. Celui-ci sert de getter des objets Dao pour notre classe App.java.
+Le pattern Dao est accompagné du pattern Factory, il permet de déléguer l’instanciation des objets à une classes, les objets DAO sont ainsi créés par celle-ci.
 
 ### Exécution
-Dans la classe « App , Il suffit d’appeler le constructeur des DAO pour pouvoir l’utiliser, notre code de la classe DAO présente les fonctionnalités complètes.
+Dans la classe « App, Il suffit d’appeler le constructeur des DAO pour pouvoir l’utiliser, notre code de la classe DAO présente les fonctionnalités complètes.
+
+### GUI
+
+#### GUI WEB
+Site Bootstrap Contenant la Liste des établissements
+<img src="Images/GUI_Web.png" width="959" height="475">
+
+#### GUI Spring
+Interface permettant de réaliser les différentes opérations sur les collections
+<img src="Images/Interface_MongoDB.png" width="862" height="407">
+
+#### GUI Terminal
+Sélection des actions à réaliser sur les données via le terminal
+<img src="Images/GUI_Terminal.png" width="358" height="431">
 
 ### Propriétés de la base MongoDB
 
