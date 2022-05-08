@@ -62,6 +62,8 @@ Le pattern Dao est accompagné du pattern Factory, il permet de déléguer l’i
 ### Exécution
 Dans la classe « App, Il suffit d’appeler le constructeur des DAO pour pouvoir l’utiliser, notre code de la classe DAO présente les fonctionnalités complètes.
 
+*** 
+
 ### GUI
 
 #### GUI WEB
@@ -76,6 +78,8 @@ Interface permettant de réaliser les différentes opérations sur les collectio
 Sélection des actions à réaliser sur les données via le terminal
 
 <img src="Images/GUI_Terminal.png" width="358" height="431">
+
+*** 
 
 ### Propriétés de la base MongoDB
 
