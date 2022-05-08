@@ -98,4 +98,5 @@ MongoDB est saluée pour la souplesse de sa structure et sa capacité à répond
 * **C**onsistency(Cohérence) : une donnée n'a qu'un seul état visible quel que soit le nombre de réplicas
 * **A**vailability(Disponibilité) : tant que le système tourne (distribué ou non), la donnée doit être disponible•Partition 
 * **T**olerance(Distribution) : quel que soit le nombre de serveurs, toute requête doit fournir un résultat correct
+
 On ne peut respecter au plus que 2 de ces propriétés, en effet une base MongoDB a très peu de disponibilité.
