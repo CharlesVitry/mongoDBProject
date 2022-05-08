@@ -74,6 +74,7 @@ Interface permettant de réaliser les différentes opérations sur les collectio
 
 #### GUI Terminal
 Sélection des actions à réaliser sur les données via le terminal
+
 <img src="Images/GUI_Terminal.png" width="358" height="431">
 
 ### Propriétés de la base MongoDB
