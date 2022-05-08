@@ -149,8 +149,6 @@ public class App {
 
         System.out.println("Bonjour et bienvenue dans notre programme de gestion de l’ensemble des établissements \n" +
                 "d’enseignement supérieur en Pays de la Loire.");
-        System.out.println("De base un étudiant peut emprunter 5 documents pour 14 jours et un enseignant peut emprunter 10 documents pour 21 jours.");
-
         do {
             System.out.println(" ");
             System.out.println(" ");
