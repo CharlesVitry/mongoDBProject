@@ -42,10 +42,9 @@ public class AdresseDao extends Dao<Adresse>{
 	}
 
 
-
-
 	@Override
 	public boolean create(Adresse obj) {
+
 //		Document document = new Document();
 //		document.put("numero", obj.getNumero());
 //		document.put("voie", obj.getVoie());

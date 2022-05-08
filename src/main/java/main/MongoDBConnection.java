@@ -8,6 +8,9 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Connexion avec la BDD, pattern Singleton
+ */
 public class MongoDBConnection {
 	  	private String url;
 	    private static String database; //ici je met le nom de ma database

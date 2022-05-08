@@ -5,6 +5,9 @@ import model.Etudiant;
 import model.Formation;
 import model.Etablissement;
 
+/**
+ * Getters des DAO
+ */
 public class DaoFactory {
 
 	public static Dao<Adresse> getAdresseDAO(){

@@ -1,7 +1,6 @@
 package main;
 
 
-import dao.AdresseDao;
 import dao.Dao;
 import model.*;
 import org.bson.BsonArray;
@@ -18,19 +17,29 @@ import javax.xml.transform.stream.StreamResult;
 import java.awt.*;
 import java.io.*;
 import java.util.ArrayList;
-import javax.xml.transform.*;
 import javax.xml.transform.stream.*;
 import org.xml.sax.*;
 import java.io.IOException;
 
+/**
+ * Contient les différentes fonctions utiles
+ */
 public class Utils {
 
 
+    /**
+     * @param obj
+     * @return Retourne la liste des cours d'un étudiant
+     */
     public static ArrayList<String> Liste_de_Cours_Etudiant(Etudiant obj) {
         ArrayList<String> formations_Etudiant = obj.getFormation().getListeDisciplines();
         return formations_Etudiant;
     }
 
+    /**
+     * @param etudiantDao
+     * Affiche liste des étudiants dans la console
+     */
     public static void Affichage_liste_Etudiants(Dao<Etudiant> etudiantDao) {
         for (Etudiant e : etudiantDao.findAll()) {
             System.out.println(e.toString());
@@ -38,12 +47,20 @@ public class Utils {
 
     }
 
+    /**
+     * @param adresseDao
+     * Affiche liste des Adresses dans la console
+     */
     public static void Affichage_liste_Adresses(Dao<Adresse> adresseDao) {
         for (Adresse a : adresseDao.findAll()) {
             System.out.println(a);
         }
     }
 
+    /**
+     * @param etablissements
+     * Affiche liste des Etablissements dans la console
+     */
     public static void Affichage_liste_Etablissements(Etablissements etablissements) {
         for (Etablissement e : etablissements.getEtablissements()) {
             System.out.println(e.toString());
@@ -51,6 +68,10 @@ public class Utils {
 
     }
 
+    /**
+     * @param formationDao
+     * Affiche liste des Formations dans la console
+     */
     public static void Affichage_liste_Formations(Dao<Formation> formationDao) {
         for (Formation f : formationDao.findAll()) {
             System.out.println(f);
@@ -64,6 +85,12 @@ public class Utils {
     }
 
 
+    /**
+     * @param adresseDao
+     * @param etudiantDao
+     * @param formationDao
+     * @return Vraie si les 10 formations & 10 étudiants ont bien été créé dans les collections
+     */
     public static boolean Jeux_De_Donnees_Ajouts(Dao<Adresse> adresseDao, Dao<Etudiant> etudiantDao, Dao<Formation> formationDao) {
 
 
@@ -118,6 +145,10 @@ public class Utils {
         return true;
     }
 
+    /**
+     * @param etablissementDao
+     * @return Vraie si la lecture du Json a bien été effectué, à chaque document lu, l'envoie à LectureJson Pour l'ajouter dans le DAO
+     */
     public static boolean JsonAdd(Dao<Etablissement> etablissementDao) {
         try {
             BufferedReader br = new BufferedReader(new FileReader("etablissements.json"));
@@ -140,7 +171,10 @@ public class Utils {
     }
 
 
-
+    /**
+     * @param strNum
+     * @return L'élément est-il un numérique ?
+     * */
     public static boolean isNumeric(String strNum) {
         if (strNum == null) {
             return false;
@@ -153,6 +187,10 @@ public class Utils {
         return true;
     }
 
+    /**
+     * @param str
+     * @return L'élément est il une chaine de charactère tous majuscules ?
+     */
     private static boolean isStringUpperCase(String str) {
         char[] charArray = str.toCharArray();
 
@@ -165,6 +203,12 @@ public class Utils {
     }
 
 
+    /**
+     * @param document
+     * @param etablissementDao
+     * Ajoute l'élément rentrer dans le DAO Etablissement
+     *
+     */
     public static void LectureJSON_Etablissement(Document document, Dao<Etablissement> etablissementDao) {
         try {
             //AJOUT ADRESSE
@@ -263,7 +307,38 @@ public class Utils {
 
     }
 
-    //créé classe etab
+    /**
+     * @param adresseDao
+     * @param etablissementDao
+     * @param etudiantDao
+     * @param formationDao
+     * Drop les collections puis appel la fonction d'ajout des données du .json puis la fonction d'ajout de 10 étudiants et 10 formations
+     *
+     */
+    public static void BDD_Reset(Dao<Adresse> adresseDao, Dao<Etablissement> etablissementDao, Dao<Etudiant> etudiantDao, Dao<Formation> formationDao){
+        //De réinitialiser la base (en injectant le fichier json concernant les universités, ainsi
+        //que le jeu de données
+        adresseDao.DropCollection();
+        etablissementDao.DropCollection();
+        etudiantDao.DropCollection();
+        formationDao.DropCollection();
+
+        //INITIALISATION DES JEUX DE DONNEES
+
+        //etablissements fournis
+        Utils.JsonAdd(etablissementDao);
+
+        //Adresses, Etablissements, Etudiants & Formations
+        Utils.Jeux_De_Donnees_Ajouts(adresseDao,etudiantDao,formationDao);
+    }
+
+    /**
+     * @param etablissements
+     * @throws JAXBException
+     * @throws FileNotFoundException
+     * @throws TransformerException
+     * Générale l'Xml à partir de la classe etablissements qui contient la liste de tout les établissements
+     */
     public static void generateXml(Etablissements etablissements) throws JAXBException, FileNotFoundException, TransformerException {
         JAXBContext context = JAXBContext.newInstance(etablissements.getClass());
         Marshaller marshaller = context.createMarshaller();
@@ -282,6 +357,14 @@ public class Utils {
     }
 
 
+    /**
+     * @throws TransformerException
+     * @throws TransformerConfigurationException
+     * @throws SAXException
+     * @throws IOException
+     * Génére une page .html à partir de la transformation contenu dans le fichier transformation.xsl
+     *
+     */
     public static void generateWithXSLtransformer() throws TransformerException, TransformerConfigurationException,
     SAXException, IOException	{
         //méthode utilisé avant d'avoir un TD
@@ -298,12 +381,20 @@ public class Utils {
 
 
     }
+
+    /**
+     * @param URL
+     * @throws IOException
+     * Ouvre le fichier html dans le navigateur par défaut
+     */
     public static void OpenInWebBrowser(String URL) throws IOException {
         File htmlFile = new File(URL);
         Desktop.getDesktop().browse(htmlFile.toURI());
 
 
     }
+
+
 
 
 }

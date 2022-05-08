@@ -16,6 +16,9 @@ import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.*;
 
+/**
+ * Class Principale du GUI qui appelle les autres classes qui sont des Jframe
+ */
 public class Fenetre_Principal {
 
 
