@@ -24,13 +24,11 @@
  
  ### Introduction
  
-Le sujet posé s’intéresse à la gestion des Etablissements : ses avions et son 
-personnel. L’idée est d’analyser le sujet, de le modéliser sous SQL et de pouvoir 
-automatiser sa gestion avec JAVA sur Eclipse. 
+Le sujet posé s’intéresse à la gestion des Etablissements : ses Etudiants, ses Diplomes, ses Formations. L’idée est d’analyser le sujet, de le modéliser via des classes Java et de pouvoir automatiser sa gestion avec JAVA sur IntelliJ. 
 
 ### Maven 
 Pour la gestion du projet nous avons utilisé Maven qui permet de gérer les dépendances dans un projet Java.
-Le projet est découpé en quatre packages : main, dao, model, GUI. Le package « main » correspond aux classes qui vont permettre d’exécuter le projet. Les packages « dao » et « model » correspondent aux classes utilisées dans le pattern Dao. Puis le package GUI contient des classes de Jframe nécessaire à l’affichage graphique. Le fichier porn.xml gère les dépendances liées aux librairies Jakarta et MongoDB. Le fichier config.properties regroupe les paramètres essentiels pour se connecter à la base de données.
+Le projet est découpé en quatre packages : main, dao, model, GUI. Le package « main » correspond aux classes qui vont permettre d’exécuter le projet. Les packages « dao » et « model » correspondent aux classes utilisées dans le pattern Dao. Puis le package GUI contient des classes de Jframe nécessaire à l’affichage graphique. Le fichier pom.xml gère les dépendances liées aux librairies Jakarta et MongoDB. Le fichier config.properties regroupe les paramètres essentiels pour se connecter à la base de données.
 
 ### Configuration
 Arrivé dans Intellij il faut importer un projet Maven existant. Dans le fichier config.properties il faut modifier les chemins d’accès en fonction du serveur NoSql-MongoDB de l’utilisateur.
@@ -38,6 +36,7 @@ Arrivé dans Intellij il faut importer un projet Maven existant. Dans le fichier
 url=mongodb://localhost:27017
 database=Projet2022
 ```
+
 
 ### Pattern Singleton
 
@@ -54,7 +53,26 @@ Pour mettre en place le pattern DAO nous avons créé une classe pour chacun des
 
 Ces classes sont une extension de la superclasse « Dao » pour gérer correctement les connexions avec la base.
 
-Le pattern Dao est accompagné du pattern Factory. Celui-ci permet de créer les objets Dao dans notre classe AppP.java.
+Le pattern Dao est accompagné du pattern Factory. Celui-ci sert de getter des objets Dao pour notre classe App.java.
 
 ### Exécution
 Dans la classe « App , Il suffit d’appeler le constructeur des DAO pour pouvoir l’utiliser, notre code de la classe DAO présente les fonctionnalités complètes.
+
+### Propriétés de la base MongoDB
+
+#### Orienté documents
+
+Orienté documents, les Bases NoSQL MongoDB sont les plus populaires, 
+MongoDB est saluée pour la souplesse de sa structure et sa capacité à répondre à un grand nombre de besoins.
+
+#### BASE
+
+* **B**asically **A**vailable: quelle que soit la charge de la base de données (données/requêtes), le système garantie un taux de disponibilité de la donnée
+* **S**oft-state : La base peut changer lors des mises à jour ou lors d'ajout/suppression de serveurs. La base NoSQL n'a pas à être cohérente à tout instant
+* **E**ventuallyconsistent : À terme, la base atteindra un état cohérent
+
+#### Théorème CAP
+* **C**onsistency(Cohérence) : une donnée n'a qu'un seul état visible quel que soit le nombre de réplicas
+* **A**vailability(Disponibilité) : tant que le système tourne (distribué ou non), la donnée doit être disponible•Partition 
+* **T**olerance(Distribution) : quel que soit le nombre de serveurs, toute requête doit fournir un résultat correct
+On ne peut respecter au plus que 2 de ces propriétés, en effet une base MongoDB a très peu de disponibilité.
