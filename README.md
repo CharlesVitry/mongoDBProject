@@ -24,7 +24,7 @@
  
  ### Introduction
  
-Le sujet posé s’intéresse à la gestion des Etablissements : ses Etudiants, ses Diplomes, ses Formations. L’idée est d’analyser le sujet, de le modéliser via des classes Java et de pouvoir automatiser sa gestion avec JAVA sur IntelliJ. 
+Le sujet posé s’intéresse à la gestion des Etablissements : ses Etudiants, ses Diplomes, ses Formations, stockés sur un fichiers json. L’idée est d’analyser le sujet, de le modéliser via des classes Java et de pouvoir automatiser sa gestion avec JAVA sur IntelliJ. 
 
 ### Maven 
 Pour la gestion du projet nous avons utilisé Maven qui permet de gérer les dépendances dans un projet Java.
