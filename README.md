@@ -12,6 +12,8 @@
 | Paramétrage     | config.properties      |
 | IDE             | IntelliJ               |
 
+**Fonctionnalités** : Injection de json, extraction des données en format XML par JAXB et génération de pages web avec une transformation XSLT.
+
 ---
 
 ## Diagramme UML du programme
